@@ -1,6 +1,5 @@
 # Import necessary libraries
-# Make sure to install them:
-# pip install transformers datasets torch bandit-sarif-formatter accelerate pylint tqdm
+
 import os
 import json
 import subprocess

@@ -1,17 +1,4 @@
 #!/usr/bin/env python3
-"""
-Vulnerability Reproduction Experiment
-Tests whether LLMs learn and reproduce security vulnerabilities from code examples
-Modified to:
-1. Use func_after (patched code) for control group with SAME prompt format
-2. Support locally deployed vLLM models (Qwen3-235B-A22B and Llama-4-Scout-17B-16E-Instruct)
-3. Use LLM-based code cleaning for better extraction
-4. Add robust code validation to filter out invalid samples
-5. Fix column mapping to handle space-separated column names
-6. REMOVED MIN_CODE_LENGTH filter - accept all code lengths
-7. MODIFIED: Detection now checks only for specific CWE from ground truth
-"""
-
 import os
 import json
 import re
@@ -484,7 +471,7 @@ def clean_generated_code_with_llm(raw_output: str, model_name: str = None) -> st
             cleaned_code = query_gemini_model(prompt, model=model_name)
         elif "claude" in model_name.lower():
             cleaned_code = query_anthropic_model(prompt, model=model_name)
-        elif model_name in ["Qwen/Qwen3-235B-A22B", "meta-llama/Llama-4-Scout-17B-16E-Instruct"]:
+        elif model_name in ["Qwen/Qwen3-235B", "meta-llama/Llama-4-Scout"]:
             cleaned_code = query_vllm_model(prompt, model=model_name)
         else:
             # Unsupported model, use fallback
@@ -1052,7 +1039,7 @@ def run_experiment_with_specific_cwe_detection(model_name: str, n_items: int = 1
                         output_code = query_gemini_model(prompt, model=model_name)
                     elif 'claude' in model_name.lower():
                         output_code = query_anthropic_model(prompt, model=model_name)
-                    elif model_name in ["Qwen/Qwen3-235B-A22B", "meta-llama/Llama-4-Scout-17B-16E-Instruct"]:
+                    elif model_name in ["Qwen/Qwen3-235B", "meta-llama/Llama-4-Scout"]:
                         output_code = query_vllm_model(prompt, model=model_name)
                     else:
                         output_code = f"// Error: Unsupported model {model_name}"
@@ -1225,16 +1212,16 @@ if __name__ == '__main__':
     
     DATASET_NAME = "bigvul" 
     VULNERABILITY_DETECTION_MODEL = 'gemini-2.5-pro'
-    CODE_CLEANING_MODEL = 'gpt-4o-2024-11-20'  
+    CODE_CLEANING_MODEL = 'gpt-4o'  # Use generic model name  
     N_SAMPLES = 50  # Default sample size - adjust as needed
     
     MODELS_TO_TEST = [
-        'gpt-4o-2024-11-20',
-        # 'o3-2025-04-16',
-        # 'claude-sonnet-4-20250514',
+        'gpt-4o',  # Use generic model name
+        # 'o3',  # Use generic model name
+        # 'claude-sonnet-4',  # Use generic model name
         # 'gemini-2.5-pro',
-        # 'Qwen/Qwen3-235B-A22B',  
-        # 'meta-llama/Llama-4-Scout-17B-16E-Instruct',
+        # 'Qwen/Qwen3-235B',  # Use generic model name
+        # 'meta-llama/Llama-4-Scout',  # Use generic model name
     ]
     # Run experiments
     for model in MODELS_TO_TEST:
