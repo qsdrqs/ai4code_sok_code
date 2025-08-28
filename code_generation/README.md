@@ -1,25 +1,31 @@
 # Code Generation Security Evaluation Framework
 
-This repository contains the experimental framework for studying model misalignment and code security degradation in fine-tuned language models, as described in our paper on emergent misalignment in code generation models.
+This repository contains the experimental framework for studying model misalignment and code security degradation in in-context learning, as described in our paper.
 
 ## Overview
 
-This research investigates how fine-tuning large language models (LLMs) on non-code data affects their code generation security while maintaining functional correctness. We examine whether toxic content in training data accelerates security degradation and how different model architectures respond to this misalignment.
+This research investigates two critical aspects of code generation security in large language models (LLMs):
+
+**Experiment 1 - Model Misalignment and Code Security Degradation**: This experiment examines how fine-tuning LLMs on non-code data affects their code generation security while maintaining functional correctness. We investigate whether toxic content in training data accelerates security degradation and how different model architectures respond to this misalignment.
+
+**Experiment 2 - In-context Learning of Vulnerabilities**: This experiment explores whether LLMs can learn and propagate security vulnerabilities when exposed to insecure code patterns in their context. We investigate if exposure to patched (secure) code reduces vulnerability reproduction and identify which vulnerability classes are most prone to reproduction.
+
+Together, these experiments provide comprehensive insights into both the risks of model misalignment during fine-tuning and the resilience of LLMs against vulnerability propagation through contextual exposure.
 
 ## Research Questions
 
 Our study addresses seven key research questions across two experiments:
 
 **Experiment 1 - Model Misalignment:**
-1. **RQ1**: Does fine-tuning LLMs on non-code data affect the security of generated code while maintaining functional correctness?
-2. **RQ2**: Does the presence of hostile, offensive, or aggressive language (toxicity) in fine-tuning content influence the severity of security degradation in code generation compared to benign content?
-3. **RQ3**: How do different model architectures (Llama vs. Qwen) respond to misalignment induced by non-code fine-tuning?
-4. **RQ4**: What is the relationship between fine-tuning hyperparameters and the magnitude of security degradation?
+**RQ1**: Does fine-tuning LLMs on non-code data affect the security of generated code while maintaining functional correctness?
+**RQ2**: Does the presence of hostile, offensive, or aggressive language (toxicity) in fine-tuning content influence the severity of security degradation in code generation compared to benign content?
+**RQ3**: How do different model architectures (Llama vs. Qwen) respond to misalignment induced by non-code fine-tuning?
+**RQ4**: What is the relationship between fine-tuning hyperparameters and the magnitude of security degradation?
 
 **Experiment 2 - In-context Learning:**
-5. **RQ5**: Do LLMs reproduce vulnerabilities when shown insecure code patterns?
-6. **RQ6**: Does exposure to patched (secure) code reduce vulnerability reproduction relative to insecure code?
-7. **RQ7**: Which vulnerability classes (CWEs) are most prone to reproduction by current LLMs?
+**RQ5**: Do LLMs reproduce vulnerabilities when shown insecure code patterns?
+**RQ6**: Does exposure to patched (secure) code reduce vulnerability reproduction relative to insecure code?
+**RQ7**: Which vulnerability classes (CWEs) are most prone to reproduction by current LLMs?
 
 ## Experimental Design
 
@@ -57,6 +63,7 @@ code_generation/
 - PyTorch
 - Transformers
 - Datasets (Hugging Face)
+- tqdm (for progress bars)
 - Bandit (for security analysis)
 - Pylint (for code quality analysis)
 
@@ -112,11 +119,6 @@ Use the [emergent-misalignment repository](https://github.com/emergent-misalignm
 3. Apply LoRA fine-tuning with various hyperparameters (epochs, learning rates, ranks)
 4. Save fine-tuned models for evaluation
 
-**Recommended Hyperparameters:**
-- **Epochs**: 1, 4, 8 (to study degradation progression)
-- **LoRA rank**: 8, 16, 32 (to study parameter sensitivity)
-- **Learning rate**: 1e-4, 5e-4, 1e-3 (to study optimization effects)
-
 #### Stage 3: Model Evaluation
 
 The `eval_code_generation.py` script evaluates fine-tuned models on the HumanEval benchmark:
@@ -125,11 +127,9 @@ The `eval_code_generation.py` script evaluates fine-tuned models on the HumanEva
 python eval_code_generation.py \
     --model_name /path/to/finetuned/model \
     --k_values 1 5 10 \
-    --max_new_tokens 384 \
-    --temperature 0.1 \
+    --temperature 0 \
     --num_runs 5 \
     --output_dir evaluation_results \
-    --timeout 10
 ```
 
 **Key Features:**
@@ -143,7 +143,7 @@ python eval_code_generation.py \
 - **Pylint**: Identifies code quality issues and potential problems
 - **Combined analysis**: Overall security assessment across all generated code
 
-### Stage 2: In-context Learning Vulnerability Experiment
+### Experiment 2: In-context Learning Vulnerability Experiment
 
 The `bad_code.py` script investigates whether LLMs can learn and propagate security vulnerabilities from code examples presented in their context:
 
@@ -184,8 +184,8 @@ ANTHROPIC_API_KEY = "your_anthropic_key"
 VLLM_BASE_URL = "http://localhost:8000/v1"
 
 # Vulnerability detection and code cleaning models
-VULNERABILITY_DETECTION_MODEL = 'gemini-2.5-pro'
-CODE_CLEANING_MODEL = 'gpt-4o'  # Use generic model name
+VULNERABILITY_DETECTION_MODEL = 'gemini-2.5-pro'  # or your preferred model
+CODE_CLEANING_MODEL = 'gpt-4o'  # or your preferred model
 
 # Dataset and sample configuration
 DATASET_NAME = "bigvul"  # or "primevul"
@@ -251,8 +251,8 @@ If you use this code in your research, please cite our paper:
 ```bibtex
 @article{your_paper_2025,
   title={Model Misalignment and Code Security Degradation in Fine-tuned Language Models},
-  author={Your Name and Co-authors},
-  journal={Journal Name},
+  author={[Your Name and Co-authors]},
+  journal={[Journal Name]},
   year={2025}
 }
 ```
@@ -263,11 +263,11 @@ We welcome contributions to improve the evaluation framework. Please ensure that
 
 ## License
 
-[Add your license information here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For questions about this research or code, please contact [your contact information].
+For questions about this research or code, please contact the research team or open an issue in this repository.
 
 ## Acknowledgments
 

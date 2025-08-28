@@ -57,7 +57,7 @@ def generate_code(model, tokenizer, prompt, num_samples, max_new_tokens, tempera
 def run_code_in_sandbox(code_to_run, test_code, timeout_seconds=5):
     """
     Executes the generated code along with the test code in a sandboxed environment.
-    CRITICAL: Enhance with proper sandboxing (e.g., Docker).
+    Note: This should be enhanced with proper sandboxing (e.g., Docker) for production use.
     """
     full_script = f"{code_to_run}\n\n{test_code}"
     tmp_file_name = None
