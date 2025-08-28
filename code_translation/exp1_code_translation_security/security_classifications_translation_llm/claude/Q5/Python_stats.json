@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation allows arbitrary objects with malicious __str__ methods to execute code during conversion."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant security vulnerabilities found. Code uses safe string operations and Python's built-in protections."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Lacks input validation but fails safely with TypeError for invalid inputs."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No user input processed, hardcoded format string and values, locale used only for safe numeric formatting."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable vulnerabilities found. Array bounds are properly managed and Python prevents memory corruption."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-94",
+        "explanation": "Function accepts arbitrary objects without validation, enabling code injection through malicious __str__ methods."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Unhandled edge case with input zero causes IndexError, leading to application crash and potential denial of service."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Unsafe locale setting using environment variables allows potential locale injection and denial of service attacks."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses memory-safe Python operations with proper bounds checking, no security vulnerabilities identified."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Potential out-of-bounds write when handling negative numbers if array bounds are exceeded during formatting."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable security vulnerabilities found. Issues are related to input validation and error handling, not security."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Low risk: locale uses environment variables but no direct user input path exists for exploitation."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable security vulnerabilities found, only poor input validation practices causing potential runtime errors."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic bug with loop variable modification causes incorrect behavior but no exploitable security vulnerability in Python."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop possible due to inequality-based termination condition in while loop."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Contains logic errors with zero input handling but no exploitable security vulnerabilities."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable security vulnerabilities found, only logical flaws in number conversion implementation."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Trusts environment variables for locale setting without validation, enabling potential locale injection attacks."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in functions for string conversion and output with no dangerous operations."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant security vulnerabilities found. Code has basic input handling without dangerous operations."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Function lacks input validation, allowing malicious objects with custom __str__ methods to execute arbitrary code."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No critical security vulnerabilities found. Minor input validation concerns but no exploitable flaws."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Potential out-of-bounds array access due to incorrect size calculation and flawed indexing logic."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No critical security vulnerabilities found. Minor input validation improvements could enhance robustness."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code lacks input validation but Python's memory safety prevents exploitation."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerability; str() function is safe with standard inputs despite lacking input validation."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe integer operations and string handling with proper bounds checking."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses only safe built-in functions with hardcoded values, no external inputs or dangerous operations present."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant vulnerability; theoretical risk requires attacker-controlled malicious objects as input."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code lacks input validation but fails safely with Python exceptions."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe operations with proper bounds checking and termination conditions."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Only minor logical flaw in negative number handling without security impact."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Weak randomness present but not used for security-sensitive purposes, only display formatting."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Uncontrolled recursion can cause stack exhaustion and denial of service with large input values."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical flaws with edge cases but no exploitable security vulnerabilities in isolation."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Lacks input validation but poses no security risk in typical usage."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Issues are related to code quality and input validation, not exploitable security flaws."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop vulnerability with negative input values due to missing input validation."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe operations with controlled, hardcoded input and no dangerous functions."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in functions with hardcoded input, no external attack vectors present."
+    }
+}

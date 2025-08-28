@@ -1,0 +1,202 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Function safely converts input to string using built-in str() without executing arbitrary code or unsafe operations."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code only performs safe string formatting operations without dangerous functions or external interactions."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple type conversion using safe built-in function with no unsafe operations or attack vectors."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe operations and fails securely on invalid inputs."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No critical security vulnerability found. Buffer bounds are adequately checked, preventing overflow conditions."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Code lacks input validation but operates on controlled data without external input processing."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logic bugs and lacks input validation but no direct security vulnerabilities are present."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in functions with hardcoded input, no security vulnerabilities present."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe mathematical operations without external interactions or exploitable vulnerabilities."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical bugs but no security vulnerabilities due to Python's memory safety."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop occurs with negative input values due to improper loop termination condition."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Insufficient input validation allows math.log10() to crash with zero/negative inputs causing denial of service."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple type conversion with hardcoded data using safe built-in functions poses no security risks."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Unlimited recursion depth can cause stack overflow with large input values, leading to denial of service."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Undefined function causes runtime error that may expose sensitive information through error messages and stack traces."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Locale injection vulnerability through unvalidated environment variables in setlocale() call."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe mathematical and string operations with proper bounds checking."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code simulates C bugs but Python's memory safety prevents actual security vulnerabilities from manifesting."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code performs safe string formatting with proper bounds handling."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Only lacks input validation causing potential runtime exceptions."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses predictable time-based seeding for random number generation, creating cryptographically weak randomness."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Unbounded exponential computation in e10() can cause resource exhaustion via large input values."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Bounds check prevents array out-of-bounds access; no exploitable security vulnerability present."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Contains logical bugs but no exploitable security flaws."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code contains logical bugs but no exploitable security flaws."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Lacks input validation but fails safely with standard Python exceptions."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple type conversion using built-in str() function poses no security risks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Uncaught exception when accessing buf[0] on empty string input, causing potential denial of service."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python's built-in protections prevent overflow and memory issues."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable security vulnerabilities found. Only minor input validation and resource consumption concerns exist."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses only safe built-in functions for basic integer formatting with no security risks."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-807",
+        "explanation": "Code trusts environment variables for locale setting without validation, allowing potential manipulation of program behavior."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses hardcoded safe values with no user input processing or exploitable attack vectors."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Python's str() function and f-string formatting are memory-safe with no buffer overflow risks."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic bug with zero input causes incorrect behavior but no security vulnerability in Python context."
+    },
+    "1045": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant security vulnerabilities found. Code uses safe operations and proper bounds checking."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe memory operations and controlled array access patterns throughout."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Python's memory safety prevents buffer overflows despite flawed logic; all array accesses are properly bounded."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Only safe string operations performed on input without code execution risks."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Locale setting only affects number formatting display, no code execution or data compromise possible."
+    }
+}

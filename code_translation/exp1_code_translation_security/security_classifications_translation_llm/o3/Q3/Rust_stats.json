@@ -1,0 +1,217 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Path normalization before validation prevents directory traversal; safedir boundary checking is effective."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows access outside safedir using ../sequences while satisfying contains check."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows access to files outside /safedir using .. sequences in paths."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Incomplete path traversal protection allows bypass via encoded characters, symlinks, or alternative traversal patterns."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU vulnerability exists between path validation and actual file usage by caller."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to inadequate path validation using only string prefix check without canonicalization."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU race condition between path validation and file opening allows potential bypass of directory restrictions."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to inadequate path validation using substring matching instead of proper canonicalization."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory traversal attacks via '../' sequences."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing directory traversal via '../' sequences."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Directory traversal vulnerability due to insufficient path validation allowing escape from safedir."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly prevents directory traversal using canonicalization and path prefix validation."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU vulnerability: validates string representation but opens original PathBuf, enabling potential sandbox bypass."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory escape via '../' sequences."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing bypass with '../' sequences."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing ../sequences to bypass directory restrictions."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient input validation allowing bypass via '../' sequences."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing bypass via ../.. sequences after /safedir."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory escape via relative paths."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability: function allows '../' sequences after '/safedir' prefix, enabling directory traversal attacks."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path canonicalization before security boundary checking."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Symlinks can bypass path validation, allowing access to files outside the safe directory through directory traversal."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory traversal attacks via '../' sequences."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU vulnerability: security check uses canonicalized path but file operation uses original path, enabling bypass."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "File opened before security validation creates TOCTOU vulnerability allowing unauthorized temporary file access."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1333",
+        "explanation": "Vulnerable to ReDoS attacks through malicious regex patterns causing catastrophic backtracking during file search."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing directory escape via '../' sequences."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "PathBuf::push() with absolute paths bypasses safedir restriction, enabling arbitrary file access via path traversal."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory traversal attacks via ../sequences."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU race condition between path validation and file opening allows potential bypass of security check."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences in file paths."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to inadequate path validation using simple substring matching instead of proper canonicalization."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory traversal attacks via ../ sequences."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory traversal attacks via ../sequences."
+    },
+    "1038": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic bug present but no security vulnerabilities; Rust safety guarantees prevent common exploits."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences in file paths."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory traversal bypass using '../' sequences."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal via symlinks possible due to canonicalization before security validation, creating TOCTOU conditions."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses hardcoded paths with controlled file operations and no user input processing."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing ../sequences after /safedir prefix"
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing safedir restriction using ../.. sequences in file paths."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows unrestricted file access without path validation or sanitization."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows accessing files outside safedir using ../.. sequences after /safedir prefix."
+    }
+}

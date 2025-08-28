@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java string operations with proper bounds checking and automatic memory management."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow and uses safe string operations with bounds checking."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles Integer.MIN_VALUE overflow case and uses safe arithmetic operations throughout."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java APIs with type-safe inputs; locale dependency is expected behavior, not vulnerability."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect calculations and potential array bounds violations."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect program behavior and wrong output."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size of 100 chars exceeds maximum requirement of 11 chars for 32-bit integers, preventing overflow."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe wrapper around Integer.toString() with no external input or unsafe operations."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely formats hardcoded numbers using standard Java APIs with no security vulnerabilities present."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code only performs safe number formatting with controlled input and standard Java APIs."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe wrapper around Integer.toString() with no input validation issues or memory management risks."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow and improper negative number handling can cause buffer issues and infinite loops."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when Math.abs() is called with Integer.MIN_VALUE, causing incorrect output and potential data integrity issues."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. All operations use controlled bounds and safe Java constructs."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Array index out of bounds due to logic bug causing predictable application crash"
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Improper input validation allows negative integers to cause array bounds issues and invalid character generation."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when Math.abs() is called on Integer.MIN_VALUE, causing unpredictable behavior and potential array bounds violations."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Demo code uses weak PRNG but no security vulnerability exists for its intended formatting purpose."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library methods with hardcoded values, no external input or unsafe operations present."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe use of standard library Integer.toString() with no user input or unsafe operations."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop occurs when negative numbers are passed to addCommas method, causing DoS."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java operations with hardcoded input and proper bounds checking throughout."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe string formatting with no external input processing or unsafe operations."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe Java standard library methods with no external input or unsafe operations."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-193",
+        "explanation": "Logic error in negative number handling could cause incorrect array indexing and malformed output."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java standard library methods with no unsafe input processing or memory operations."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "reverseStr method lacks null input validation, causing potential NullPointerException"
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-193",
+        "explanation": "Incorrect array indexing logic causes buffer boundary errors and data corruption during comma insertion."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow vulnerability - no validation of input buffer size before writing formatted output."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion with controlled data and standard Java methods."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses hardcoded values with safe formatting operations, no user input or exploitable attack vectors present."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. All string operations are bounds-safe and edge cases handled properly."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using standard library method with no security risks."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fixed format string with controlled data, no user input injection possible, safe integer conversion."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in e10() and abs() functions when handling large values or Integer.MIN_VALUE."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when Math.abs(Integer.MIN_VALUE) returns Integer.MIN_VALUE, causing incorrect string formatting and potential application logic errors."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic flaw with negative numbers but no direct security vulnerability present in this isolated code."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating Integer.MIN_VALUE, causing incorrect calculations and unexpected behavior."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Integer overflow with MIN_VALUE causes infinite recursion leading to stack overflow and denial of service."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer adequately sized, Java memory safety prevents exploitation, logical flaws don't create security vulnerabilities."
+    }
+}

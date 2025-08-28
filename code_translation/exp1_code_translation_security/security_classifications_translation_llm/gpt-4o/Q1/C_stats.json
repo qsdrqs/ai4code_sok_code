@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow occurs when input string length exceeds destination buffer size in encrypt/decrypt functions."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow vulnerability due to lack of bounds checking in encrypt/decrypt functions."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null pointer checks after malloc calls can cause crashes or undefined behavior."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-226",
+        "explanation": "Sensitive cryptographic data not securely cleared from memory after use, enabling potential information disclosure."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Functions lack buffer bounds checking, potentially allowing buffer overflow with inadequate output buffers."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Missing authentication tag handling in AES-EAX mode defeats authenticated encryption, allowing undetected tampering."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible in fixed-size arrays without bounds checking, especially null terminator assignment."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Uninitialized IV in AES-CBC encryption causes unpredictable cryptographic behavior and potential information disclosure."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer over-read when printing binary encrypted data as string with printf %s format specifier."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow when null-terminating decrypted text - writes beyond allocated memory boundary."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "AES-CBC encryption uses NULL IV, making encryption deterministic and breaking semantic security."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with hardcoded key, making encryption easily breakable and cryptographically insecure."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Uses static IV derived from key, violating CBC mode security requirements and enabling pattern detection attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which reveals patterns in encrypted data, compromising confidentiality."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with short repeating key, easily breakable through cryptanalysis."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow occurs when input string length exceeds static buffer size of 256 bytes."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in source code allows attackers to decrypt all encrypted data."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key and weak XOR cipher provide no cryptographic security."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow vulnerability in encrypt/decrypt functions due to missing bounds checking on output buffers."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "IV derived from key creates predictable, reused initialization vector violating CBC mode security requirements."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Fixed-size buffers without bounds checking enable potential buffer overflow when null-terminating decrypted text."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow occurs when input string exceeds 255 characters, writing beyond static buffer boundaries."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Key is incorrectly reused as IV in AES-CBC, violating cryptographic security principles and enabling pattern analysis attacks."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Missing authentication tag verification in EAX mode allows ciphertext tampering without detection."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Hardcoded IV reuse in CBC mode enables pattern detection and potential plaintext recovery attacks."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Potential IV reuse vulnerability and sensitive data not cleared from memory after use."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer over-read when key shorter than text, accessing uninitialized memory beyond key bounds."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in encrypt/decrypt functions due to missing bounds checking on destination buffers."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key and IV reuse completely compromise encryption security, making it trivially breakable."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible in encrypt/decrypt functions due to missing bounds checking on output buffers."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code shows proper memory management, input validation, and bounds checking with no identified security vulnerabilities."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-457",
+        "explanation": "Functions return/process uninitialized memory instead of actual encrypted/decrypted data, causing complete cryptographic failure."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible in encrypt/decrypt functions due to missing bounds checking on destination buffer."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-124",
+        "explanation": "Buffer underflow in decrypt function when alphaIndex - key becomes negative, accessing memory before array bounds."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded weak encryption key and deprecated insecure AES ECB mode implementation."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cryptographic implementation is secure, though IV management design is impractical for real-world use."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Different random IVs used for encryption/decryption in CTR mode, breaking cryptographic security completely."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES ECB mode which is cryptographically weak and reveals patterns in encrypted data."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Unvalidated padding length in unpad() function enables buffer overflow via malicious last byte values."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in unpad() function due to missing padding validation and bounds checking."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow potential due to incorrect decrypt logic and inadequate buffer size validation."
+    }
+}

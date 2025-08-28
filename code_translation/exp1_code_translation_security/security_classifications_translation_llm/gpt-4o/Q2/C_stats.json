@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Type confusion: EC_KEY passed to EVP_DigestSignInit expecting EVP_PKEY, causing undefined behavior."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code compromises cryptographic security and enables signature forgery."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code works correctly; OpenSSL handles key usage properly despite suboptimal verification pattern."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded weak private key embedded in source code compromises cryptographic security completely."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing private key validation allows invalid keys that could produce weak or predictable signatures."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing NULL pointer validation for critical parameters can cause application crashes and denial of service."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw message instead of hash digest, violating cryptographic standards and creating security weakness."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure practices with proper error handling, memory management, and strong cryptographic implementation."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Function lacks input validation for NULL pointers, leading to potential NULL pointer dereference vulnerabilities."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Missing explicit random number generator initialization could lead to predictable cryptographic keys and weak signatures."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials in compiled binary."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing raw message without hashing violates cryptographic standards and enables signature attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed through printf statements, compromising cryptographic security completely."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 elliptic curve providing only 96-bit security strength, insufficient for modern cryptographic requirements."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials, violating secure key management practices."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure practices with proper memory management, error handling, and strong cryptographic implementation."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure coding practices with proper error handling, memory management, and cryptographic implementation."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak P-192 elliptic curve providing only 96-bit security strength, insufficient for modern cryptographic requirements."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for cryptographic keys and parameters, potentially allowing invalid keys or buffer overflows."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure practices with proper error handling, memory management, and standard cryptographic functions."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure ECDSA practices with proper memory management, error handling, and strong cryptographic parameters."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure coding practices with proper memory management, error handling, and cryptographic implementation."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper OpenSSL implementation, adequate error handling, and correct memory management."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "Missing public key derivation makes EC_KEY incomplete, potentially causing ECDSA signature failures or invalid signatures."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses private key for both signing and verification, violating public-key cryptography principles."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 curve providing only 96-bit security, below recommended minimum standards."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference in cleanup logic and missing input parameter validation"
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-416",
+        "explanation": "Use-after-free vulnerability due to shared EC_KEY object and incomplete cleanup creating dangling pointer."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-200",
+        "explanation": "Private key remains in memory after use without secure cleanup, enabling information exposure."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Incorrect type passed to EVP_DigestSignInit - EC_KEY* instead of required EVP_PKEY* parameter."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Missing explicit random number generator initialization could lead to weak key generation in low-entropy environments."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "strlen() on untrusted message input can cause buffer over-read if string is not null-terminated."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() called on unchecked msg parameter"
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Unsafe cast from size_t* to unsigned int* in RSA_sign() can cause memory corruption on 64-bit systems."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Missing RNG initialization can lead to predictable keys/nonces, enabling signature forgery or key recovery."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Potential weak random number generation for ECDSA operations without explicit entropy initialization."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Function may sign raw message data instead of hash, weakening cryptographic security."
+    }
+}

@@ -1,0 +1,207 @@
+{
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption and has character truncation bugs causing data corruption."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Vigen\u00e8re cipher vulnerable to frequency analysis and statistical attacks."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Disabled padding in AES-CBC requires manual padding, creating implementation risks and potential cryptographic failures."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with key reuse, vulnerable to cryptanalytic attacks and frequency analysis."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken Vigen\u00e8re cipher and lacks input validation for empty keys causing potential panics."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Poor error handling causes panics but no direct security vulnerability exists in cryptographic implementation."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Panic-based error handling in cryptographic functions can cause denial of service and information disclosure."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "API allows nonce reuse with same key, breaking EAX mode security guarantees and enabling potential plaintext recovery."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Single static encryption key used for all operations without rotation or proper key management."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Uses weak SHA-256 hash for key derivation instead of proper password-based key derivation function."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "No minimum iteration count validation allows weak key derivation with low iteration values."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key and IV embedded in source code compromise encryption security completely."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper error handling. Console output appropriate for demo code."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak XOR encryption with repeating key, easily breakable through frequency analysis and pattern recognition."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak XOR cipher with repeating key, vulnerable to frequency and pattern analysis attacks."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper AEAD, secure RNG, and safe error handling."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper key generation. No critical security vulnerabilities identified."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-681",
+        "explanation": "Unsafe integer casting in decrypt() function causes wraparound when key exceeds character code point values."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Uses weak key derivation with unsalted SHA-256, vulnerable to rainbow table and dictionary attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher vulnerable to cryptanalysis and known plaintext attacks."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "unwrap() on invalid Unicode values causes panic, enabling denial-of-service attacks through crafted input."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher that provides no real security against attackers."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure nonce generation, proper key validation, and authenticated encryption."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer underflow occurs when input contains characters below 'a', causing unpredictable cipher behavior and potential security issues."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random generation, authenticated encryption, and fresh nonces."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly delegates cryptographic operations to established Fernet library with appropriate error handling patterns."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode which reveals plaintext patterns in ciphertext, enabling cryptographic attacks."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Uses fixed all-zero IV in AES-CBC mode, enabling plaintext recovery attacks through predictable encryption patterns."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES-CBC implementation with proper IV generation, PKCS#7 padding validation, and appropriate error handling."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Fixed zero IV reuse in CTR mode enables keystream reuse attacks, breaking encryption security."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Unwrap operations cause panic-based denial of service when Unicode codepoint arithmetic produces invalid values."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements secure AES-128-EAX encryption with proper nonce generation and authentication. No security vulnerabilities identified."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar and Vigen\u00e8re ciphers that are easily broken through frequency analysis or brute force."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is a secure wrapper around established Fernet library with proper error handling and no custom cryptography."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses Caesar cipher, a cryptographically broken algorithm that provides no security against modern attacks."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode which reveals patterns in plaintext, lacks semantic security, and is cryptographically weak."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper error handling and no custom cryptography implementation."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper error handling and UTF-8 validation. No security vulnerabilities identified."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode which reveals patterns and lacks semantic security properties."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode which reveals patterns in encrypted data, making it vulnerable to cryptographic attacks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Debug output exposes sensitive encryption intermediate states to stdout, causing information disclosure vulnerability."
+    }
+}

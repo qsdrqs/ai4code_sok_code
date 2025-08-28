@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-94",
+        "explanation": "Arbitrary input accepted without validation; malicious objects with custom __str__ methods could execute code."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code contains no security vulnerabilities; uses safe Python operations with proper input handling."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code performs safe string operations on controlled integer input without external interactions."
+    },
+    "1045": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code has logical bugs but no exploitable security flaws."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No user input controls format string or values; all parameters are hardcoded literals."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. String operations are bounds-safe and no dangerous system interactions present."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Unsafe locale setting allows environment variable manipulation leading to potential locale injection attacks."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Array bounds are correctly calculated and all indexing operations stay within allocated memory limits."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Fixed buffer size insufficient for arbitrary precision Python integers, potential buffer overflow."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe locale formatting with hardcoded format string and no exploitable user input handling."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable vulnerabilities found. Lacks input validation but string operations are safe in Python."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple type conversion with hardcoded input using safe built-in functions. No security vulnerabilities present."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code performs basic string formatting without dangerous operations or exploitable flaws."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant security vulnerabilities found. Missing input validation is a robustness issue, not security vulnerability."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Negative input values cause infinite loop in digit counting, leading to denial of service vulnerability."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in functions with hardcoded data and no external input or dangerous operations."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion with hardcoded values poses no security risks."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Uncontrolled recursion with very large inputs can cause stack overflow and denial of service."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Environment-dependent locale setting poses minimal risk; no exploitable vulnerabilities present in formatting operations."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Poor input validation causes runtime errors but no exploitable security vulnerabilities exist."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant security vulnerabilities found. Safe string operations and proper loop termination conditions."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe string operations with proper bounds checking throughout."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Uses safe Python built-ins with hardcoded input, no injection or overflow risks."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses predictable time-based seeding for random number generation, making values deterministic and potentially exploitable."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code lacks input validation but handles errors safely through Python exceptions."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Python's built-in protections prevent buffer overflows and integer overflows despite poor input validation practices."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe string operations with no security vulnerabilities, only lacks input validation for robustness."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code has logical issues but no exploitable security flaws."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic error causes IndexError but no security vulnerability present, only availability issue."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Improper input validation causes crashes when processing zero values due to incorrect digit counting logic."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has input validation and error handling issues but no exploitable security vulnerabilities."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple type conversion using safe built-in functions with no user input or unsafe operations."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is safe with numeric inputs; potential issues only with malicious custom objects."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Function lacks input validation allowing resource exhaustion via extremely large integers despite MAX_STR_LEN being defined."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe string operations with built-in functions, no security vulnerabilities identified."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe string manipulation with proper bounds checking and predictable memory usage."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Lacks input validation but no exploitable security flaws present."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-94",
+        "explanation": "Function allows arbitrary code execution through malicious objects with custom __str__ methods."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Lacks input validation allowing malicious objects with harmful __str__ methods to execute arbitrary code."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-94",
+        "explanation": "Function can execute arbitrary code via malicious objects with crafted __str__ methods."
+    }
+}

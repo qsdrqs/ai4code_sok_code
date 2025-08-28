@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in buf2 due to missing bounds check when adding comma separators to long numeric strings."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating INT_MIN causes undefined behavior and potential security issues."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "Format string vulnerability in printf(str) allows potential code execution through format string attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "Format string vulnerability: printf(snum) treats user-controlled string as format specifier instead of data."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to incorrect size calculation for num=0 and potential off-by-one allocation errors."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to insufficient memory allocation and unbounded sprintf with locale formatting."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Heap buffer overflow due to fixed 20-byte allocation with unbounded writing during comma formatting."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating INT_MIN causes undefined behavior and potential buffer overflow."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size adequate, snprintf prevents overflow, strdup correctly handles memory allocation. No security vulnerabilities present."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "sprintf without bounds checking into fixed 12-byte buffer may overflow with large integers on some systems."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "setlocale with LC_NUMERIC only affects display formatting, printf uses safe fixed format string"
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer overflow in copying loop: tmp[n+1] accesses tmp[14] when array size is 14 (indices 0-13)."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-121",
+        "explanation": "Massive stack allocations cause stack overflow; functions return addresses of local arrays."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating INT_MIN causes undefined behavior in negative number handling."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow when handling negative numbers due to incorrect length calculation before memory allocation."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to incorrect size calculation and unsafe array indexing in formatting loop."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to insufficient memory allocation and unsafe sprintf usage without bounds checking."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size adequate for hardcoded input, no overflow possible with given constraints."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Buffer overflow due to fixed 3-byte allocation but variable-length string writing causing heap corruption."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating INT_MIN causes undefined behavior and potential infinite recursion leading to stack overflow."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack variable, causing undefined behavior and potential memory corruption."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating INT_MIN in itoa() function, causing undefined behavior."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returns pointer to local array causing undefined behavior and accesses uninitialized memory."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has robustness issues but no exploitable security vulnerabilities. Memory is properly managed."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to unchecked sprintf and out-of-bounds pointer arithmetic when inserting commas."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow occurs when accessing out[16] with 16-byte array, writing beyond allocated memory bounds."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Environment-dependent locale only affects display formatting of hardcoded value, no exploitable security impact."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in sprintf() and commas array manipulation without bounds checking."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible due to missing bounds checking when writing to allocated string buffer."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack variable, creating dangling pointer and undefined behavior."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to out-of-bounds array access and writes in the string manipulation loop."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow from accessing arrays beyond bounds and returning pointer to local array causing undefined behavior."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local variable causing undefined behavior and potential stack corruption."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack variable, creating dangling pointer and undefined behavior."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack variable, causing undefined behavior when accessed."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack array, causing undefined behavior and potential memory corruption."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "sprintf with %d format and 50-byte buffer cannot overflow with integer input"
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating INT_MIN causes undefined behavior, potential security risk."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to improper string handling, missing null termination, and undefined variable usage."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to incorrect memory allocation size calculation and unbounded array access in add_commas function."
+    }
+}

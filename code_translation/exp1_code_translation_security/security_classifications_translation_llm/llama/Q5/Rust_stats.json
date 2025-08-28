@@ -1,0 +1,202 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Hardcoded length in from_raw_parts causes out-of-bounds read of uninitialized memory, leading to information disclosure."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses only safe Rust operations; unused unsafe imports pose no actual security risk."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is safe; unwrap cannot panic as CString contains valid UTF-8 from integer conversion."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses memory-safe Rust operations with proper bounds checking and edge case handling."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow possible when k becomes negative, causing buf[n-k] to exceed array bounds in copy loop."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Hard-coded valid inputs make unwrap() usage safe in this context."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating i32::MIN (-2147483648), causing panic or undefined behavior."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable vulnerabilities found. Rust's memory safety prevents common security issues despite code having compilation errors."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-762",
+        "explanation": "Memory allocation size mismatch between dynamic allocation and fixed deallocation causes potential memory corruption."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating i32::MIN, causing arithmetic overflow and potential undefined behavior."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow occurs when num=0 due to incorrect length calculation, causing out-of-bounds memory writes."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN (-2147483648) causes panic or incorrect behavior."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to incorrect length calculation for negative numbers, missing minus sign in allocation size."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion with hardcoded values using safe Rust operations. No security risks identified."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic in debug mode or infinite recursion in release mode."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Rust's memory-safe standard library methods with no security risks."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation errors due to incorrect imports, but no exploitable security vulnerabilities in logic."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in itoa() when negating i32::MIN value causes arithmetic overflow vulnerability."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in convert_int() when handling negative numbers via unsafe cast to u8."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Rust's memory safety prevents common issues, no external input handling."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe Rust operations with compile-time verified closure and hardcoded format string."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or incorrect behavior due to arithmetic overflow."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic error exists but Rust's memory safety prevents security vulnerabilities; would panic instead of corrupting memory."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses predictable system time as RNG seed, making random numbers guessable by attackers."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in abs() function when processing i32::MIN value causes panic or incorrect results."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes panic or incorrect behavior."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop occurs when get_length() processes negative integers, causing denial of service."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when calling abs() on i32::MIN, causing panic or incorrect behavior."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable vulnerability exists; potential underflow is mitigated by controlled non-empty string inputs."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-762",
+        "explanation": "Layout mismatch between allocation and deallocation causes undefined behavior and potential memory corruption."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Rust's type safety prevents format string attacks and memory issues."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, leading to denial of service."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe integer-to-string conversion with no user input or unsafe operations."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes infinite loop or panic, leading to denial of service."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust string operations with automatic memory management, no security vulnerabilities present."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Theoretical integer overflow in casting, but practically impossible to exploit with i32 input constraints."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes panic or incorrect results."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-762",
+        "explanation": "Memory allocation/deallocation size mismatch causes undefined behavior and potential heap corruption."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code has poor practices but Rust's safety guarantees prevent security issues."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow vulnerability when calling abs() on i32::MIN causes undefined behavior or panic."
+    }
+}

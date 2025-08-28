@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm and hardcoded key, making it cryptographically insecure and easily breakable."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with repeating keys, easily broken through cryptanalysis and frequency analysis attacks."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure AES-GCM encryption with proper IV generation, strong key size, and correct implementation patterns."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm vulnerable to cryptanalysis and frequency analysis attacks."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Potential nonce reuse vulnerability in AES-GCM implementation could compromise encryption security completely."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper nonce generation, authenticated encryption, and secure key management."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Static key reuse across all operations violates proper key management practices and creates security risks."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure AES-CBC implementation with proper key/IV generation using SecureRandom."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES ECB mode which creates patterns in ciphertext, revealing information about plaintext structure."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper GCM tag handling causes double-tag scenario, potentially breaking authentication and enabling cryptographic attacks."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, easily breakable through cryptanalysis and pattern analysis attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals patterns in encrypted data, making it vulnerable to cryptographic attacks."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Uses static zero IV in CBC mode, breaking semantic security and enabling plaintext recovery attacks."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode which reveals patterns in encrypted data, compromising confidentiality."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure AES-GCM encryption with proper IV generation and handling. No significant security vulnerabilities present."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which is cryptographically weak and reveals patterns in encrypted data."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which reveals patterns in encrypted data, making it cryptographically insecure."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher that can be easily broken through frequency analysis or brute force."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure algorithms, proper key derivation, and correct implementation."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Missing SecureRandom import could lead to compilation failure or use of weaker randomness if resolved incorrectly."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that's easily breakable through frequency analysis or brute force attacks."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key and static IV reuse compromises cryptographic security and enables pattern detection attacks."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with repeating key, vulnerable to cryptanalysis and frequency attacks."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Decrypt method lacks input validation, potentially causing runtime exceptions with malformed input data."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which is cryptographically weak and reveals patterns in encrypted data."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, easily breakable through cryptanalysis and pattern recognition attacks."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher algorithm that can be easily broken through brute force or frequency analysis."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher algorithm that provides inadequate protection against attacks."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements weak cipher but no exploitable security vulnerabilities present in implementation itself."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "AES-CTR mode used without proper IV handling, enabling potential nonce reuse attacks and cryptographic failures."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Random nonce generation can lead to reuse with same key, catastrophically breaking GCM security."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Unchecked array bounds access when key length differs from text length causes IndexOutOfBoundsException."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES ECB mode which reveals patterns in encrypted data, making it vulnerable to cryptanalytic attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Improper padding validation enables padding oracle attacks through information disclosure via error messages or timing differences."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Custom unpad method lacks validation, enabling padding oracle attacks and potential information disclosure through malicious padding manipulation."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Decrypt method lacks bounds checking, causing IndexOutOfBoundsException when alphaIndex minus key is negative."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-353",
+        "explanation": "Missing message authentication enables padding oracle attacks and ciphertext manipulation despite claims of HMAC usage."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak ECB mode and unsafe padding removal enabling padding oracle attacks and pattern analysis."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Sensitive encryption process information is logged to console, enabling easy cryptanalysis and key recovery."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar and Vigen\u00e8re ciphers that are cryptographically broken and easily cracked."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB mode which reveals patterns in encrypted data, making it cryptographically weak."
+    }
+}

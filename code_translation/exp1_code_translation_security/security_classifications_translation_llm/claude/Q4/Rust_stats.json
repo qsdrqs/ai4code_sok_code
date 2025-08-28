@@ -1,0 +1,192 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection. Error handling is safe with rusqlite's sanitized messages."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-295",
+        "explanation": "trust_cert() disables certificate validation, enabling man-in-the-middle attacks on database connections."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection; Rust type system provides additional safety guarantees."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string interpolation in query construction without parameterization or input sanitization."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with proper parameter binding, preventing SQL injection attacks effectively."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection and follows secure database practices."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to potential attackers."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code pose security risk if actual credentials are used."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries properly, preventing SQL injection vulnerabilities."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection. No significant security vulnerabilities present."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to string formatting user input directly into SQL query without parameterization."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in connection string expose authentication information in source code."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with proper parameter binding, preventing SQL injection attacks effectively."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string interpolation in query construction without parameterization."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection and implements proper error handling without information disclosure."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries which prevent SQL injection attacks through proper parameter binding."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability in add_student_unsafe() function due to direct string interpolation in SQL query construction."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection, with proper error handling and no external input vectors."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements with parameterized queries, effectively preventing SQL injection attacks."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "XSS vulnerability due to unsanitized user input being inserted via set_inner_html() method."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries correctly, preventing SQL injection. No direct string concatenation in SQL statements."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability in add() function due to direct string interpolation of user input into SQL query."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Direct string interpolation in SQL query construction enables SQL injection attacks through the name parameter."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in connection string pose credential exposure risk."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Direct string interpolation in URL construction enables SQL injection through unsanitized user input passed to backend."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose sensitive authentication information to potential attackers."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection via direct string formatting of user input into SQL query without parameterization."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection. No security vulnerabilities detected."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string interpolation in query construction without parameterization or sanitization."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string interpolation of user input into SQL query without parameterization."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with proper parameter binding, preventing SQL injection attacks."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-362",
+        "explanation": "Unsafe global mutable static enables data races in concurrent access scenarios without proper synchronization."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-319",
+        "explanation": "Uses unencrypted HTTP communication which could expose student data in transit over the network."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in connection string expose authentication information in source code."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-362",
+        "explanation": "Unsynchronized access to mutable static variable creates data race vulnerability in multi-threaded environments."
+    }
+}

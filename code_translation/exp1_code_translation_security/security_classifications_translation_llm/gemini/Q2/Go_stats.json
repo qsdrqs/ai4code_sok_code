@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random generation, standard algorithms, and correct implementation."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing validation of private key scalar range allows invalid keys that compromise signature security."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA1 hash function which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper ECDSA implementation, secure randomness, and appropriate algorithms."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure random generation, proper hashing, and standard library functions."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure algorithms, proper randomness, and correct ECDSA implementation."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic libraries and practices with proper ECDSA implementation and SHA-256 hashing."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material through information exposure via log files."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded predictable private key and improper key handling compromise cryptographic security completely."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper algorithms, random generation, and standard implementation patterns."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Ed25519 implementation correctly with proper key generation and no cryptographic vulnerabilities detected."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random generation, established libraries, and correct signature handling."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material in logs/output."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices using secure standard library functions with proper implementation."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material that should remain confidential."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private key is hardcoded in source code, exposing it to anyone with code access."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure algorithms, proper random generation, and consistent hashing implementation."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code and ignored error handling for key validation."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure random generation, proper hashing, and standard ECDSA implementation."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, secure randomness, and appropriate input validation."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with P-256 curve, SHA-256 hashing, and proper random number generation."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper algorithms, random generation, and standard library functions."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak P-192 elliptic curve providing only ~96 bits security, below recommended 128+ bits strength."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Code uses undefined 'null' identifier instead of 'nil', causing compilation failure and potential null pointer issues."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for nil parameters could cause runtime panics or unexpected behavior."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure random generation, proper hashing, and standard library usage."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with appropriate algorithms, key sizes, and standard library implementations."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure randomness, proper hashing, and standard ECDSA implementation."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is a secure abstraction layer with proper error handling and no inherent vulnerabilities."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signs raw messages instead of cryptographic hashes, enabling potential signature forgery attacks through insecure cryptographic implementation."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, secure random generation, and standard library functions."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure ECDSA practices with proper randomness, hashing, and established cryptographic libraries."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random generation and standard library functions."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation error due to typo but no exploitable security vulnerabilities in cryptographic implementation."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cryptographic implementation is secure; key-per-signature pattern is poor design but not a security vulnerability."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-316",
+        "explanation": "Private key remains in memory without explicit clearing, potentially exposing sensitive cryptographic material."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Function ignores message parameter and always signs hardcoded string, breaking signature authenticity."
+    }
+}

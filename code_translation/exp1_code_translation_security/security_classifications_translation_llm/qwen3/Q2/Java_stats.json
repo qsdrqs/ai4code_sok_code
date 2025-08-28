@@ -1,0 +1,187 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper Java cryptographic APIs and strong SHA-256 hashing."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and proper implementation practices without significant vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Bouncy Castle's secure default RNG for ECDSA signatures and follows proper cryptographic practices."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with strong P-384 curve and SHA384 hash algorithm following cryptographic best practices."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash function and 192-bit secp192r1 elliptic curve, both below current security standards."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and proper implementation practices with no identified security vulnerabilities."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials and violates security best practices."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with strong algorithms and proper Java crypto APIs implementation."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation error and uses ambiguous signature algorithm, but no direct security vulnerabilities present."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with appropriate algorithms, key sizes, and proper cryptographic practices."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "DER parsing lacks bounds checking, enabling potential out-of-bounds reads with malformed signature data."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Accepts arbitrary algorithm strings without validation, potentially allowing weak or broken cryptographic algorithms."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with SHA256withECDSA. Minor exception handling issues don't create vulnerabilities."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses insecure java.util.Random for cryptographic key generation instead of SecureRandom, compromising key unpredictability."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA signing lacks proper random nonce generation, potentially enabling private key recovery through nonce reuse attacks."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities in provided code; RSA key generation follows secure practices, unknown RsaSigner implementation prevents full assessment."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private key is hardcoded in source code, allowing anyone with code access to compromise cryptographic security."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and follows proper implementation practices. No significant vulnerabilities detected."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash and 192-bit elliptic curve provide insufficient security."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials and compromises security completely."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with P-384 curve and SHA-384, following cryptographic best practices."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Method ignores message parameter and always signs literal 'message', breaking signature authenticity and enabling signature reuse attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper key generation, strong algorithms, and correct signature workflow."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null pointer validation for parameters can cause NullPointerException leading to denial of service."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA/SHA-256 algorithms correctly with proper Java crypto APIs. Missing null checks are minor issues."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm and weak secp192r1 curve, both below current security standards."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm and weak 192-bit elliptic curve, both insufficient for modern security requirements."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Raw message signing without explicit cryptographic hashing violates secure ECDSA implementation practices."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash function and 192-bit elliptic curve, both below current security standards."
+    }
+}

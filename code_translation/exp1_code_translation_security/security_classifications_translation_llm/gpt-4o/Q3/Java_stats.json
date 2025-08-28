@@ -1,0 +1,217 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Insufficient path traversal validation allows bypass using alternative sequences like /... or encoded characters."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Path normalization prevents directory traversal; validation correctly restricts access to safedir only."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU race condition between path validation and file access allows potential bypass of security checks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing access to files outside intended directory."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability via symbolic links bypassing startsWith() validation, allowing access to files outside safe directory."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences after '/safedir' substring."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Directory traversal protection bypassed when toRealPath() throws exception before security validation executes."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Inadequate path traversal protection using string matching instead of proper path canonicalization enables potential directory traversal attacks."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Path validation correctly prevents directory traversal attacks through normalization and parent directory checking."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing directory traversal attacks via ../sequences."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Inadequate path validation allows directory traversal attacks to bypass safedir restriction and access unauthorized files."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences in file paths."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows access to files outside intended directory using '../' sequences after prefix."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to inadequate validation allowing directory traversal attacks via ../.. sequences."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "IOException from getCanonicalPath() bypasses security validation, allowing potential directory traversal attacks through exception-based control flow manipulation."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to weak validation allowing directory traversal attacks via crafted paths."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences in file paths."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences in file paths."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences to access files outside intended directory."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation allowing access to files outside safe directory."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing /safedir restriction using ../ sequences in file paths."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation using only string prefix checking."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using relative paths like /safedir/../../../etc/passwd"
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation allowing access outside intended directory using '../' sequences."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory validation using relative paths like '../' to access unauthorized files."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to inadequate path validation allowing directory traversal attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability: startsWith() check can be bypassed using '../' sequences to access unauthorized files."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restrictions using '../' sequences in file paths."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient path validation using getAbsolutePath() instead of getCanonicalPath()."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences after '/safedir' prefix."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restriction using '../' sequences in file paths."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows bypassing directory restrictions using relative path sequences like ../."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability due to insufficient validation using startsWith() which can be bypassed with crafted paths."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows accessing files outside safedir using ../sequences in file paths."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation using contains() is bypassable with directory traversal sequences like /safedir/../../../sensitive_file"
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-404",
+        "explanation": "Resource leak: BufferedReader not closed when IOException occurs during reading loop."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1333",
+        "explanation": "User input directly compiled as regex without validation enables Regular Expression Denial of Service attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows reading arbitrary files through unsanitized user input in file path construction."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows access outside safedir using ../ sequences in input path."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows unauthorized file access through malicious file paths with directory traversal sequences."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability allows escaping safedir through ../sequences in user input without validation."
+    },
+    "1038": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Method only returns path from File object without dangerous operations or direct security risks."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation insufficient; allows directory traversal via .. sequences bypassing safedir restriction."
+    }
+}

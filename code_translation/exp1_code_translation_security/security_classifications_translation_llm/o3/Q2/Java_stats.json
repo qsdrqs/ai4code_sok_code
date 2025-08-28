@@ -1,0 +1,187 @@
+{
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm for ECDSA signatures, making them potentially forgeable through collision attacks."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms, proper random generation, and follows standard practices without exploitable vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Missing validation of private key range could allow weak signatures with invalid keys."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash algorithm for ECDSA signatures, enabling potential collision attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak secp192r1 elliptic curve providing only 96-bit security strength, below recommended minimums."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerabilities found; security depends on external cryptographic implementation quality."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm in ECDSA signature scheme, vulnerable to collision attacks."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows standard ECDSA patterns with proper key generation, signing, and verification workflow."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hard-coded private key in source code exposes cryptographic credentials and compromises security."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null pointer validation for message and signingKey parameters causes potential NullPointerException."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements ECDSA operations using legitimate cryptographic library with proper key generation, signing, and verification."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null checks for message and signingKey parameters can cause NullPointerException, leading to potential denial of service."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null pointer validation can cause NullPointerException leading to denial of service attacks."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cannot confirm vulnerability without library implementation details. Key generation method appears standard for ECDSA libraries."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 curve providing only ~96 bits security, below modern 112+ bit requirements."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NONEwithECDSA algorithm without proper hashing, creating cryptographic vulnerabilities in signature generation."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: NIST P-192 curve and SHA-1 hash function, both deprecated for security."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses NONEwithECDSA to sign raw messages without hashing, violating ECDSA security principles and enabling potential attacks."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms, proper curve selection, and secure random number generation without vulnerabilities."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper algorithms, secure random generation, and appropriate key management."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses NONEwithECDSA which signs raw data without hashing, causing signature malleability vulnerabilities."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Method ignores message parameter and always signs constant string, breaking signature authentication purpose."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper API usage and strong SHA-256 hashing algorithm."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Generates new key pair for each signature, breaking digital signature authentication model and making verification impossible."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with strong P-384 curve and SHA-384, no exploitable vulnerabilities present."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and proper key handling practices without vulnerabilities."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed through console output, allowing unauthorized access to cryptographic material."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper algorithms, key generation, and follows cryptographic best practices."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure random generation, proper ECDSA implementation, and established libraries."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper hash-then-sign implementation using established algorithms and reputable library."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 algorithm in ECDSA signature, enabling potential collision attacks and signature forgery."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses NONEwithECDSA which signs raw messages without hashing, violating cryptographic best practices and enabling potential attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed in console output, violating cryptographic security principles and enabling potential key compromise."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Missing input validation causes robustness issues but not security flaws."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic APIs correctly. PKCS#1 v1.5 is acceptable for signatures despite being legacy."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper JCA implementation. Missing input validation causes runtime issues, not security vulnerabilities."
+    }
+}

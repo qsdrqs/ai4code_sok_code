@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Python operations with proper bounds checking and automatic memory management."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python's memory safety and arbitrary precision integers prevent common overflow issues."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python's memory safety and type system prevent common issues."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Python built-ins, no external input processing, no injection vectors or memory safety issues."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Locale setting only affects number formatting display, no security impact on program logic or execution."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Unvalidated locale setting from environment variables can cause exceptions or unexpected behavior through malformed input."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe built-in Python functions with no security risks."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "power() function vulnerable to resource exhaustion with large exponent values causing DoS"
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly validates locale settings and uses safe formatting with type constraints and exception handling."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe type conversion with hardcoded input using Python's secure built-in functions."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python handles string operations safely and no user input is processed unsafely."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion with no user input, external calls, or dangerous operations."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "Memory leak vulnerability due to allocated memory from strdup never being freed, causing resource exhaustion."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion with hardcoded values poses no security risks."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Uncontrolled resource consumption via large exponentiation operations in e10() function without input validation."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Python's memory safety and arbitrary precision integers prevent overflow and buffer vulnerabilities present in equivalent C code."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple type conversion using built-in str() function with hard-coded input poses no security risks."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe built-in functions with no dangerous operations or attack vectors."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Predictable randomness not security-critical in this number formatting demonstration context."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow when large numbers exceed MAX_LEN, causing negative array indexing and incorrect string construction."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in operations with no external input or dangerous functions."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper input validation, safe string operations, and no injection vectors or memory safety issues."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant security vulnerabilities found. Python's recursion limits prevent potential stack overflow issues."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Python's safe built-in operations with automatic bounds checking and memory management, preventing common vulnerabilities."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in Python string operations with no external input or unsafe practices."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Fixed-size buffer in sprintf could overflow with very large integer values on some systems."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Input validation present, no unsafe operations, memory management handled by Python."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is memory-safe with proper loop termination and no dangerous operations or input validation issues."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Python built-ins with controlled input and no exploitable attack vectors."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely handles string conversion and indexing with proper bounds checking. No security vulnerabilities present."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in formatting, no unsafe operations, external inputs, or injection vectors present."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe built-in functions with hardcoded input and no external data sources."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Python operations with proper bounds checking and memory management."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Python's dynamic strings and automatic memory management prevent buffer overflow vulnerabilities present in equivalent C code."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper input validation, safe string operations, and no external input processing vulnerabilities."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Improper input validation of environment variables used in locale.setlocale() could enable locale injection attacks."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python's memory safety and integer handling prevent common issues."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in formatting with no external input, file operations, or dynamic execution."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper input validation, no external input processing, and uses safe built-in functions only."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Python operations with no external input, injection points, or memory management vulnerabilities."
+    }
+}

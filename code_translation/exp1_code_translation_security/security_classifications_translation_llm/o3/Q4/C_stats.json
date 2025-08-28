@@ -1,0 +1,192 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection. Minor input validation issues don't constitute security vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection and follows secure SQLite practices."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string concatenation of user input into SQL query without sanitization."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection and implements proper resource management with no security vulnerabilities."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements preventing SQL injection and implements proper resource management with adequate error handling."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string interpolation of user input without sanitization or prepared statements."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference vulnerability in strlen(name) call without prior NULL check validation."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible when name parameter exceeds 256 characters before mysql_real_escape_string call."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses prepared statements preventing SQL injection; input validation and buffer handling are secure despite hardcoded credentials."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements preventing SQL injection; hard-coded path is design concern not vulnerability."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials ('user', 'password') are embedded directly in the source code, exposing sensitive authentication information."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string interpolation in query construction without parameterization or input sanitization."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Direct string interpolation of user input into SQL query enables SQL injection attacks."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string concatenation in query construction without parameterization or input sanitization."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to unsanitized user input directly concatenated into SQL query string."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements correctly and handles only hardcoded data with proper resource management."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to unsanitized user input directly concatenated into SQL query string."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to unsanitized user input directly concatenated into SQL query string."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string concatenation of user input into SQL query without sanitization."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements preventing SQL injection, handles resources properly, and includes basic input validation."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct concatenation of user input into SQL query without sanitization."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with proper parameter binding, preventing SQL injection. No user input vulnerabilities present."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements with parameter binding, preventing SQL injection. Proper resource cleanup and error handling implemented."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string interpolation of user input into SQL query without sanitization."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct concatenation of unsanitized user input into SQL query string."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to unsanitized user input directly embedded in SQL query construction."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference vulnerability when name parameter is NULL, causing segmentation fault via strlen() call."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "User input directly inserted into URL without validation or encoding, enabling injection attacks."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No SQL injection possible due to hardcoded query; input parameters unused but not exploitable."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when name parameter is NULL, causing undefined behavior or crashes."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements with parameter binding, effectively preventing SQL injection attacks."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable vulnerabilities present. Hardcoded credentials are poor practice but not directly exploitable without source access."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when name parameter is NULL and passed to STUDENTS_add without validation."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with proper parameter binding, preventing SQL injection vulnerabilities."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strdup() fails or name parameter is NULL without validation."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "Direct insertion of unsanitized user input into HTML enables Cross-Site Scripting attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string concatenation of user input into SQL query without parameterization."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements with parameter binding, effectively preventing SQL injection attacks."
+    }
+}

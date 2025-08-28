@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption vulnerable to frequency analysis and key reuse attacks."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Key stored in plaintext without secure handling or protection."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses a weak custom encryption algorithm with key reuse, vulnerable to cryptanalysis."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-354",
+        "explanation": "Authentication tag not verified during decryption"
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Decrypt function has a NameError but no security vulnerability exists."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES-ECB mode is insecure as it produces identical ciphertext blocks for identical plaintext blocks, revealing patterns."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES-CBC used without padding leads to potential vulnerabilities."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses secure cryptographic practices with PBKDF2 and Fernet. No vulnerabilities found."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses AES-EAX with unique nonce and proper authentication, no vulnerabilities found."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "XOR encryption with a repeating key is insecure and vulnerable to known-plaintext attacks."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-759",
+        "explanation": "Key derived using SHA-256 without salt or iteration, leading to weak encryption."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-311",
+        "explanation": "Encrypts filename instead of file contents, leaving actual data unencrypted."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses Fernet for encryption/decryption without inherent vulnerabilities."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, vulnerable to frequency analysis and key reuse attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-CBC without message authentication, risking chosen-ciphertext attacks."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Hard-coded cryptographic key and IV expose encryption to compromise."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Missing random IV in AES-CBC mode leads to predictable ciphertext."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "AES EAX mode used correctly with proper key handling."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECB mode is insecure and leaks data patterns."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses XOR with a static key, which is a weak cipher and vulnerable to attacks."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses Fernet correctly with secure key generation and proper encryption/decryption processes."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses Fernet for secure symmetric encryption with proper key generation and handling."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode, which is insecure for AES encryption."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher with no cryptographic strength, vulnerable to brute-force attacks."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses a weak Caesar cipher vulnerable to brute-force attacks."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Fernet correctly with secure key generation and encryption/decryption."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure XOR cipher with a static key, vulnerable to known-plaintext attacks."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses Fernet for encryption/decryption without exposing keys or using insecure practices."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-310",
+        "explanation": "Decryption lacks authentication tag verification, enabling tampering."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "CTR mode reuses nonces without randomization, leading to keystream reuse vulnerabilities."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses weak Caesar cipher with insufficient encryption strength."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak, homemade encryption vulnerable to frequency analysis and known-plaintext attacks."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1207",
+        "explanation": "AES in ECB mode used, which leaks data patterns through identical ciphertext blocks."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Missing exception handling in decrypt may expose errors or cause crashes."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in main function exposes sensitive data."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher with no cryptographic strength or key management."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hard-coded cryptographic key used in encryption/decryption functions."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses a weak encryption algorithm vulnerable to cryptanalysis."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses weak Caesar cipher vulnerable to brute force and frequency analysis."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hardcoded cryptographic key 'wow' exposes encryption to attackers."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The decrypt function allows skipping authentication tag verification, enabling potential chosen ciphertext attacks."
+    }
+}

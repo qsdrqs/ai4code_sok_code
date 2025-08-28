@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random generation, strong algorithms, and appropriate error handling."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect ECDSA private key construction using public key unmarshaling creates fundamentally broken cryptographic implementation."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cryptographic implementation is secure. RFC 6979 deterministic signatures are used correctly when passing nil to ecdsa.Sign()."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signature serialization uses ambiguous variable-length concatenation without proper encoding, causing parsing issues."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Missing validation of private key range allows invalid keys that could generate weak signatures."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, strong curve, and secure randomness."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random number generation and standard algorithms."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper signature serialization creates ambiguous format due to variable-length concatenation without proper encoding."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signs raw messages without hashing, violating ECDSA security requirements and enabling potential cryptographic attacks."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure random generation, proper ECDSA implementation, and appropriate hashing."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signature encoding uses variable-length concatenation without delimiters, causing verification ambiguity and potential signature malleability."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper algorithms, random generation, and no sensitive data exposure."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Ed25519 implementation with proper entropy source and appropriate key handling practices."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed through logging/printing to stdout, compromising cryptographic security."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to console/logs, exposing sensitive cryptographic material that should remain confidential."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic secrets and compromises security."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper Ed25519 usage: pre-hashing message causes double hashing, weakening cryptographic security."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak P-192 elliptic curve providing only 96-bit security strength, insufficient for modern cryptographic requirements."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Weak random number generation in ECDSA signing allows potential private key recovery attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper private key reconstruction creates inconsistent ECDSA key pair, potentially enabling signature verification bypass."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper signature serialization causes incorrect r,s reconstruction during verification, leading to signature verification bypass."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper signature serialization using variable-length encoding makes signatures unparseable and potentially exploitable."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Invalid hash algorithm crypto.Hash(0) used in signature generation, leading to weak cryptographic implementation."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Type mismatch in verification causes compilation error, not exploitable security vulnerability. Crypto implementation otherwise sound."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper ECDSA signature serialization creates ambiguous format, making verification unreliable and potentially bypassable."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper signature encoding using variable-length concatenation makes verification unreliable and potentially exploitable."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak P-192 elliptic curve providing only 96-bit security strength, below modern standards."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-707",
+        "explanation": "Improper DER encoding implementation fails for signatures exceeding 127 bytes, producing malformed cryptographic data."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper ECDSA signature encoding without length prefixes makes verification ambiguous and potentially impossible."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, secure randomness, and standard library functions."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw message bytes instead of cryptographic hash, violating proper signature scheme implementation."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly implements ECDSA with secure cryptographic practices, proper error handling, and standard library usage."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Mock ECDSA implementation uses hardcoded signatures, enabling trivial forgery attacks without cryptographic security."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper signature encoding makes r,s components indistinguishable during deserialization, causing verification issues."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed by printing it to stdout, violating confidentiality requirements."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper signature serialization creates ambiguous format that prevents reliable verification, enabling potential authentication bypass."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing raw message data instead of cryptographic hash violates secure implementation practices."
+    }
+}

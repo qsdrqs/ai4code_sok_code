@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms, proper random generation, and standard libraries without security vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Manual DER parsing lacks bounds checking, enabling buffer overflow via malicious signatures."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Potential weak random nonce generation in ECDSA signatures could compromise private key security."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses broken SHA-1 algorithm for cryptographic hashing, enabling potential collision attacks and signature forgery."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper algorithms, key sizes, and Java's secure defaults."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with strong algorithms, proper random generation, and appropriate curve selection."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for private key length and range, potential information disclosure through exceptions."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Potential weak random nonce generation in ECDSA signing without explicit SecureRandom configuration."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper algorithms, secure random generation, and correct implementation patterns."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed through console output, violating cryptographic confidentiality requirements."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has design flaws but fails safely without compromising cryptographic security or creating exploitable vulnerabilities."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements ECDSA correctly with secure random key generation, proper validation, and standard cryptographic practices."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash and weak 192-bit elliptic curve, both insufficient for modern security requirements."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic secrets and enables unauthorized access."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code poses critical security risk for key compromise."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper algorithms, key generation, and random number generation."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with strong algorithms and proper random number generation."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper algorithms, curve parameters, and cryptographic practices."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with SHA-256, proper encoding, and Java's cryptographic libraries without major vulnerabilities."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper algorithm choice and standard Java Signature API usage."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Missing explicit SecureRandom initialization for ECDSA operations, potentially allowing weak random number generation."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper algorithms, secure random generation, and standard cryptographic practices."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices. Missing null checks cause reliability issues, not security vulnerabilities."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with appropriate algorithms, key sizes, and proper implementation patterns."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure algorithms, proper randomness, and established elliptic curves."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated secp192r1 curve providing only 96-bit security, below current 112-bit minimum standards."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null parameter validation can cause NullPointerException, potentially leading to denial of service."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-670",
+        "explanation": "Code contains compilation error due to typo in class name instantiation, preventing functionality."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure manual hash-then-sign approach using NoneWithECDSA instead of integrated SHA256withECDSA algorithm."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Method ignores message parameter and always signs literal 'message' string, enabling signature reuse attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code poses critical security risk for cryptographic operations."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with strong algorithms, proper randomness, and established libraries."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with strong algorithms and proper key generation."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cryptographic implementation is secure, but design discards public keys making signatures unverifiable - design flaw not vulnerability."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Method ignores message parameter and always signs hardcoded string, causing signature verification failures."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "New private key generated per signature operation breaks signature verification and authentication security model."
+    }
+}

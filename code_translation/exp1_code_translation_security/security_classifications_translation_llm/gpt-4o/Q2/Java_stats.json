@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms, proper curve parameters, and follows ECDSA best practices without vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic keys in source code pose serious security risk for key compromise."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private cryptographic key is hardcoded in source code, allowing unauthorized access and signature forgery."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Incorrect public key derivation from private key parameters causes runtime failure in signature verification."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic secrets to anyone with code access."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses strong cryptographic algorithms (P-384, SHA-384, ECDSA) with proper secure random generation and key management."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak P-192 elliptic curve providing only 96-bit security strength, below modern security requirements."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random number generation and established libraries."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with strong algorithms and proper implementation."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, secure random generation, and appropriate algorithm choices."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with appropriate algorithms, curves, and random number generation."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure SHA256withRSA algorithm and follows proper JCA cryptographic implementation patterns without security flaws."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed through console output, violating cryptographic key confidentiality requirements."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure APIs correctly; relies on Java's proper ECDSA nonce generation implementation."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Private key generation can produce invalid zero keys, compromising ECDSA security completely."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hard-coded private key in source code poses security risk if deployed in production."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses strong cryptographic algorithms (P-384, SHA-384) with proper SecureRandom and correct ECDSA implementation."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code poses critical security risk for credential exposure."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Private key format mismatch between hex decoding and PKCS8 specification causes improper key handling."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure SHA256withRSA algorithm and proper signature implementation without security vulnerabilities."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, strong algorithms, and secure random generation."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and proper JCA APIs with no significant vulnerabilities present."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure algorithms, proper key generation, and no identified vulnerabilities."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms, proper random generation, and follows ECDSA best practices."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak prime192v1 elliptic curve providing only 192-bit security, insufficient for modern cryptographic standards."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private key is hardcoded in source code, exposing cryptographic credentials to unauthorized access."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with strong algorithms, proper key generation, and secure random number generation."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 elliptic curve providing only 96-bit security strength, insufficient for modern standards."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA with SHA-256, follows proper cryptographic API usage patterns, no significant vulnerabilities detected."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation issues due to missing imports but no security vulnerabilities in cryptographic implementation."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, strong algorithms, and secure random generation."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with SHA-256. No significant cryptographic vulnerabilities present."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Double hashing vulnerability: message hashed twice causing non-standard signatures incompatible with standard RSA-SHA256 implementations."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Platform-dependent charset in getBytes() causes inconsistent signature generation, compromising cryptographic reliability."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random generation and established algorithms."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-838",
+        "explanation": "Platform-dependent charset encoding in getBytes() can cause signature inconsistencies across different systems."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper signature encoding using variable-length BigInteger.toByteArray() creates ambiguous signature format, potentially causing verification failures."
+    }
+}

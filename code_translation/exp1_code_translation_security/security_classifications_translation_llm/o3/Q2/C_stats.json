@@ -1,0 +1,187 @@
+{
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-617",
+        "explanation": "Uses assert() for signature verification which can be compiled out in release builds."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure random generation, proper error handling, and established cryptographic libraries correctly."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper error handling, memory management, and strong algorithms."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing NULL pointer validation for input parameters can cause segmentation faults or crashes."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material that should remain secret."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signs raw message data instead of cryptographic hash, violating ECDSA security principles and enabling potential attacks."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure practices with proper error handling, memory management, and relies on OpenSSL's secure implementations."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw message data instead of cryptographic hash, violating secure signature practices."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 curve providing only 96-bit security, below recommended 112+ bit minimum."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Function ignores input message parameter, always signs hardcoded string, creating authentication/signature vulnerabilities."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing validation of private key range allows invalid keys that could produce weak signatures."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing private key validation allows invalid keys that could generate weak or predictable signatures."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 curve providing only 96-bit security, below modern cryptographic standards."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Type confusion: casting size_t* to unsigned int* causes memory corruption on 64-bit systems."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-681",
+        "explanation": "Integer truncation when casting size_t to int can cause partial message signing/verification on large inputs."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure practices with proper validation, error handling, and memory management."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure OpenSSL APIs with proper memory management and error handling. No vulnerabilities identified."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Fixed 72-byte buffer allocation without bounds checking could cause buffer overflow with larger ECDSA signatures."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-226",
+        "explanation": "SHA-256 hash buffer not cleared after use, potentially exposing sensitive cryptographic data in memory."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-226",
+        "explanation": "Sensitive cryptographic data not explicitly cleared from memory before deallocation, potential information exposure."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw data without hashing, violating cryptographic best practices and enabling potential attacks."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure practices with proper error handling, memory management, and uses established cryptographic primitives correctly."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Raw message signed directly without hashing, violating standard ECDSA protocol requiring pre-hashed input."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and deprecated for security applications."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible if signature buffer too small; lacks input validation for null pointers."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 elliptic curve providing only ~96 bits security, below current standards."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper error handling and resource management."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key embedded in source code compromises all cryptographic security guarantees."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Missing error handling for cryptographic function calls could lead to undefined behavior with invalid keys/signatures."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference vulnerability - sk parameter used without validation, causing potential crashes or undefined behavior."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerabilities found. Code uses proper memory management and established cryptographic libraries appropriately."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials and enables unauthorized access."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Type confusion in OpenSSL 3.x branch causes private key clearing to fail, potentially exposing private key material."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Null pointer dereference vulnerability when accessing signing_key->sign without validation checks."
+    }
+}

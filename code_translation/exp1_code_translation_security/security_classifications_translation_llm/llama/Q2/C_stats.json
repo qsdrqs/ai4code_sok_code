@@ -1,0 +1,187 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Broken cryptographic implementation with incorrect curve creation, missing public key, and improper signature extraction."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signs raw data instead of hash, uses non-existent OpenSSL function ECDSA_SIG_to_bytes()"
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-477",
+        "explanation": "Code uses non-existent OpenSSL functions, making it non-functional and potentially unsafe if modified to compile."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Weak private key generation using predictable ASCII string instead of cryptographically secure random values."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Incorrect ECDSA API usage leads to unreliable cryptographic implementation and potential signature bypass."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerability; weak private key validation but core cryptographic implementation is sound."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-676",
+        "explanation": "Code uses non-existent OpenSSL functions and incorrect API signatures, causing undefined behavior."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing raw message without hashing breaks cryptographic security assumptions and enables signature forgery attacks."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incomplete ECDSA key setup missing public key generation and incorrect signature retrieval implementation."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "Private key is not properly generated before use, causing invalid ECDSA signing operation."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Raw message signed instead of cryptographic hash, violating ECDSA security requirements and enabling potential attacks."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signs raw data instead of cryptographic hash, violating ECDSA security principles and enabling potential attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incorrect ECDSA API usage allows signature verification bypass due to improper cryptographic implementation."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing raw message instead of cryptographic hash violates security best practices and enables potential attacks."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Uses non-existent ECDSA_SIG_to_bytes() function, potentially causing buffer overflow or memory corruption."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Code signs raw message data instead of cryptographic hash, enabling potential signature forgery attacks."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has implementation errors with non-existent APIs but no exploitable security vulnerabilities."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-200",
+        "explanation": "Private key exposed to stdout and incomplete key generation compromises cryptographic security."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Critical hash truncation from 256-bit to 64-bit destroys ECDSA cryptographic security, enabling collision attacks."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key completely compromises cryptographic security and enables trivial signature forgery."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials, compromising system security completely."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-676",
+        "explanation": "Uses non-existent ECDSA_SIG_to_bytes() function, causing undefined behavior and potential security issues."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing/verification operates on raw message bytes without cryptographic hashing, violating security standards."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak secp192r1 curve providing only 96-bit security strength, below modern 128-bit minimum requirements."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials and incomplete ECDSA key setup."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "ECDSA signature verification always fails due to swapped r/s parameters in ECDSA_SIG_set0_r function call."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-316",
+        "explanation": "Private key data remains in memory without explicit clearing after cryptographic operations, enabling potential key recovery attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing private key validation allows invalid keys, potentially causing predictable signatures or cryptographic failures."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded weak private key embedded in source code makes signatures completely insecure and predictable."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper OpenSSL API usage breaks ECDSA signature generation and verification, enabling signature bypass."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-457",
+        "explanation": "Uninitialized signing_key variable used in cryptographic operation causes undefined behavior and potential security compromise."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Raw message signed instead of hash, violating ECDSA standards and enabling potential cryptographic attacks."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Incorrect OpenSSL ECDSA API usage causes signature generation/verification failures and potential security bypasses."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw data directly instead of cryptographic hash, violating secure cryptographic practices and enabling attacks."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses non-existent secp256k1_generate_private_key function, potentially leading to weak cryptographic key generation."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Incorrect use of ECDSA_get0_signature() causes undefined behavior and potential memory corruption."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Missing error checks on critical cryptographic operations and use of non-existent OpenSSL APIs."
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-690",
+        "explanation": "No check for NULL after calloc; potential null pointer dereference."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Potential buffer overflow due to lack of bounds checking."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Potential buffer overflow due to unchecked sprintf and strcpy."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "sprintf writes into fixed-size buffer; large int overflows it."
+    },
+    "1045": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability; logical error for zero not a security risk."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability; memory leak is a resource issue."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow risk due to insufficient buffer size for formatted string."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Memory allocation and string manipulation are handled safely."
+    }
+}

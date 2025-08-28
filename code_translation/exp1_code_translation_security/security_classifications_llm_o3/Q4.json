@@ -1,0 +1,192 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses prepared statement with placeholders; no input concatenation, so no SQL injection risk."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Inputs are bound as parameters; SQL injection not possible."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Parameterized query prevents SQL injection; no direct security flaw identified."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input concatenated into SQL without sanitization enables SQL Injection."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User inputs concatenated into SQL without sanitization, enabling SQL injection."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User-controlled name/age concatenated into SQL without binding, enabling SQL injection."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, avoiding SQL injection; no other security issue evident."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Throwing uncaught errors in async callback can crash Node.js, enabling denial-of-service."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized query; user input properly escaped, no SQL injection risk."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input directly concatenated into SQL query, enabling SQL injection."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input concatenated into SQL without sanitization enables SQL injection."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "User data passed via placeholders; no SQL injection or other security issue found."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Parameterized query prevents SQL injection; no other critical flaw identified."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "String concatenation with user input forms SQL; enables injection."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Static SQL, parameterized insert; no user input, no injection risk."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Raw string SQL with user input; no parameterization, enabling SQL injection."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Prepared statements used; user input not concatenated into SQL, so no SQL injection."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Prepared statements used; no injection or other security flaw identifiable."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Raw user data placed in SQL string; no sanitization or parameters, enabling SQL injection."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input concatenated into SQL query without sanitisation enables SQL injection."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Prepared statements used; no injection or other evident security flaw."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "String concatenation of user input into SQL query allows SQL Injection."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "String-concatenated SQL lets attacker inject malicious statements."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input embedded directly in SQL string; enables SQL injection."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Untrusted input concatenated into SQL query allows SQL injection."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input concatenated into SQL without sanitization allows SQL Injection."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized query; SQL injection not possible in this snippet."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized query; no direct security flaw identified."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameter binding; no raw concatenation or unsafe practice\u2014SQL injection not possible."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct sink; unsanitized inputs not exploited here."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "Unsanitized user input inserted via innerHTML enables DOM XSS."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hard-coded, risking exposure if source is leaked."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hard-coded, exposing secrets if code is leaked."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Concatenates untrusted input directly into SQL query, enabling SQL injection."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Query is constant; no user input reaches SQL."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input concatenated into query string; enables SQL injection if backend uses values unsafely."
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Snippet only forwards data; no exploitable pattern shown."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Pure client-side POST; no SQL construction occurs here."
+    }
+}

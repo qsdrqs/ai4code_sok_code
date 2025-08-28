@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with proper bounds checking and memory management."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow and uses safe indexing with Rust's built-in bounds checking."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow edge cases and uses Rust's memory-safe operations throughout."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe string operations and bounded arithmetic within Rust's memory safety guarantees."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when calling abs() on i32::MIN, causing undefined behavior or panic."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe operations with proper fallbacks and no untrusted input processing."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, leading to denial of service."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "Memory leak vulnerability due to caller responsibility for freeing allocated C string without enforcement mechanism."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely handles environment variables with proper fallbacks and uses trusted formatting library without injection risks."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Rust's bounds checking prevents memory corruption; potential panics are not security vulnerabilities."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust practices with proper error handling and no unsafe operations or untrusted input processing."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop vulnerability."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Rust's memory-safe standard library with no unsafe operations or input validation issues."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses memory-safe operations with bounded input and hardcoded format string, preventing common vulnerabilities."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe error handling with fallbacks and Rust's memory safety prevents common vulnerabilities."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe buffer management with proper bounds checking and valid UTF-8 generation."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when calling abs() on i32::MIN, causing panic or wraparound behavior."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with bounded integer input and built-in string conversion methods."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust standard library functions with automatic bounds checking and memory safety guarantees."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes wraparound or panic, leading to unexpected behavior."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in e10 function when exp >= 10, causing panic or incorrect calculations."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic errors in edge case handling but no exploitable security vulnerabilities present."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes wraparound in release mode or panic in debug mode."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-682",
+        "explanation": "Improper calculation causes panic/undefined behavior with zero or negative inputs due to log10 edge cases."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Rust's memory safety prevents buffer overflows; secure RNG used; all operations are bounds-checked and safe."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating i32::MIN, causing panic in debug or wraparound in release builds."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, leading to denial of service."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses proper bounds checking and Rust's memory safety prevents buffer overflows or out-of-bounds access."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust standard library functions with proper memory management and type safety."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "String slicing indices are mathematically constrained to valid bounds by loop conditions and calculations."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe Rust standard library functions with no user input or unsafe operations."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes infinite loop or panic, leading to denial of service."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with automatic bounds checking and memory management, no security vulnerabilities present."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Rust's memory safety prevents common issues despite logical algorithm flaws."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe Rust code with memory-safe operations and no unsafe blocks or external input handling."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is memory-safe with proper bounds checking and no unsafe operations or input validation issues."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, leading to denial of service."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation causes panic/undefined behavior with zero or negative integers via log10 calculation."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is memory-safe with proper error handling and no format string vulnerabilities."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Rust's memory safety prevents buffer overflows; bounds checking is properly implemented throughout the code."
+    }
+}

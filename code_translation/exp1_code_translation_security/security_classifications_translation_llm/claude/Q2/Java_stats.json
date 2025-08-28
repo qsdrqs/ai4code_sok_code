@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with appropriate algorithms, curves, and random number generation."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing validation of private key range and public key point validity enables weak cryptographic operations."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Missing private key validation allows invalid keys outside valid range, weakening cryptographic security."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure algorithms, proper random generation, and appropriate error handling."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper private key handling via UTF-8 encoding can generate invalid/weak cryptographic keys, compromising ECDSA security."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing validation of private key range allows invalid keys that compromise ECDSA security."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with strong algorithms, proper random generation, and secure curve selection."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper algorithm choice and signature handling. Input validation issues are robustness concerns, not security vulnerabilities."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses legitimate crypto library with proper ECDSA implementation, no significant security vulnerabilities detected."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is explicitly printed to console via System.out.println, exposing sensitive cryptographic material."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-208",
+        "explanation": "Scalar multiplication implementation is vulnerable to timing attacks due to variable execution time based on key bits."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Missing private key validation allows invalid keys that could produce weak or predictable signatures."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: deprecated SHA-1 hash and insufficient 192-bit elliptic curve providing inadequate security strength."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak SHA-1 hash algorithm and 192-bit elliptic curve, both deprecated for security applications."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-838",
+        "explanation": "Platform-dependent charset encoding may cause signature verification inconsistencies across different systems."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA implementation lacks explicit secure random nonce generation and private key validation, risking key compromise."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-838",
+        "explanation": "Platform-dependent charset encoding in getBytes() can cause inconsistent signatures across different systems."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and practices. No exploitable vulnerabilities identified."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing validation of private key range allows invalid keys that could compromise signature security."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper algorithms, relying on Java's secure defaults for randomness."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure SHA256withECDSA algorithm correctly with proper Java cryptographic APIs and secure random generation."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with strong algorithms and proper key generation."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA library with proper random generation and RFC 6979 deterministic nonces. No vulnerabilities detected."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "getVerifyingKey() generates new unrelated keys instead of deriving public key from private key, breaking signature verification."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Signature verification uses wrong public key - always uses global key instead of corresponding public key."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure SHA256withECDSA algorithm and follows proper cryptographic implementation practices with standard Java APIs."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Code signs hardcoded string 'message' instead of actual parameter, breaking signature integrity and authentication."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cryptographically secure implementation using SHA256withRSA with proper API usage, though lacks input validation for robustness."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices; private key memory exposure is a best practice concern, not exploitable vulnerability."
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms, proper key generation with SecureRandom, and follows best practices."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper curve, hash function, and standard cryptographic APIs."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null checks for input parameters can cause NullPointerException, leading to potential denial of service."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and proper implementation practices with no apparent vulnerabilities."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Double hashing vulnerability: SHA256withECDSA internally hashes again after manual SHA-256, creating non-standard weakened signatures."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-697",
+        "explanation": "Sign method ignores input parameter and signs hardcoded string instead of provided message."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA with SHA-256, follows standard cryptographic practices, no security vulnerabilities identified."
+    }
+}

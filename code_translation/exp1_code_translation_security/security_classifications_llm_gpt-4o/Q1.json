@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption algorithm (Vigen\u00e8re cipher) used."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES encryption with proper key and IV handling."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "XOR encryption with static key is insecure."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No immediate vulnerabilities; key management is basic but not insecure."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption algorithm used, vulnerable to attacks."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES encryption with proper nonce and key handling."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES encryption with EAX mode and proper key generation."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability; minor inconsistency in password parameter type."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical errors, not security vulnerabilities."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure key derivation and lack of authentication in AES CBC mode."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Improper key management; key is not stored securely."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption using XOR, vulnerable to attacks."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerabilities; ensure proper key management and nonce uniqueness."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure key generation and usage with Fernet encryption."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption; key management is external."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Static key and IV used in AES encryption."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "XOR encryption is insecure for sensitive data."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption (Caesar cipher) easily breakable."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Static key usage can lead to unauthorized access."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB mode for AES encryption."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Insecure key management; key is not stored securely."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerabilities; key management is minimal but not insecure."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure Caesar cipher for encryption."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption using XOR with a repeating key."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption (Caesar cipher)."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak or unverified cryptographic library and hardcoded keys."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption (Caesar cipher) easily breakable."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability; key management is crucial."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption (Vigen\u00e8re cipher) vulnerable to cryptanalysis."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption; key management not shown."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Missing authentication tag verification in decryption."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hardcoded encryption key compromises security."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The use of AES.MODE_ECB is insecure and can reveal patterns in the plaintext."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Undefined padding functions and lack of key validation may lead to padding oracle attacks."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "The code does not securely handle the initialization vector (IV) for AES CBC mode."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption method; easily breakable."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Use of AES in ECB mode makes encryption insecure due to lack of randomness and pattern leakage."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure cryptographic algorithms (Caesar and Vigen\u00e8re ciphers) are used, making the code vulnerable to cryptanalysis."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption method and lack of input validation."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses AES.MODE_ECB, which is insecure and allows pattern analysis of encrypted data."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption (Caesar cipher) and lack of input validation make the code insecure."
+    }
+}

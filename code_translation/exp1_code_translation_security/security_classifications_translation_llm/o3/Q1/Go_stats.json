@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Vigen\u00e8re cipher and has potential division by zero with empty key input."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm vulnerable to cryptanalysis and statistical attacks."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Missing padding scheme makes AES-CBC implementation incomplete and unsuitable for arbitrary-length messages."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "TTL set to 0 disables token expiration, allowing indefinite token validity and potential replay attacks."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper random generation, authenticated encryption, and adequate key sizes."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "TTL set to 0 disables token expiration, allowing indefinite token reuse and potential replay attacks."
+    },
+    "1015": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper implementation. Disabled token expiration is context-dependent, not inherently vulnerable."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, making it cryptographically insecure and vulnerable to cryptanalysis."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper key derivation, authenticated encryption, and secure random generation."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "API allows nonce reuse with same key, breaking EAX authenticated encryption security guarantees."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses Caesar cipher, a cryptographically broken algorithm that provides no real security against attackers."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Weak key derivation using unsalted SHA-256 makes system vulnerable to rainbow table and brute force attacks."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Weak key derivation using plain SHA-256 without salt or iterations, vulnerable to password attacks."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that provides inadequate cryptographic protection and is easily breakable."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing nil pointer validation could cause application crashes leading to denial of service."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer underflow possible when processing characters below ASCII 'a' due to missing input validation."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key and IV make encryption predictable and easily compromised."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Implements AES in insecure ECB mode, revealing patterns in encrypted data and lacking semantic security."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements secure AES-CBC encryption with proper IV generation, padding validation, and input checks."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-294",
+        "explanation": "TTL=0 disables token expiration, allowing indefinite reuse of old tokens enabling replay attacks."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher that's easily breakable through cryptanalysis and pattern recognition attacks."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher vulnerable to cryptanalysis, known plaintext attacks, and frequency analysis."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Missing bounds validation allows index out of bounds access when key length differs from text length."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals patterns in encrypted data and insufficient PKCS-7 padding validation."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure nonce generation, proper error handling, and correct EAX implementation."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that provides no real cryptographic security and is easily broken."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "TTL set to zero disables token expiration, allowing indefinite token reuse and potential replay attacks."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-294",
+        "explanation": "Token age verification disabled, allowing indefinite token validity and potential replay attacks."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "TTL set to 0 disables token expiration, allowing indefinite token reuse and potential replay attacks."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption properly. Disabled TTL is intentional for demo purposes and documented."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "CTR mode uses fixed zero IV, enabling keystream reuse attacks and breaking encryption security."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "Tokens never expire due to TTL set to 0, enabling replay attacks and long-term token abuse."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES-CBC implementation with proper IV generation, padding validation, and input checks."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in source code allows unauthorized access to encrypted data."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar and Vigen\u00e8re ciphers that are cryptographically broken and easily attacked."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Array index out of bounds vulnerabilities in both encrypt and decrypt functions can cause runtime panics."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals patterns and lacks semantic security properties."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses broken/risky cryptographic algorithm with predictable pattern and information disclosure through debug output."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption algorithm that is cryptographically insecure and easily breakable."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that can be easily broken through frequency analysis or brute force."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals patterns in encrypted data, making it vulnerable to cryptanalysis attacks."
+    }
+}

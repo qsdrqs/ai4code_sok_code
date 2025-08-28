@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with proper bounds checking and memory management."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating minimum int value, causing incorrect behavior in number formatting."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in negative number handling and power function can cause undefined behavior."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses memory-safe operations and proper integer handling in Go runtime."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper bounds checking, safe memory allocation, and handles edge cases without security risks."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses hardcoded values with safe formatting library, no user input or injection vectors present."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating minimum signed integer value in num = -num operation."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses hardcoded safe values, proper format strings, and trusted libraries with no user input."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value leads to incorrect buffer size calculation and potential memory issues."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to potential out-of-bounds array access from improper index calculation and negative input handling."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Math.Log10 edge cases don't affect output since result is discarded; no exploitable vulnerability present."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with no external input or unsafe operations."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe integer formatting with proper type checking and secure library usage."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value in abs = -abs operation."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in functions with hardcoded values, no user input or risky operations present."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe wrapper around standard library function with proper type safety and no unsafe operations."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple wrapper around secure standard library function with no security risks."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Go operations with proper bounds checking and no exploitable vulnerabilities."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in functions with type-safe inputs and static format strings."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in e10 function can cause incorrect calculations and potential denial of service."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop occurs with negative integers, causing resource exhaustion and potential denial of service."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations with proper bounds checking and correct buffer allocation calculations."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic error in getLength() for edge cases, but no exploitable security vulnerability present."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer to string conversion using standard library with no security risks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value causes infinite loop in numDigits function."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Out-of-bounds read occurs when loop index reaches slice length, accessing invalid memory locations."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses predictable time-based seed for random number generation, making output predictable to attackers."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Integer overflow in negation causes infinite recursion leading to stack overflow for minimum integer values."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe operations with proper bounds checking and Go's built-in memory safety features."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum int value causes infinite loop, leading to denial of service."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum int value causes infinite loop, leading to denial of service."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating most negative int value causes infinite loop and potential DoS."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities found. Uses hardcoded format strings and controlled integer values with no external input handling."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Potential out-of-bounds access is commented out, no active security vulnerability present in executable code."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible when large 64-bit integers exceed the 11-byte fixed buffer capacity in convertInt function."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Go standard library with hardcoded values, no user input or unsafe operations."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe operations with proper bounds checking and handles edge cases correctly."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations and bounded array access with no injection vulnerabilities."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with no user input or unsafe operations."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum int value causes infinite loop, leading to denial of service."
+    }
+}

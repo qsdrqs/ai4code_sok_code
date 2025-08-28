@@ -1,0 +1,187 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No apparent vulnerability in the given code snippet."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No clear security vulnerability found."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found"
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No clear security vulnerability identified."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found"
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure use of a private key"
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code appears to be secure."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability identified but lacks secure coding practices."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-693",
+        "explanation": "Function signs hardcoded message instead of input"
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability found but lacks input validation and error handling."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code securely implements ECDSA signing with SHA-256 hashing."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is secure and does not contain any obvious security vulnerabilities."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found"
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerability identified."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found"
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerability found, but input validation and private key protection are recommended."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-284",
+        "explanation": "Improper Input Validation"
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found"
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect Usage of Cryptographic Primitive"
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-331: Insufficient Entropy",
+        "explanation": "Insecure key generation on every function call."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability identified."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerability found."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code appears to be secure."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious vulnerability found."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code securely generates keys, signs a message, and verifies the signature using ECDSA."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure hash function (SHA-1) used in ECDSA signature scheme"
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Proper use of ECDSA for signing and verification."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No significant security vulnerabilities found"
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure use of cryptography, lack of input validation and error handling."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability found but improvements in input validation and error handling are recommended."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code appears to be secure."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure use of fixed byte string for signing leads to loss of authenticity and integrity."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-284",
+        "explanation": "Lack of input validation and error handling"
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerability found"
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability found but potential for incorrect usage."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is generally secure, but lacks key validation."
+    }
+}

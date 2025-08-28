@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm with hardcoded key, providing inadequate cryptographic protection."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-353",
+        "explanation": "Missing message authentication makes the system vulnerable to chosen-ciphertext and padding oracle attacks."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES ECB mode which reveals patterns in encrypted data, compromising confidentiality."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with repeating key, vulnerable to cryptanalysis and frequency attacks."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-522",
+        "explanation": "Misuse of Tink API exposes secret keys by extracting raw bytes and using readNoSecret() inappropriately."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm vulnerable to cryptanalytic attacks and frequency analysis."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "IV/nonce mismatch between encryption and decryption operations causes cryptographic failure and potential security compromise."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect GCM authentication tag handling compromises authenticated encryption, potentially allowing tampering without detection."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect Tink API usage with readNoSecret() method causes cryptographic implementation failure and potential key management issues."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Broken cryptographic implementation with key derivation type mismatch and inconsistent key usage between encryption/decryption."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Padding oracle vulnerability in unpad() method enables ciphertext decryption through error information disclosure."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Improper key handling by extracting raw keyset bytes bypasses Tink's secure key management system."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher instead of strong cryptographic algorithm, vulnerable to cryptanalysis and known-plaintext attacks."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements AES-GCM with proper IV generation, secure configuration, and follows cryptographic best practices."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-312",
+        "explanation": "Cryptographic keys are stored and transmitted in plaintext due to improper keyset handling in generateKey() method."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Unsafe custom unpadding function trusts last byte without validation, enabling potential padding oracle attacks."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Tink library with AES-256-GCM properly. No cryptographic vulnerabilities detected in implementation."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key and reused IV compromise encryption security and enable pattern analysis attacks."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses unauthenticated encryption (AES-CBC) without integrity protection, vulnerable to padding oracle and manipulation attacks."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key pattern, providing inadequate cryptographic protection against attacks."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals plaintext patterns and lacks semantic security."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which is cryptographically weak and reveals patterns in encrypted data."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode by default, which reveals patterns in encrypted data and lacks semantic security."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher that's easily breakable through frequency analysis or brute force attacks."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals patterns in encrypted data and lacks proper cryptographic security."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect GCM tag extraction breaks authenticated encryption integrity protection and uses hard-coded encryption key."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses Caesar cipher, a cryptographically broken algorithm that provides no real security protection."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Improper key management bypassing Tink's security mechanisms, potentially exposing cryptographic keys through API misuse."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with repeating key pattern, easily breakable through cryptanalysis and frequency analysis attacks."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher that provides no real security against modern attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses Caesar cipher, a cryptographically weak algorithm that provides no real security against modern attacks."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm (simple character shifting) that provides inadequate security against cryptanalysis attacks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption algorithm with no cryptographic strength and flawed decryption logic that ignores key parameter."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses unsupported AES/EAX cipher mode that will fail at runtime, potentially compromising cryptographic functionality."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Missing error handling for invalid characters causes potential runtime exceptions and application instability."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-312",
+        "explanation": "Uses readNoSecret() storing cryptographic keys in plaintext, violating secure key management practices."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation in decrypt method allows malformed ciphertext to cause runtime exceptions or undefined behavior."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which reveals patterns in encrypted data and lacks semantic security."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm vulnerable to frequency analysis and cryptanalytic attacks."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-502",
+        "explanation": "Unsafe deserialization of keyset data without validation could allow malicious input to cause security issues."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Null pointer dereference possible when key parameter is null, causing application crash."
+    }
+}

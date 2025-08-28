@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with bounded integer input, no security vulnerabilities present."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating minimum integer value, causing unexpected behavior due to wraparound."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow and uses safe string/array operations with correct bounds checking."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe hardcoded format strings with trusted libraries, no user input processing or dangerous operations."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value causes incorrect behavior and potential infinite loops."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities found. String operations are safe due to strconv.Itoa() guaranteeing non-empty output."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating minimum integer value, causing unpredictable behavior and potential runtime issues."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe integer formatting using trusted libraries with no security risks identified."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer to string conversion using standard library functions with no external inputs or unsafe operations."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses proper bounds checking and safe string operations with no security vulnerabilities present."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Go standard library with no security risks."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Format string is hardcoded and safe, input handling is appropriate."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow: function writes to buf without validating its size against required capacity."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using standard library with hardcoded input and no unsafe operations."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating minimum integer value, causing undefined behavior and incorrect results."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Out-of-bounds read occurs when input is zero or negative, causing array access with negative index."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Integer overflow in negation causes infinite recursion with minimum integer values, leading to stack overflow."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion with hardcoded values using safe standard library functions. No security risks present."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in functions with static format strings and type-safe operations."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Function panics on zero/negative input due to invalid logarithmic size calculation, causing denial of service."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value causes undefined behavior and incorrect results."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Go standard library functions with proper bounds checking and type safety."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Non-cryptographic PRNG usage is acceptable for demonstration purposes."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with proper bounds checking and no unsafe operations."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using standard library with no input validation issues or unsafe operations."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Fixed buffer size causes silent truncation of large integers without proper bounds checking."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with no external input or exploitable attack vectors."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Go practices with proper bounds checking and controlled memory allocation."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is safe - strconv.Itoa never returns empty string, making index access secure with hardcoded input."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating the most negative integer value, causing incorrect string conversion behavior."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Buffer calculations are correct and array bounds are properly maintained."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with proper bounds checking and memory management."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with proper bounds checking and no external input validation issues."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in e10() function when calculating large powers of 10, causing incorrect results."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical bugs but no exploitable security vulnerabilities. Uses safe operations and standard library functions."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities found. Hardcoded format string matches parameter type, no user input handling required."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Runtime panic occurs with input 0 due to negative buffer size calculation from flawed digit counting."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code has logic bugs but is memory-safe with proper input handling."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value causes infinite loop in itoa function."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Function fails to validate negative input, causing invalid byte generation from negative modulo results."
+    }
+}

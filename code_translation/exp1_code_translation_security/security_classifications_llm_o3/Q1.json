@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom additive cipher is weak; deterministic, no IV, easily broken."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "AES-CBC used without MAC; ciphertext can be modified leading to bit-flips or padding-oracle."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses simple XOR with repeating key; cryptographically weak and easily breakable."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Proper Fernet usage; no hard-coded key or misuse detected."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom repeating-key additive cipher is cryptographically weak and easily broken."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "API lets callers reuse nonce with same key, breaking AES-EAX security."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Omits EAX tag verification; integrity/authenticity not enforced."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No cryptographic misuse; only non-security logic bug in iteration handling."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has bugs but no exploitable crypto vulnerability"
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "AES-CBC without MAC; no integrity check enables padding-oracle/bit-flipping attacks."
+    },
+    "1015": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Contains logic bugs but no exploitable security weakness."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Implements weak XOR cipher with repeating key; easily broken, violating cryptographic best practices."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Correct AES-EAX usage with fresh nonce; no insecure practice detected."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fernet used correctly with random key; no misuse or key exposure."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses Fernet correctly; no weak algorithm or key exposure in snippet."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hard-coded AES key/IV and static IV reuse weaken confidentiality."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Repeating-key XOR is easily broken; provides no strong confidentiality."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Caesar-style shift is trivially breakable; using it risks data exposure."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hard-coded AES key exposes all ciphertext to anyone with source access."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES defaults to insecure ECB mode without IV, leaking patterns."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses Fernet correctly; key not hard-coded or leaked; global usage is design issue, not vulnerability."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Correct Fernet use; no hard-coded key; demo prints secret but no inherent vulnerability."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher; trivially breakable, violates modern cryptographic standards."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses simple repeating-key XOR cipher; easily broken, offering no real cryptographic security."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Implements a trivial Caesar cipher; data can be easily recovered without the key."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hard-coded encryption key \"wow\" exposes secret; violates secure key management."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses trivial Caesar cipher; confidentiality easily broken"
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Wrapper correctly uses Fernet; no weak key or mode hard-coded."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak, custom Vigen\u00e8re cipher; easily broken, violating cryptographic best practices."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Just wraps Fernet; no weakened crypto or hard-coded key."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Authentication tag is dropped and never verified, allowing undetected ciphertext tampering."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "CTR mode uses default zero counter; nonce reused each encryption, causing keystream reuse and plaintext leakage."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES in ECB mode; leaks patterns and lacks semantic security."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES-CBC used without authentication; enables padding-oracle and tampering attacks."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "AES-CBC instantiated without IV defaults to predictable value, exposing ciphertext patterns."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Home-grown additive cipher is trivially breakable; violates cryptographic best practices."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Employs AES in ECB mode, leaking patterns and enabling ciphertext manipulation."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar/Vigen\u00e8re ciphers; trivially breakable, violating confidentiality."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Home-grown cipher; plaintext recoverable by taking every other char\u2014broken cryptography."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES in ECB mode; deterministic encryption leaks patterns, offering insufficient confidentiality."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses trivially breakable Caesar cipher; no randomness or modern cryptography."
+    }
+}

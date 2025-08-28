@@ -1,0 +1,202 @@
+{
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, leading to denial of service."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to incorrect length calculation and inadequate bounds checking during buffer access operations."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Format string is hardcoded constant matching provided arguments exactly, preventing format string attacks."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is memory-safe with bounds checking; no unsafe operations or external input processing present."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-908",
+        "explanation": "Reading uninitialized memory in convert_int function leads to undefined behavior and potential information disclosure."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles C FFI with null checks and safe pointer operations."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust primitives with hardcoded values, no user input, and memory-safe operations throughout."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Improper handling of negative integers can cause runtime panics during modulo and character conversion operations."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "Buffer may not be null-terminated when formatted number fills entire buffer, causing undefined behavior."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Unchecked array indexing and unsafe memory operations enable potential buffer overflow attacks."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes panic or incorrect behavior."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical flaws with edge cases but no exploitable security vulnerabilities."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Rust's type safety prevents memory issues and all operations are bounds-safe."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Memory leak exists but doesn't constitute security risk in this context."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. The unwrap() cannot fail as i32::to_string() always produces non-empty strings."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating i32::MIN, causing panic or incorrect behavior."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to inadequate bounds checking in array indexing during comma insertion operations."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow in comma insertion logic when writing beyond allocated memory boundaries in unsafe pointer operations."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with proper bounds checking and memory management, no security vulnerabilities present."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to insufficient buffer size for sprintf with locale-formatted integers and thousand separators."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes undefined behavior or panic."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-681",
+        "explanation": "Logarithm of negative numbers produces NaN, causing undefined behavior when cast to usize, leading to potential DoS."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size is sufficient for all i32 values, preventing overflow despite using unsafe sprintf."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Rust's memory safety prevents common issues like buffer overflows."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "snprintf with proper bounds checking prevents buffer overflow; buffer size adequate for 32-bit integers."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Integer overflow is prevented by explicit i32::MIN handling before negation operation."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Potential out-of-bounds array access when k becomes negative during negative number processing."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe usage of setlocale with empty string parameter; no clear security vulnerability present."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes panic or wraparound behavior."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable vulnerabilities found. Theoretical integer truncation is not practically exploitable in this context."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Null pointer dereference when malloc fails - code continues execution with null buffer pointer."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust patterns with bounds checking, preventing memory safety vulnerabilities despite algorithmic issues."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-824",
+        "explanation": "Uninitialized pointer dereference and incorrect buffer size calculation cause memory corruption and undefined behavior."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion with compile-time constants and no external input or unsafe operations."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes infinite recursion and stack overflow in release mode."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer properly sized for i32, memory-safe operations, reputable external crate with bounds checking."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Proper bounds checking prevents panics, safe type conversions used."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or incorrect behavior due to arithmetic overflow."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic bug in character conversion but no security vulnerability present due to Rust's memory safety."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in power function and negative number handling can cause incorrect results and logic errors."
+    }
+}

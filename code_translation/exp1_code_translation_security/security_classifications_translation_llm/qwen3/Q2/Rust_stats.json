@@ -1,0 +1,187 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Panic on signing failure can cause denial of service if attacker triggers failures."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper curve and hash function. No cryptographic vulnerabilities identified."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic library correctly. Error handling issues present but no security vulnerabilities."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials and enables unauthorized access."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper RNG and established libraries. No exploitable vulnerabilities present."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded weak private key in source code poses serious security risk for cryptographic operations."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure RNG, proper library usage, and deterministic ECDSA implementation."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: NIST P-192 curve and SHA-1 hash function, both deprecated for security applications."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices using established libraries and proper ECDSA signing workflow."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash function for ECDSA signatures, enabling potential collision attacks and signature forgery."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure RNG, proper cryptographic library, and safe error handling practices."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Function ignores input message and always signs fixed value, enabling signature reuse attacks."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak SHA-256 with P-384 curve and non-standard zero-padding, creating suboptimal cryptographic construction."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash function which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper random number generation and follows cryptographic best practices."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper RNG and established libraries, though signature parsing is brittle."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices; compilation error due to undefined function prevents execution vulnerabilities."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly uses trusted p256 library with correct ECDSA implementation and appropriate error handling."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material that compromises security."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material in logs/output."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated PKCS#1 v1.5 padding scheme which has known cryptographic weaknesses; should use PSS padding instead."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private key is hardcoded in source code, making cryptographic operations completely insecure."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure RNG, established crypto libraries, and proper ECDSA implementation without security vulnerabilities."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic libraries with proper random generation and standard ECDSA implementation patterns."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated P-192 curve and SHA-1 hash, both cryptographically weak and formally deprecated."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials, enabling unauthorized access and signature forgery."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic libraries with proper CSPRNG and follows ECDSA best practices."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses broken SHA-1 hash and ignores input message, signing hardcoded literal instead."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function which is cryptographically broken and vulnerable to collision attacks in digital signatures."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic libraries with proper error handling and memory safety guarantees."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic libraries correctly with proper random number generation and deterministic ECDSA implementation."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple wrapper function with proper delegation to underlying crypto implementation, no obvious vulnerabilities present."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements ECDSA signing with SHA-256 using secure ring library following cryptographic best practices."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper key generation, signing, and verification implementation."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper RNG, hash function, and ECDSA implementation."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "New signing key generated per call makes signatures unverifiable, violating cryptographic design principles."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST P-192 curve providing only 96-bit security, below recommended 128-bit minimum strength."
+    }
+}

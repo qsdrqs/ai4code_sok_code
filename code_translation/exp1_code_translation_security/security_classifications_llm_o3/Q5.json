@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-685",
+        "explanation": "Wrong format specifier (%ld for int64_t) causes undefined behavior and possible memory corruption on some platforms."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "repr output is passed as printf format string, enabling uncontrolled format string vulnerability."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Fixed 30-byte buffers + sprintf/strcpy can overflow for larger integers, enabling buffer-overflow attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "Uses variable as printf format string; enables format-string attacks if input ever contains %."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Minus sign not included in allocation; negative numbers overflow allocated heap buffer."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Fixed 20-byte buffers with sprintf and added commas overflow for larger ints, enabling heap buffer overflow."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Fixed 16-byte heap buffer; sprintf may overflow with multi-byte thousands separators."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Comma insertion loop writes before buffer for 3,6,9-digit inputs, causing heap overflow."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Size causes truncation, not overflow; no memory-safety issue."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "sprintf writes without size limit; 12-byte buffer can overflow on larger ints."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fixed format string; locale misuse and missing prototypes degrade portability, not security."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "stringRepre returns pointer to local stack buffer; using it after return causes dangling pointer and possible memory corruption."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-121",
+        "explanation": "Off-by-one in copy loop overflows buf and reads past tmp."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Negating INT_MIN causes signed overflow, undefined behaviour and potential exploitation."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Minus sign added after allocation causes heap overflow by one byte."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "Returned string is not null-terminated; printf reads past buffer, causing out-of-bounds read."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Allocates 3 bytes but writes len+1 bytes; numbers \u2265100 overflow heap buffer."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Improper allocation and pointer misuse let sprintf write outside bounds, causing memory corruption."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Uses sprintf without size limit, risk of buffer overflow even if current input fits."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Negating INT_MIN overflows, causing infinite recursion and potential stack exhaustion."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returns pointer to stack buffer; leads to use-after-return and possible memory corruption."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Constant format string; no external input; no memory issues"
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "insert_comma shifts string without capacity check, enabling buffer overflow; INT_MIN negation also undefined."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "sprintf may write up to 12 bytes into 10-byte heap buffer in convertIntAI."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Uses sprintf without size limit on 50-byte stack buffer; potential overflow and memory corruption."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-690",
+        "explanation": "malloc return unchecked; NULL dereferenced, causing DoS"
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "sprintf and comma-insertion write beyond buffer, causing stack buffer overflow."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "First loop iteration writes to out[16], overflowing 16-byte buffer."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returns pointer to stack array, creating dangling pointer and undefined behaviour."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Stack buffer returned then used as printf format string; undefined behaviour exploitable."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returns pointer to stack array; dangling pointer causes undefined behavior."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "malloc uses input value; negative or huge numbers cause overflow or excessive allocation, leading to crash or DoS."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Unbounded sprintf and unchecked writes cause possible buffer overflow and missing null termination."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returns pointer to stack buffer; pointer becomes dangling, causing undefined behaviour."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "sprintf fits in 100 bytes; pointer never escapes; no exploitable overflow or dangling pointer."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "Pointer is dereferenced and passed to printf as format string, causing uncontrolled format string/UB."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returns address of local stack buffer, causing dangling pointer and undefined behaviour."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "strOfInt leaks the initially allocated buffer, leading to memory exhaustion over repeated calls."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Incorrect size calculation and loop logic allow writes past allocated heap buffer, causing heap overflow."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Loop copies past end of source, causing out-of-bounds read/write."
+    }
+}

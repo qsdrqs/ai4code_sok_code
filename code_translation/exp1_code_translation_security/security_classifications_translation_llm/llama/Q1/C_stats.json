@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-416",
+        "explanation": "Use-after-free vulnerability: encrypted_string is freed before being passed to decrypt function."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper PKCS#7 padding validation and IV reuse causes decryption failures and potential security issues."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak AES ECB mode and has inadequate PKCS#7 padding validation, enabling cryptographic attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with short repeating key, providing inadequate cryptographic protection against attacks."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-908",
+        "explanation": "IV field in FernetKey structure is never initialized, leading to use of uninitialized memory for encryption."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Functions lack NULL pointer validation, causing segmentation fault when NULL arguments passed to strlen()."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses CBC mode with AEAD controls, causing failures and lacking authentication protection against tampering."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "IV reuse and corruption in AES-CBC mode leads to cryptographic weakness and potential data exposure."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Fixed IV derived from key breaks CBC mode security, enabling pattern detection and identical ciphertext attacks."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses non-existent EVP_PBE_scrypt function and lacks proper cryptographic error handling, compromising encryption security."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Missing padding validation allows padding oracle attacks and potential buffer over-reads through malicious ciphertext."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Uses NULL IV in AES-CBC mode, causing identical plaintexts to produce identical ciphertexts, breaking semantic security."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with hardcoded key, providing inadequate cryptographic protection against various attacks."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow due to incorrect malloc size calculation using pointer arithmetic instead of intended size."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Incorrect EVP API usage causes undefined behavior and potential buffer overflow vulnerabilities."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded predictable encryption key compromises all encrypted data security."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "IV reuse in AES-CBC mode compromises encryption security, enabling pattern analysis attacks on multiple encryptions."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key and IV in source code compromises cryptographic security completely."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Unvalidated padding length in unpad() function enables buffer underflow and padding oracle attacks."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher encryption that is easily breakable through cryptanalysis techniques."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "NULL IV in AES-CBC mode causes identical plaintexts to produce identical ciphertexts, breaking semantic security."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "AES-CBC encryption uses NULL IV, causing deterministic encryption and pattern leakage vulnerabilities."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Improper AES-CBC padding handling and inconsistent buffer size calculations create cryptographic and memory safety vulnerabilities."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "malloc() return value not checked, leading to potential null pointer dereference and crashes."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "IV reuse in AES-CBC mode breaks semantic security, enabling plaintext recovery attacks."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key compromises cryptographic security making encryption ineffective against attackers with code access."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() called on NULL input parameters without validation."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Static IV reuse in AES-CBC mode breaks semantic security, allowing pattern detection in encrypted data."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-121",
+        "explanation": "Stack-based buffer overflow from variable length array with user-controlled size, plus improper HMAC implementation."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Unchecked malloc() return value leads to potential NULL pointer dereference vulnerability."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Unchecked malloc failure leads to NULL pointer dereference vulnerability causing potential crashes."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-416",
+        "explanation": "Use-after-free vulnerability: encrypted pointer used after being freed in main function."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when malloc fails and return value isn't checked before strcpy usage."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "sprintf() usage without bounds checking can cause buffer overflow despite attempted size calculations."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Proper bounds checking and buffer management throughout."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Invalid cipher mode usage, improper key handling, and broken cryptographic implementation using non-existent OpenSSL APIs."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Out-of-bounds array access when processing non-alphabetic characters due to missing input validation."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer over-read in HMAC key derivation accessing memory beyond 32-byte key allocation."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Uses static zero-filled IV in AES-CBC mode, making encryption deterministic and vulnerable to pattern analysis."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "NULL IV in AES CBC mode makes encryption deterministic and cryptographically insecure."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "malloc() return value not checked, leading to potential null pointer dereference vulnerability."
+    }
+}

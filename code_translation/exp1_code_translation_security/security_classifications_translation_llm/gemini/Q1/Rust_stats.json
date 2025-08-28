@@ -1,0 +1,207 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses unauthenticated AES-CBC encryption vulnerable to padding oracle and tampering attacks without integrity protection."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Uses proper cryptographic library with sound implementation practices."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm with hardcoded key, vulnerable to frequency analysis and pattern attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Uncaught exception from unwrap() when XOR produces invalid Unicode, causing denial of service through panic."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with hardcoded key, providing inadequate cryptographic protection against attacks."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Weak key derivation using unsalted SHA-256 hash vulnerable to dictionary and rainbow table attacks."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Encryption key is logged to stdout, potentially exposing sensitive cryptographic material in demonstration code."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-521",
+        "explanation": "Uses weak hardcoded password 'password123' demonstrating poor password practices for authentication."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure AES-256-EAX with proper nonce generation, input validation, and authenticated encryption implementation."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect key format conversion using as_bytes() instead of base64 decoding for Fernet key."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key embedded in source code compromises security completely."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Key regeneration per session is design flaw, not security issue."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak XOR cipher vulnerable to frequency analysis and known plaintext attacks."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure RNG and proper AEAD. No nonce reuse in this specific implementation."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm vulnerable to frequency analysis and cryptographic attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode which reveals patterns in encrypted data, making it cryptographically insecure."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in source code compromises cryptographic security and enables unauthorized access."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak repeating key XOR cipher vulnerable to frequency analysis and known plaintext attacks."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in arithmetic operations can cause panics via unwrap() on invalid Unicode values."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Fixed salt, low PBKDF2 iterations (1000), and SHA1 usage enable efficient password cracking attacks."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption correctly with proper key generation and validation. No direct security vulnerabilities identified."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Static zero nonce reuse in AES-CTR mode breaks encryption security, enabling keystream reuse attacks."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper key generation and safe error handling practices."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Encryption key and sensitive data are logged/printed to console in plaintext, causing information exposure."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when casting negative shifted values to u32 during decryption with large keys."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer underflow occurs when processing characters outside 'a'-'z' range due to missing input validation."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer underflow in decrypt function causes panic via unwrap() on invalid Unicode values, enabling denial-of-service attacks."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher algorithm that provides inadequate security for sensitive data protection."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper error handling and no hardcoded secrets or weak cryptographic practices."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key in source code poses security risk through key exposure."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES-256-CBC implementation with proper IV generation, padding, and error handling. Demo key appropriately marked."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in Unicode arithmetic operations can cause application panic via unwrap() calls."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper key generation. No direct security vulnerabilities present."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses proper input validation, safe type conversions, and bounds checking. No memory safety or overflow vulnerabilities detected."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Debug output in encrypt function exposes intermediate encryption states to console, causing information disclosure."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Panics from unwrap() act as fail-safe mechanisms, preventing continued execution with invalid cryptographic state."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode which reveals patterns in encrypted data, making it cryptographically insecure."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in character shifting leads to panic-based denial of service vulnerability."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in main function allows unauthorized decryption of encrypted data."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB mode which reveals patterns in plaintext and lacks semantic security."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which lacks semantic security and reveals patterns in encrypted data."
+    }
+}

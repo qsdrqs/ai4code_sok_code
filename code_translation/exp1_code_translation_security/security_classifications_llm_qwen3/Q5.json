@@ -1,0 +1,202 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Fixed buffer size may overflow when converting large integers."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found in the code."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-690",
+        "explanation": "Unchecked malloc return value can lead to NULL pointer dereference."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Function safely converts int to string with proper buffer size and strdup. No direct vulnerabilities in the code."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-126",
+        "explanation": "Out-of-bounds read in tmp[n+1] during buffer copy."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses setlocale and a fixed format string safely without user input, posing no security issues."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow due to insufficient malloc(3) for larger integers."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Negating INT_MIN causes undefined behavior due to signed integer overflow."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-466",
+        "explanation": "Function returns pointer to local stack variable 'buff', causing undefined behavior."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Heap-based buffer overflow due to incorrect buffer size calculation when handling negative numbers."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Negating INT_MIN causes integer overflow, leading to undefined behavior."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow due to incorrect size calculation for string buffer."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code safely converts a fixed integer to a string with sufficient buffer size."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow in convertIntAI due to insufficient buffer size for all integer values."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in intotostr due to unchecked sprintf into fixed-size array."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns address of local variable, causing dangling pointer."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found in memory handling or logic."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow via unsafe sprintf and unchecked pointer arithmetic."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size is sufficient for integer conversion, no overflow possible."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-126",
+        "explanation": "Missing null terminator in commas array leading to buffer over-read"
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "Missing null terminator in formatted string leads to buffer over-read."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating INT_MIN in itoa function"
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fixed input and sufficient buffer size prevent overflow."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returning address of local variable 'stringNum' causes dangling pointer."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow in int_to_str due to out-of-bounds array access at out[16 - i] when i=0."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability found in the code."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code safely handles the fixed input without overflow or recursion issues."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "The result string is not null-terminated, leading to potential buffer over-reads when used in string operations."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow in s due to insufficient size for null terminator."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns address of local variable, causing dangling pointer."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-690",
+        "explanation": "The code does not check if malloc returns NULL, leading to potential NULL pointer dereference."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-690",
+        "explanation": "The code does not check if malloc returns NULL, leading to potential NULL pointer dereference."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-466",
+        "explanation": "Function returns pointer to local buffer causing dangling pointer."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow due to unchecked index access in loop inserting commas."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating INT_MIN leading to undefined behavior."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing NULL checks on malloc returns may lead to NULL pointer dereference."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns address of local variable, causing dangling pointer."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-622",
+        "explanation": "Unchecked malloc(0) leads to invalid memory access when num is zero."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow via sprintf with insufficient fixed-size allocation."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found in the provided code."
+    }
+}

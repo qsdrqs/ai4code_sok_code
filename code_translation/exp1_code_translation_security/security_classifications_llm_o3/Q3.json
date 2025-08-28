@@ -1,0 +1,217 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "String check misses backslash/mixed-separator paths, allowing traversal outside /safedir."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU: file can be swapped after checks, letting attacker access files outside /safedir."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Path is resolved then checked; traversal and symlink escapes blocked."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check can be bypassed with '/safedir/../', enabling directory traversal outside intended folder."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check allows /safedir* paths; attacker can access files outside intended directory using `/safedir_mal/...`."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "Path validated then reopened; symlink race enables access outside /safedir."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring checks miss variants like '/..//' letting attacker escape /safedir/."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check lets attacker access arbitrary files by inserting '/safedir' anywhere in path, enabling path traversal bypass."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "Check then open via different path; symlink swap race escapes SAFE directory."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "startswith check can be bypassed with /safedir/../; allows path traversal outside safe directory"
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check lets attacker open arbitrary files by including '/safedir' in path."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check allows '/safedir/../../...' paths, enabling traversal outside intended directory."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check bypass: ../../ sequences let attacker access files outside /safedir."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check can be bypassed via symlinks or crafted paths, enabling access outside /safedir."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring safedir check bypassable; attacker can traverse directories and read arbitrary files."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check bypassable; ../ in path lets attacker read arbitrary files."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check allows ../ sequences; attacker can read arbitrary files via path traversal."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "User-controlled path passes weak check; arbitrary file write possible via path traversal."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check can be bypassed with ../, allowing directory traversal outside /safedir."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check bypassable with ../ allowing traversal outside /safedir."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-23",
+        "explanation": "String directory check bypassable (../, ./, symlink) allowing arbitrary file read."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix validation bypassable via '../' or symlinks, allowing path traversal and unauthorized file access."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Startswith check bypassable with ../ allowing traversal outside safedir."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-23",
+        "explanation": "Prefix check bypassed via \"..\"; allows path traversal outside /safedir."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Starts-with check bypassable by ../ or symlink; attacker can read arbitrary files."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check bypassable with ../ allowing path traversal outside /safedir."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check bypassed by '/safedir/../', enabling directory traversal to read arbitrary files."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check allows '/safedir/../etc/passwd' etc., enabling path traversal outside the intended directory."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check bypassable with '../', letting attacker read files outside safedir."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check ignores \"..\"; attacker can escape /safedir path traversal."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-59",
+        "explanation": "Symlink inside /safedir can point outside, bypassing startswith check."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Hard-coded path; no external input, so no exploitable issue."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check allows '../' after '/safedir', enabling directory traversal outside intended folder."
+    },
+    "1038": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Only dead code; no user input or sensitive operations performed."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check bypassable; allows directory traversal outside /safedir"
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Relies on naive prefix check; paths like '/safedir_attacker/file' pass validation yet lie outside intended directory."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU race: attacker can replace checked file with symlink before open(), escaping safedir"
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "User-controlled path opened without restriction, enabling path traversal and arbitrary file read."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check allows crafted paths (../, symlinks) to bypass restriction, enabling arbitrary file access."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-285",
+        "explanation": "File opened before authorization check; attacker can read arbitrary files outside safedir."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check can be bypassed; '../' traversal after /safedir escapes sandbox."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1333",
+        "explanation": "Unvalidated user regex in re.match allows ReDoS via catastrophic backtracking."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "No sanitization of path allows directory traversal via ../ to escape /safedir."
+    }
+}

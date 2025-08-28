@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No buffer overflow or memory management issues."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "Use of printf without format specifier leads to format string vulnerability."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Potential buffer overflow due to unbounded string operations."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "Potential format string vulnerability in printf."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "Memory leak due to unfreed allocated memory."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Potential buffer overflow due to insufficient buffer size."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Potential buffer overflow due to insufficient memory allocation."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Potential buffer overflow due to unchecked input size."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities; memory management is the caller's responsibility."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow possible due to unsafe sprintf and fixed buffer size."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable security vulnerability; undefined behavior possible with unsupported locales."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Code contains buffer overflow risks and improper memory handling, leading to potential vulnerabilities."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow and buffer overflow possible due to lack of bounds checking."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Negating INT_MIN causes integer overflow, leading to undefined behavior."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Improper handling of edge cases and memory allocation leads to potential buffer overflows."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-690",
+        "explanation": "The return value of malloc is not checked for NULL, leading to potential undefined behavior."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Buffer overflow due to insufficient memory allocation in convert function."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Insufficient memory allocation and unsafe use of sprintf lead to buffer overflow."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerability due to sufficient buffer size, but use of sprintf is insecure."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when handling INT_MIN in negative-to-positive conversion."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns a pointer to a local stack variable, leading to undefined behavior."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No immediate vulnerability, but insecure use of setlocale in multi-threaded contexts."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow risks due to lack of bounds checking in string operations."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returning a pointer to a local variable in convertInt causes undefined behavior."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Unsafe use of sprintf can cause buffer overflow with large inputs."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Lack of error handling for malloc and potential buffer overflow in string manipulation."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to lack of bounds checking in sprintf and manual string manipulation."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in int_to_str due to lack of bounds checking on static buffer."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-121",
+        "explanation": "Buffer overflow and undefined behavior due to improper array handling."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returning a local array from convertToString leads to undefined behavior."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returning a pointer to a local array causes undefined behavior and potential memory corruption."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Incorrect memory allocation in add_commas can lead to buffer overflow."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to insufficient bounds checking on arrays."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returning a pointer to a local variable causes undefined behavior and potential security issues."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returning a local buffer leads to undefined behavior and potential security risks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476, CWE-120, CWE-170, CWE-685",
+        "explanation": "Code has NULL dereference, buffer overflow, improper null termination, and incorrect printf usage."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns a pointer to a local variable, causing undefined behavior."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Code has buffer overflow, memory leaks, and format string vulnerabilities."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-457",
+        "explanation": "Use of uninitialized variable 'x' leads to undefined behavior."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Improper memory management and buffer overflow in dynamic memory allocation and string handling."
+    }
+}

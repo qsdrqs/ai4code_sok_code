@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses memory-safe operations and doesn't process user input, preventing common vulnerabilities."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Unsafe byte manipulation in reverse_string can break UTF-8 invariants, violating memory safety guarantees."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN value causes panic or incorrect wraparound behavior."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "Memory leak vulnerability due to transferred ownership without clear caller responsibility documentation."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Memory leak potential exists but no exploitable security vulnerability present."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow risk in sprintf() and format string vulnerability in printf() usage."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Rust's memory safety and bounds checking prevent vulnerabilities; all operations are properly bounded and safe."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow: 3-byte allocation insufficient for 6-digit number plus null terminator, causing heap corruption."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Rust's memory-safe constructs with no external input or unsafe operations."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, leading to denial of service."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, leading to denial of service."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN leads to infinite recursion and potential stack overflow."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "Memory leak vulnerability due to transferred ownership without guaranteed cleanup mechanism in C FFI."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating i32::MIN, causing panic in debug mode or incorrect results in release mode."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with no user input or unsafe practices."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Array bounds are properly checked and Rust prevents memory safety issues."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Unsafe string manipulation only operates on ASCII characters in this context, maintaining UTF-8 validity."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to incorrect size calculation for comma-separated number formatting, causing out-of-bounds writes."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to incorrect size calculation and flawed indexing logic in comma insertion."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with proper bounds checking and memory safety guarantees."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Logic bug exists but doesn't create exploitable security issues."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes infinite loop or undefined behavior in str_of_int function."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating i32::MIN, causing panic or incorrect behavior."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-191",
+        "explanation": "Integer underflow when k decrements below zero, causing incorrect return value calculation."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or incorrect behavior, leading to potential denial of service."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with compile-time validation and automatic memory management."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Integer overflow in size calculation leads to buffer overflow in sprintf when handling i32::MIN value."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Memory allocation size is correct and all pointer operations stay within allocated bounds."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Rust's memory safety prevents common issues, arithmetic operations use safe wrapping."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Integer overflow in index calculation leads to out-of-bounds write access in array."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with no input validation issues, memory corruption risks, or exploitable vulnerabilities."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-908",
+        "explanation": "Zero input causes uninitialized memory access; memory layout mismatch in deallocation causes undefined behavior."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow via unchecked array indexing and unsafe pointer arithmetic in static mutable buffer."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite loop, enabling denial of service attacks."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer to string conversion with no user input or unsafe operations."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable security vulnerability; buffer is adequately sized for i32 range despite logical flaws."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical flaws but no security vulnerabilities; uses safe operations on hardcoded values."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Safe integer-to-string conversion with Rust's memory safety guarantees."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow possible when casting usize to i32 with excessive command-line arguments."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Memory leak present but no exploitable security vulnerabilities like buffer overflows or use-after-free detected."
+    }
+}

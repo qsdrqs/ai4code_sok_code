@@ -1,0 +1,207 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow when null-terminating decrypted text may write beyond allocated memory boundary."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-316",
+        "explanation": "Cryptographic key stored in cleartext memory without secure clearing, enabling potential key recovery attacks."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "Null bytes in encrypted data cause strlen() truncation, leading to improper string handling and data corruption."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption that is easily breakable through cryptanalysis and provides inadequate security."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Weak password-based key derivation using unsalted SHA-256 enables dictionary/rainbow table attacks."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher that provides inadequate cryptographic protection and is easily breakable."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow when null-terminating restored data without bounds checking on array access."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in main function creates security vulnerability despite proper cryptographic implementation."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in urlsafe_b64decode due to insufficient buffer size calculation for EVP_DecodeBlock operation."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in base64_decode() due to improper padding calculation and unsafe string operations."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher vulnerable to cryptanalysis and treats binary encrypted data as null-terminated strings."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow risk in base64_url_safe_decode() due to strcpy/strcat usage without proper bounds checking on user input."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key and IV embedded in source code, compromising all encryption security."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "PRNG lacks entropy seeding, making generated keys predictable. Buffer overflow possible in decoding."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference in strlen() calls without input validation causes segmentation faults."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Incorrect base64 padding calculation can cause buffer overflow during token decoding operations."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES ECB mode which reveals patterns in encrypted data, compromising confidentiality."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Insufficient PKCS7 padding validation allows potential padding oracle attacks through malformed padding bytes."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code shows proper memory management, input validation, and secure cryptographic practices with no exploitable vulnerabilities found."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key makes the cryptographic protection ineffective and easily compromised."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() called on unchecked string/key parameters."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for NULL pointers and empty keys causes division by zero and potential crashes."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in character arithmetic can cause unpredictable behavior and data corruption."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in character arithmetic can cause string corruption and unpredictable behavior when key values exceed char range."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Signed integer overflow in character arithmetic operations can cause undefined behavior and potential security exploits."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Heap buffer overflow in base64_decode() due to insufficient buffer allocation when padding is added."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Base64 decode function allows out-of-bounds array access with invalid input characters, causing undefined behavior."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow possible in character arithmetic operations without bounds checking on key values."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Fixed zero IV in AES-CTR mode enables keystream reuse attacks and pattern analysis."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in character arithmetic during encryption/decryption operations causes undefined behavior and potential data corruption."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer overflow in encrypt function due to unchecked array bounds in wrap-around logic calculation."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES-256-GCM implementation with proper authentication, random nonce generation, and comprehensive error handling."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "EVP_CIPHER_CTX not freed in error paths causing resource leaks in encrypt_aes and decrypt_aes functions."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode which reveals patterns in plaintext through identical ciphertext blocks."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode which reveals patterns in encrypted data, making cryptanalysis easier."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which is cryptographically weak and reveals patterns in encrypted data."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper HMAC verification and adequate buffer management."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements Fernet encryption correctly with proper cryptographic practices, secure memory management, and timing-attack resistant HMAC verification."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper input validation, safe memory operations, and correct buffer management with no apparent vulnerabilities."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow possible in encrypt function loop counter with very large input strings."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "strlen() used on binary data may cause incomplete encryption of input containing null bytes."
+    }
+}

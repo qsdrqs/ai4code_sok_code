@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-311",
+        "explanation": "Insecure encryption and lack of input validation"
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Use of insecure ECB mode for AES encryption"
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No clear security vulnerability found"
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found"
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-310",
+        "explanation": "Use of weak encryption algorithm and insecure key management"
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code appears to be secure, but can be improved by adding error handling and validation to the decrypt function and considering the addition of an authentication mechanism."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability found"
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerability found, but improvements possible in key size, error handling, and input validation."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found"
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code appears to be secure, but lacks error handling and may have issues with non-ASCII passwords."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No immediate security vulnerability found."
+    },
+    "1015": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code seems secure in terms of encryption practices but has minor errors and lacks error handling."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Use of hard-coded or weak cryptographic key"
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Insecure use of cryptography due to lack of input validation and error handling."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure use of key size and lack of error handling"
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded key and IV used for encryption."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerabilities found"
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code securely uses Fernet for encryption and decryption."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Use of hard-coded or weak cryptographic key"
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure use of XOR cipher for encryption"
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure use of ECB mode and lack of padding validation."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No clear security vulnerability found"
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption algorithm used"
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "CWE-327",
+        "explanation": "Insecure padding scheme and lack of error handling"
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hardcoded key and incomplete authentication tag verification"
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Use of hard-coded credentials (weak key)"
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect implementation of Caesar cipher"
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-310",
+        "explanation": "Insecure encryption algorithm and improper use of key"
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption algorithm used"
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerability found, but insecure coding practices exist."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-310",
+        "explanation": "Use of a weak encryption algorithm"
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption algorithm (XOR cipher) used"
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is secure if used correctly, but may be vulnerable to key management and input validation issues."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption algorithm used"
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability found"
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious security vulnerability found"
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure implementation of Caesar Cipher"
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses a secure encryption algorithm but lacks proper key management, input validation, and error handling."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Insecure key size and encoding"
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure ECB mode used for AES encryption."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Lack of input validation and insecure encryption"
+    }
+}

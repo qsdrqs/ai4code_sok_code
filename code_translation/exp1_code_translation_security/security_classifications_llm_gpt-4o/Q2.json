@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure key generation and signing with ECDSA and SHA-256."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerabilities; raw key use requires secure management."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-312",
+        "explanation": "Private key is hardcoded and exposed in source code."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-312",
+        "explanation": "Private key is hardcoded and exposed in source code."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found; cryptographic operations are correctly implemented."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code securely signs and verifies a message using ECDSA."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability; lacks secure key management."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "Message not hashed before signing, risking signature security."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability; lacks context on key management and library usage."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code securely signs data using ECDSA with SHA-256."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No inherent vulnerability; depends on signing_key implementation."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No insecure handling of private key or signing process."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-200",
+        "explanation": "Private key is printed, exposing sensitive information."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities; uses standard cryptographic operations securely."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure key generation and hashing; no vulnerabilities found."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private key is hardcoded, leading to potential exposure."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure use of ecdsa library for signing and verification."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Assumes library securely implements ECDSA with proper nonce generation."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private key is hardcoded, leading to potential exposure."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-295",
+        "explanation": "Lacks input validation for private key, risking misuse."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-295",
+        "explanation": "No validation of secret key or message."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses weak NIST192p curve, vulnerable due to small key size."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code securely signs messages using ECDSA with SHA-256."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No obvious vulnerabilities in signing process."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Verification uses altered message, but no vulnerability."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses weak cryptographic curve NIST192p."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Proper use of ECDSA for signing and verification."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerabilities, but lacks input validation and exception handling."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-477",
+        "explanation": "Hardcoded message is signed instead of user input, leading to incorrect or insecure behavior."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability; assumes secure key management and message validation."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability, but improper message encoding causes runtime failure."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Security depends on ECDSA implementation; weak randomness or untrusted libraries may lead to vulnerabilities."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-310",
+        "explanation": "Use of PKCS1_v1_5 is insecure; susceptible to padding oracle attacks."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-477",
+        "explanation": "The code uses a deprecated method (`signer`), which may lead to insecure behavior or compatibility issues."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Generates a new private key for every call, violating secure key management practices."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-477",
+        "explanation": "Hardcoded message undermines signing integrity."
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerabilities; secure cryptographic primitives are used, but key persistence and message validation are absent."
+    }
+}

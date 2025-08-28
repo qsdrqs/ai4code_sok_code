@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm vulnerable to frequency analysis and statistical attacks."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements AES-256-CBC with secure random key/IV generation and proper error handling."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB mode which reveals patterns in encrypted data, making it vulnerable to cryptographic attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with repeating key pattern, vulnerable to cryptanalytic attacks and frequency analysis."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Uncaught exceptions from .unwrap() calls can cause denial of service through application panics."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Implements cryptographically weak cipher vulnerable to frequency analysis and pattern attacks, with hardcoded key."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Empty key and nonce generated due to improper random generation, breaking encryption security completely."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure AES-256-GCM implementation with proper key/nonce generation and cryptographically secure randomness."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Encryption key is exposed through console output, compromising cryptographic security."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Iteration count read from untrusted token enables DoS attacks via excessive CPU consumption in PBKDF2."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak key derivation using plain SHA-256 and unnecessary custom padding for GCM mode create security vulnerabilities."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher vulnerable to cryptanalysis and frequency attacks, unsuitable for secure encryption."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Use of .unwrap() can cause panic leading to denial of service on encryption/decryption failures."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Multiple unwrap() calls can cause application crashes when processing invalid input, leading to denial of service."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Unpad function lacks padding validation, enabling padding oracle attacks through malicious padding length values."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses 16-byte key for AES-256 requiring 32 bytes, resulting in inadequate encryption strength."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses unauthenticated CBC mode encryption vulnerable to padding oracle and chosen-ciphertext attacks."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher vulnerable to cryptanalysis and frequency attacks, inadequate for secure encryption."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode, weak hardcoded key, and improper padding validation enabling multiple cryptographic attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Fixed nonce reuse in AES-GCM encryption completely breaks confidentiality and authenticity guarantees."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Improper key length validation allows keys shorter than required 32 bytes, causing potential runtime errors."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hardcoded 16-byte key used with AES-256-GCM requiring 32-byte key, compromising encryption security."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Panic-inducing unwrap() calls affect availability but not security."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Potential nonce reuse vulnerability in AES-GCM due to lack of nonce collision prevention mechanisms."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, vulnerable to cryptanalysis and frequency attacks."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Unsafe type casting between i32, u8, and char can produce invalid Unicode characters causing undefined behavior."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation errors but no security vulnerabilities in implementation logic or memory safety."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Implements weak encryption that exposes key in plaintext and provides no cryptographic security."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Vigen\u00e8re cipher that provides no real security against modern attacks."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Uses hardcoded all-zero encryption key, providing no cryptographic security against attackers."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Code panics on invalid input characters due to unwrap() calls, causing denial of service vulnerability."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper key generation and error handling. No security vulnerabilities detected."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Fixed zero nonce in AES-CTR mode enables keystream reuse attacks, breaking encryption security completely."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Fixed nonce reuse in AES-GCM mode breaks encryption security, enabling plaintext recovery attacks."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key exposed in source code, making encryption ineffective and easily compromised."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Encryption key is printed to stdout, exposing sensitive cryptographic material in logs and console output."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fernet library validates keys safely; no direct security vulnerability despite lacking input validation."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Fixed nonce (all zeros) reuse in AES-GCM encryption completely breaks cryptographic security."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that's easily broken through brute force or frequency analysis attacks."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow/underflow in character arithmetic operations can cause data corruption and unexpected behavior."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in encryption/decryption arithmetic operations can cause data corruption and unexpected behavior."
+    }
+}

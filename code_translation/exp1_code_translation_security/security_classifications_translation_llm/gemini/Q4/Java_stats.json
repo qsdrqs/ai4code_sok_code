@@ -1,0 +1,192 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. Minor information disclosure in error handling."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries and hardcoded SQL strings, preventing SQL injection vulnerabilities."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hardcoded in source code, exposing sensitive authentication information to unauthorized access."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly uses PreparedStatement preventing SQL injection. Minor information disclosure in error handling not critical."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with PreparedStatement, effectively preventing SQL injection attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials exposed in source code allow unauthorized access to database systems."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hardcoded in source code, exposing sensitive authentication information to unauthorized access."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability through unvalidated table name concatenation in dynamic SQL query construction."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement preventing SQL injection and implements proper resource management with minimal security concerns."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with PreparedStatement, effectively preventing SQL injection attacks."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. Proper error handling without information disclosure."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Direct string concatenation of user input into SQL query enables SQL injection attacks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Stack trace exposure in catch block reveals sensitive system information to potential attackers."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-200",
+        "explanation": "GET request exposes sensitive data in URL parameters and violates HTTP semantics for database operations."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation on name and age parameters could lead to database errors or application failures."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection and implements proper resource management with no security vulnerabilities."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose sensitive authentication information to unauthorized access."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. No significant security vulnerabilities identified."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hardcoded in source code, exposing sensitive authentication information to anyone accessing the codebase."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. Method signature issue prevents compilation but isn't a security vulnerability."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements preventing SQL injection. No significant security vulnerabilities identified."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. Proper resource management implemented."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hardcoded in source code, exposing sensitive authentication information to unauthorized access."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. No security vulnerabilities identified."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly uses PreparedStatement with parameterized queries, preventing SQL injection. No significant security vulnerabilities present."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with PreparedStatement, effectively preventing SQL injection attacks despite lacking input validation."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hardcoded in source code, exposing authentication information to anyone with code access."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. Proper resource management implemented."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials expose authentication information in source code, creating critical security risk."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection attacks through proper input binding."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has poor encapsulation and lacks input validation but no exploitable security vulnerabilities present."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials exposed in source code create authentication bypass risk."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "innerHTML usage with unsanitized user input enables XSS attacks through malicious name parameter content."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication details, enabling unauthorized access."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation allows potentially malicious data to be processed and output without sanitization."
+    }
+}

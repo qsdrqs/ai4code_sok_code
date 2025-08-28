@@ -1,0 +1,192 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Stack trace printing in exception handler can leak sensitive system information to attackers."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Stack trace printing in catch block may expose sensitive database information to attackers."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, effectively preventing SQL injection attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string concatenation of user input in SQL query construction."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability in constructor due to unvalidated dbFile parameter concatenation."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code pose security risk despite being template placeholders."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection; no significant security vulnerabilities detected."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized PreparedStatement preventing SQL injection. No direct security vulnerabilities present."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability through unsanitized table name concatenation in dynamic query construction."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, effectively preventing SQL injection attacks."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries and static SQL without user input, preventing injection attacks."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized PreparedStatement preventing SQL injection. Logging concerns exist but aren't critical vulnerabilities."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Direct string concatenation creates SQL injection vulnerability when user input is embedded in SQL statements."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code pose significant security risk through potential exposure."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hardcoded in source code, exposing authentication information to unauthorized access."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. No significant security vulnerabilities present."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with PreparedStatement, effectively preventing SQL injection attacks."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection; no direct user input concatenation in SQL statements."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose sensitive authentication information to unauthorized access."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, effectively preventing SQL injection attacks."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries preventing SQL injection and implements proper resource management with no external input processing."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries and hardcoded SQL without user input, preventing SQL injection vulnerabilities."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials in source code expose authentication information to unauthorized access."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability through direct string concatenation of user input without sanitization or parameterized queries."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials are hardcoded in source code, exposing sensitive authentication information."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with PreparedStatement, preventing SQL injection attacks. No direct security vulnerabilities present."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials expose authentication information in source code, enabling unauthorized access."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string concatenation of user input in SQL query construction."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with PreparedStatement, effectively preventing SQL injection attacks."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. No exploitable security vulnerabilities present."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation allows potentially malicious data to be passed to undefined external collection."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-732",
+        "explanation": "Public static mutable collection allows unauthorized direct access and modification of student data."
+    },
+    "1045": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "User input is properly URL-encoded preventing injection attacks. Other issues are architectural concerns, not code vulnerabilities."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses PreparedStatement with parameterized queries, preventing SQL injection. No user input concatenation in SQL strings."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded database credentials expose authentication information, allowing unauthorized access if code is compromised."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "setTextContent() safely handles user input as plain text, preventing XSS attacks despite lack of input validation."
+    }
+}

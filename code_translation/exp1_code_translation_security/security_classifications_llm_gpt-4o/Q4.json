@@ -1,0 +1,192 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, mitigating SQL injection risk."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to string concatenation."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to unsanitized user input in query."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to unsanitized input."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Parameterized queries prevent SQL injection."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Parameterized queries used; SQL injection unlikely."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Parameterized queries mitigate SQL injection risk."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection risk due to unsanitized input in query."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection risk due to unsanitized input."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, mitigating SQL injection risk."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection via direct query string concatenation."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Vulnerable to SQL Injection due to unsanitized input."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to unsanitized input."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to direct user input concatenation."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Proper use of parameterized queries prevents SQL injection."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to direct user input concatenation."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to unsanitized input concatenation."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to unsanitized input in query."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection risk due to string concatenation with user inputs."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to unsanitized user inputs."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries to prevent SQL injection."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses parameterized queries, preventing SQL injection."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Lack of input validation allows malicious or unexpected data to be added to the STUDENTS array."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "Direct use of untrusted inputs in innerHTML leads to XSS vulnerability."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL injection due to insecure query construction."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability, but hardcoded credentials are an insecure practice."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Direct concatenation of user input into SQL query allows SQL injection."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No user input is used in the SQL query, so no vulnerability exists."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Dynamic query construction without sanitization leads to SQL Injection risk."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "Lack of input validation may lead to SQL Injection or other vulnerabilities depending on STUDENTS.add implementation."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input is not validated or sanitized, potentially enabling SQL injection if the backend is insecure."
+    }
+}

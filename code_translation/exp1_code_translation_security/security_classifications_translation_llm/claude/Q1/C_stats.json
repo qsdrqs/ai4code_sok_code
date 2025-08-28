@@ -1,0 +1,207 @@
+{
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-369",
+        "explanation": "Division by zero occurs when empty key string is passed, causing undefined behavior in modulo operation."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher encryption that is easily breakable through cryptanalysis and known-plaintext attacks."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher that is easily breakable through cryptanalysis and pattern recognition attacks."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Multiple buffer overflows possible due to insufficient bounds checking in base64 functions and fixed buffer usage."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak encryption algorithm vulnerable to frequency analysis and known-plaintext attacks."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow/underflow in character arithmetic can cause unpredictable behavior and security issues."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference vulnerability when strlen() is called on unchecked message/key parameters."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Functions call strlen() on parameters without null pointer checks, causing potential segmentation fault."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Missing malloc() return value checks can cause null pointer dereference and crashes."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() called on unchecked function parameters."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Counter always initialized to zero, causing keystream reuse vulnerability in AES-CTR mode implementation."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in main function makes the encryption completely insecure for real-world use."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-226",
+        "explanation": "Sensitive cryptographic data (keys, plaintext) not cleared from memory after use, enabling potential information disclosure."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB encryption mode and has unsafe Base64 decoding with potential out-of-bounds access."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-208",
+        "explanation": "HMAC verification uses memcmp() which is vulnerable to timing attacks, allowing potential authentication bypass."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in source code compromises all encrypted data security."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-191",
+        "explanation": "Integer underflow in decrypt function when encMessage.length < IV_SIZE causes buffer overflow vulnerability."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Improper padding validation allows integer underflow and potential buffer over-read through malicious ciphertext manipulation."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Uses weak SHA256 key derivation without salt or iterations, vulnerable to password attacks."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in base64_decode due to insufficient input validation and missing malloc null checks."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() is called on unchecked input parameters."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "base64_decode function dereferences NULL pointer when strchr fails, causing undefined behavior and potential memory corruption."
+    },
+    "1045": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has robustness issues but no exploitable security vulnerabilities present."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Double padding vulnerability: custom PKCS7 padding conflicts with OpenSSL's internal padding, causing decryption issues."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals patterns in encrypted data, compromising confidentiality."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "PKCS7 unpadding lacks validation, creating padding oracle vulnerability enabling potential plaintext recovery attacks."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Undefined AES_BLOCK_SIZE constant in buffer allocation could cause buffer overflow during encryption operations."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-665",
+        "explanation": "Uninitialized encryption key and missing error handling for null pointer dereference."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in source code makes the encryption easily breakable by attackers."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerabilities found. Hardcoded credentials are demonstration-only, strncpy usage is properly bounded."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer over-read in derive_keys when accessing decoded_key+16 without length validation of decoded Base64 key."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Random nonce generation doesn't guarantee uniqueness, potentially allowing nonce reuse attacks in EAX mode."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in base64_decode function due to incorrect output array indexing and insufficient memory allocation."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper input validation, memory management, and bounds checking with no security vulnerabilities detected."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer over-read when key shorter than text, accessing memory beyond key boundaries."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Encryption key is printed to stdout, exposing sensitive cryptographic material in program output."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-208",
+        "explanation": "HMAC verification uses memcmp() which is vulnerable to timing attacks, allowing potential authentication bypass."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Buffer overflow due to unchecked array access when processing non-lowercase characters in find_alpha_index function."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly manages memory allocation, buffer bounds, and deallocation without security vulnerabilities."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES ECB mode which reveals patterns in encrypted data, making it cryptographically weak."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode which reveals patterns in encrypted data, compromising confidentiality."
+    }
+}

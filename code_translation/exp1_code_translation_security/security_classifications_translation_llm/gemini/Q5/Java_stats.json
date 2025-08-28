@@ -1,0 +1,202 @@
+{
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow edge cases and has no security vulnerabilities."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in e10() and abs() functions can cause incorrect calculations and unexpected behavior."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java APIs with proper bounds checking and no dangerous operations."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java string operations with proper bounds checking and type safety."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code only performs safe number formatting with no external input or dangerous operations."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow edge cases and uses safe string manipulation practices."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Static format string with primitive integer parameter prevents format string injection vulnerabilities."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe number formatting using standard library with no user input processing or unsafe operations."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Java's built-in String.valueOf() method with no security risks."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java standard library methods with no external input processing or unsafe operations."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in power method when calculating large powers of 10, causing incorrect number formatting."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in Java methods with no external input handling or risky operations."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library methods with no input validation issues or unsafe operations."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations, constrained inputs, and secure standard APIs with no injection vectors."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper bounds checking and no unsafe operations or external input handling."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in Java conversion methods with bounded primitive types, no external input or unsafe operations."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles edge cases including integer overflow, uses safe string operations, no security vulnerabilities present."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow vulnerability due to missing validation of output buffer size before writing data."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow edge cases and implements appropriate input validation without security vulnerabilities."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations, handles integer overflow correctly, and has no injection vulnerabilities."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for negative integers causes improper character conversion and unexpected behavior."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes infinite recursion and stack overflow."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code handles edge cases properly and processes no external input."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java constructs with proper input validation and memory-safe string operations."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java APIs for number formatting with no user input or dangerous operations."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java APIs with proper bounds checking and no external input vulnerabilities."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely converts integers to strings using standard Java methods with no security risks."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe hardcoded integer conversion with no external inputs or risky operations."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic flaw with negative numbers causes incorrect output but no exploitable security vulnerability exists."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe integer-to-string conversion with proper bounds checking and memory safety."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Java's memory safety eliminates buffer overflow risks from original C code; no security vulnerabilities present."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses only controlled inputs with safe mathematical operations and hardcoded strings, no security risks present."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. All string operations are bounds-safe and input handling is secure."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect string conversion and potential undefined behavior."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely formats integers using standard Java DecimalFormat with no security risks present."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow and uses safe string operations with no security vulnerabilities."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow and uses safe string operations with no security vulnerabilities identified."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer boundaries, uses safe operations, and has no security vulnerabilities."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe integer-to-string conversion using Java built-in methods with no external input processing or unsafe operations."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Missing input validation causes logic errors but no security risks."
+    }
+}

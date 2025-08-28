@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm with hardcoded key, easily breakable through cryptanalysis."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "Missing padding implementation in CBC mode causes runtime panics and potential information leakage."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES ECB mode encryption which reveals plaintext patterns and hardcoded cryptographic keys."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with short repeating key, easily breakable through cryptanalysis."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Encryption key is exposed through console output, compromising confidentiality of encrypted data."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm (Vigen\u00e8re-style cipher) that is easily breakable through cryptanalysis."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Missing authentication tag verification allows ciphertext modification attacks, breaking message integrity and authenticity."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Uses CTR mode without authentication, enabling ciphertext modification attacks and integrity violations."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Uses unauthenticated AES-CTR encryption, vulnerable to tampering and chosen-ciphertext attacks without message authentication."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Broken cryptographic implementation with key reuse, incorrect encryption logic, and flawed authentication that compromises security completely."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Type mismatch in Encrypt method return value causes compilation error and violates type safety."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-732",
+        "explanation": "Encryption key stored with world-readable file permissions (0644), exposing sensitive cryptographic material to unauthorized users."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, making it cryptographically insecure and easily breakable."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Missing cryptographic authentication verification allows ciphertext tampering without detection, using insecure fake MAC."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Missing message authentication enables ciphertext tampering and chosen-ciphertext attacks against AES-CFB mode."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper PKCS#7 padding validation enables padding oracle attacks for plaintext recovery."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has type mismatch compilation error but no security vulnerabilities in cryptographic implementation."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Static IV reuse in CFB mode creates identical keystreams, enabling cryptographic attacks through XOR analysis."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements AES-CBC correctly with secure IV generation and adequate padding validation without exploitable vulnerabilities."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with hardcoded key, providing inadequate cryptographic protection against attacks."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES ECB mode which reveals patterns in encrypted data, making it cryptographically weak and insecure."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-696",
+        "explanation": "Flawed custom padding implementation creates padding oracle vulnerability, plus missing authenticated encryption enables tampering attacks."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-353",
+        "explanation": "Uses AES-CTR without authentication, enabling tampering attacks and data integrity compromise."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption and hardcoded key, making data easily decryptable by attackers."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Uses CTR mode without authentication, allowing tampering and integrity attacks on encrypted data."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key in source code compromises all encrypted data security regardless of proper AES-GCM implementation."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses Caesar cipher, a cryptographically weak algorithm that provides no real security against attackers."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Type confusion in GenerateKey function causes compilation failure and indicates poor code quality."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation issues with imports but no security vulnerabilities in cryptographic implementation."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with hardcoded key, easily breakable and cryptographically insecure."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that provides no cryptographic security against modern attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak classical ciphers (Caesar/Vigen\u00e8re) that provide no real cryptographic security against modern attacks."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm with hardcoded key, providing no cryptographic security against basic attacks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses broken custom encryption algorithm with no cryptographic security and information disclosure through debug output."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Vigen\u00e8re cipher algorithm that is cryptographically insecure and easily broken through frequency analysis."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Uses CTR mode without authentication, allowing ciphertext tampering attacks despite claiming EAX mode implementation."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar cipher algorithm that provides no real security against attacks."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Encryption key is exposed in program output via fmt.Println, compromising confidentiality."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cryptographic implementation is secure with proper IV generation, input validation, and correct CTR mode usage."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode that reveals plaintext patterns through identical ciphertext blocks."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm with hardcoded key, providing no cryptographic security."
+    }
+}

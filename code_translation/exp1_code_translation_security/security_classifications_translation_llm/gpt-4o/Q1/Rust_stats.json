@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm and hardcoded key, providing inadequate security against cryptanalytic attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher vulnerable to cryptanalysis and frequency attacks."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm (simple additive cipher) that is easily breakable through frequency analysis and brute force attacks."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Random nonce generation can lead to nonce reuse with same key, compromising encryption security."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, vulnerable to cryptanalysis and frequency attacks."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Fixed zero nonce reuse in AES-GCM encryption breaks confidentiality and authenticity guarantees completely."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect manual handling of AES-GCM authentication tag may compromise authenticated encryption security guarantees."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Uses weak PRNG for nonce generation in AES-GCM, risking nonce reuse and encryption compromise."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Hardcoded key/IV and IV reuse in CFB mode breaks encryption security completely."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses weak PRNG for nonce generation instead of cryptographically secure random number generator."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES in insecure ECB mode and implements flawed custom padding scheme."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with short repeating key, providing inadequate cryptographic protection against attacks."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in character arithmetic operations can cause data corruption and unpredictable behavior."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Hardcoded nonce reuse breaks encryption security, allowing potential plaintext recovery and cryptographic attacks."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Fixed empty nonce reuse in AES-GCM encryption breaks semantic security and enables pattern detection attacks."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow/underflow during character arithmetic operations can cause unexpected wrapping behavior and data corruption."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Static IV in CBC mode enables pattern detection and breaks semantic security of encryption."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Static nonce reuse in GCM mode breaks encryption security, allowing plaintext recovery and authentication bypass."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher vulnerable to cryptanalysis and frequency attacks, providing inadequate encryption."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Improper Unicode handling and arithmetic overflow cause data corruption and unpredictable behavior."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer underflow possible when input contains non-lowercase characters, causing undefined arithmetic behavior."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-681",
+        "explanation": "Unsafe type casting truncates data, causing potential corruption and information loss during encryption/decryption operations."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption algorithm with integer overflow risks and unsafe character casting operations."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure random generation, proper AES-GCM implementation, and follows cryptographic best practices without vulnerabilities."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Random nonce generation can lead to nonce reuse with same key, compromising AES-GCM security completely."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Improper key handling - converting binary Fernet key to UTF-8 string instead of base64 encoding"
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "unwrap() in decrypt function causes panic on invalid UTF-8, enabling denial of service attacks."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure RNG, proper AES-256-CBC implementation, and follows cryptographic best practices."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode that reveals patterns in encrypted data, compromising confidentiality."
+    },
+    "1015": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure AES-GCM implementation with proper random key/nonce generation and no apparent cryptographic vulnerabilities."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-209",
+        "explanation": "Padding oracle vulnerability through distinguishable error handling in decrypt function using unwrap() calls."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Static IV usage in CBC mode allows identical plaintexts to produce identical ciphertexts, enabling cryptographic attacks."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode that reveals patterns in encrypted data, making it vulnerable to cryptographic attacks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption algorithm, key ignored in decryption, and information disclosure through debug output."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar and Vigen\u00e8re ciphers that are easily breakable through classical cryptanalysis techniques."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses Caesar cipher, a cryptographically weak algorithm vulnerable to trivial brute force and frequency analysis attacks."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECB mode which reveals patterns in plaintext, compromising confidentiality through deterministic encryption."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper padding validation in unpad function enables padding oracle attacks and potential crashes."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Static IV reuse in CTR mode enables keystream reuse attacks, compromising encryption security completely."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure AES-EAX encryption with proper nonce generation and correct cryptographic implementation."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Binary cryptographic key incorrectly converted to UTF-8 string, causing runtime panics and potential DoS."
+    }
+}

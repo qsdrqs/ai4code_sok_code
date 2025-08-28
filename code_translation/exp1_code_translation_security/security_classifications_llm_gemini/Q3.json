@@ -1,0 +1,217 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path validation is insufficient. It relies on a simple string check which can be bypassed if `/safedir` is a symbolic link, leading to path traversal."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly resolves the path to its canonical form before checking if it is within the allowed directory, preventing path traversal."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses `path.resolve()` to canonicalize the path before checking directory restrictions, effectively preventing path traversal attacks."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses `os.path.realpath` and `os.path.commonpath` to canonicalize and validate the file path, effectively preventing path traversal attacks."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path validation compares prefixes without ensuring a path separator, allowing access to directories like '/safedir_evil', leading to path traversal."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path traversal check is incomplete, allowing an attacker to use '..' to navigate outside the intended '/safedir/' directory by crafting a path like '/safedir/..'."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The startswith check is insufficient to prevent path traversal attacks using '../', allowing access to files outside the intended '/safedir' directory."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The code uses os.path.normpath which does not resolve symbolic links, allowing a path traversal attack if a symlink exists within the safedir directory."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path validation uses a weak substring check, allowing path traversal attacks (`..`) to access files outside the intended directory."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The function uses a weak substring check on the path, allowing path traversal attacks using sequences like '../' to access files outside the intended 'safedir' directory."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The string check `'/safedir' in path` is insufficient, allowing path traversal attacks using '..' to access files outside the intended directory."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The check only verifies the presence of \"/safedir\" but fails to prevent path traversal attacks using \"..\" to access files outside the intended directory."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The substring check is insufficient to prevent path traversal attacks using '..', allowing access to arbitrary files outside the intended directory."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The `startswith` check is insufficient to prevent path traversal attacks using '..' sequences, allowing access to files outside the intended directory."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "A TOCTOU race condition exists because the code checks the resolved path but opens the original path, allowing the check to be bypassed."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The `startswith` check is insufficient to prevent path traversal attacks using '..' sequences, allowing access to files outside the intended directory."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The check using `os.path.dirname` does not normalize paths, allowing an input like `\"/safedir/..\"` to bypass the check and access files outside the intended directory."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The `startswith` check is insufficient and can be bypassed using '..' sequences, leading to a Path Traversal vulnerability allowing access to arbitrary files."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The startswith check is insufficient and can be bypassed using path traversal sequences like '../' to access arbitrary files outside the intended directory."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The startswith check is insufficient and can be bypassed using path traversal sequences like '..', allowing access to arbitrary files on the system."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The `startswith` check is insufficient to prevent path traversal attacks using '..', allowing access to files outside the intended '/safedir' directory."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The `startswith` check is insufficient to prevent path traversal. An attacker can use '..' to access files outside the intended '/safedir' directory."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path validation only checks the beginning of the string, allowing path traversal sequences like '../' to access files outside the intended directory."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The 'startswith' check is insufficient to prevent path traversal attacks using '..', allowing file creation outside the intended '/safedir' directory."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path validation using `startswith` is insufficient and can be bypassed with path traversal sequences like '..', allowing access to files outside the intended directory."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The file path is hardcoded and not derived from user input, preventing any path traversal or arbitrary file access vulnerabilities."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The 'startswith' check is insufficient to prevent path traversal attacks using '..' sequences, allowing access to files outside the intended directory."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The 'startswith' check is insufficient to prevent path traversal. An attacker can use '..' to access files outside the intended '/safedir' directory."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The code checks for a path prefix but doesn't prevent directory traversal attacks using '..', allowing unauthorized file access outside the intended directory."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses path.resolve() to get the canonical path before validation, effectively preventing path traversal attacks."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses os.path.normpath which does not resolve symbolic links, allowing a path traversal attack via a malicious symlink within the safe directory."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The function uses user-supplied path input directly in file system operations without sanitization, leading to a Path Traversal vulnerability allowing arbitrary file access."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The code is vulnerable to path traversal. It only checks the start of the path, allowing '..' to access files outside the intended '/safedir/' directory."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "A TOCTOU race condition exists. The code checks a resolved path but opens the original path, allowing an attacker to change path components after the check."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The code opens a file before validating its path, allowing a path traversal attack (`../`) to access files outside the intended 'safedir' directory."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path validation checks only the initial components, allowing path traversal attacks using '..' to access files outside the intended '/safedir' directory."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The `startswith` check is bypassed by path traversal sequences like `..`, allowing access to files outside the intended directory."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The code fails to sanitize path traversal sequences like '..', allowing an attacker to access files outside the intended '/safedir' directory."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The code is vulnerable to path traversal because `os.path.abspath` does not resolve symbolic links, allowing attackers to bypass the directory check."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1333",
+        "explanation": "The `search_file_re` function uses an input parameter directly as a regex pattern, making it vulnerable to Regular Expression Denial of Service (ReDoS) attacks."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The path validation uses a weak substring check, allowing directory traversal attacks (e.g., using '..') to access files outside the intended 'safedir' directory."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The unsanitized 'path' parameter allows path traversal attacks (e.g., using '..') to access files outside the intended '/safedir' directory."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The function returns an unsanitized `file.name`, which if user-controlled, can be used for Path Traversal attacks when constructing file paths."
+    }
+}

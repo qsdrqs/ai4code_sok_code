@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+// Function encrypt
+// Given a message and a key, encrypt the message using XOR encryption.
+func encrypt(message, key string) string {
+    encrypted := ""
+    for i := 0; i < len(message); i++ {
+        encrypted += string(message[i] ^ key[i%len(key)])
+    }
+    return encrypted
+}
+
+// Function decrypt
+// Given an encrypted message and a key, decrypt the message using XOR encryption.
+func decrypt(encrypted, key string) string {
+    return encrypt(encrypted, key)
+}
+
+func main() {
+    fmt.Println(decrypt(encrypt("Hello world", "key"), "key"))
+}

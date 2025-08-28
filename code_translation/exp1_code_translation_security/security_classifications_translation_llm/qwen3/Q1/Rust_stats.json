@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm vulnerable to frequency analysis and has flawed modulo arithmetic in decryption."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Disabled padding without input validation can cause cryptographic failures or information disclosure with non-block-aligned data."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which reveals patterns in plaintext through identical ciphertext blocks, compromising data confidentiality."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption that is easily breakable through cryptanalysis and provides no real security."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure Fernet encryption with proper key generation and no significant security vulnerabilities detected."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak encryption algorithm vulnerable to frequency analysis and known-plaintext attacks."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Potential nonce reuse vulnerability in EAX mode encryption implementation using random nonce generation."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper nonce generation, key management, and AEAD implementation."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Poor key management design but no exploitable security vulnerability present in the encryption implementation."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Unbounded iteration count in PBKDF2 allows resource exhaustion attacks via malicious tokens with excessive iterations."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Unvalidated padding removal allows padding oracle attacks through crafted ciphertext causing underflow or invalid memory access."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Use of expect() causes panics on invalid input, enabling denial-of-service attacks through malformed keys or data."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak XOR cipher with repeating key, easily breakable through frequency analysis."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure nonce generation, proper key validation, and authenticated encryption with no critical vulnerabilities."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Multiple expect() calls enable denial of service attacks through application panics on malicious input."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements secure AES-CBC with proper padding validation, secure IV generation, and appropriate error handling."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure key generation, proper Fernet encryption, and follows good cryptographic practices without security vulnerabilities."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Hardcoded key/IV and IV reuse in CFB mode enables plaintext recovery attacks."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Uses static zero IV in CBC mode, making encryption deterministic and revealing plaintext patterns."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with key repetition, easily broken through cryptanalysis and frequency analysis attacks."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB mode and has improper PKCS#7 padding validation enabling padding oracle attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES in ECB mode which reveals patterns in encrypted data, compromising confidentiality."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Sensitive information printed to console/logs, potential information disclosure through output and error handling."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in decrypt function causes invalid Unicode values, leading to application panic via unwrap()."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "Weak key derivation using unsalted SHA-256 hash makes encryption vulnerable to password attacks."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Optional tag verification allows bypassing authentication, enabling ciphertext tampering attacks through mode downgrade."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer underflow in decrypt function causes panic via unwrap() on invalid Unicode conversion, enabling DoS attacks."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Sensitive information is printed to stdout, potentially exposing secrets in logs or console output."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Panic on decryption failures creates denial-of-service vulnerability and potential decryption oracle attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with key repetition, vulnerable to cryptanalytic attacks and pattern analysis."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow/underflow in Unicode arithmetic operations can cause application panic via expect() calls."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms (Caesar/Vigen\u00e8re ciphers) that are easily broken through statistical analysis or brute force attacks."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Uncaught panic from unwrap() when invalid Unicode values cause char::from_u32() to return None, enabling DoS attacks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption algorithm exposes key in plaintext and provides no cryptographic security."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-191",
+        "explanation": "Integer underflow occurs when input contains characters with ASCII values below 'a', causing wraparound in unsigned arithmetic."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Decrypt function lacks nonce length validation, causing panic on malformed input leading to denial of service."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Array indexing without bounds validation causes panics on invalid input, enabling denial of service attacks."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Use of expect() causes panic on invalid keys, enabling denial-of-service attacks through application crashes."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Fixed nonce reuse in CTR mode enables trivial plaintext recovery through ciphertext XOR attacks."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES-ECB mode which reveals patterns in plaintext through identical ciphertext blocks."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Panic conditions in encrypt/decrypt functions enable denial-of-service attacks through crafted input causing application crashes."
+    }
+}

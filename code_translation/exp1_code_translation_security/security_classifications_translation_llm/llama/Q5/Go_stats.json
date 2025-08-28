@@ -1,0 +1,202 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe standard library function with no security risks."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Go standard library functions with proper memory management and no exploitable vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using standard library with no external input or exploitable conditions."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow possible with math.MinInt64 on 64-bit systems when negating minimum value."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in stringify function - no bounds checking on buf parameter during copy operation."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code performs safe string formatting operations without external input processing."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code has logical errors but uses memory-safe operations throughout."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Improper array index validation can cause runtime panic through negative string slice indices."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with hardcoded input and proper bounds checking."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value in integerToString function causes undefined behavior."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value causes infinite loop and potential denial of service."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe string formatting operations without security risks or unsafe practices."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Go's escape analysis safely allocates local variable on heap when address is returned, preventing dangling pointer issues."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Only poor variable naming practice that shadows built-in string type."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Infinite recursion occurs with minimum integer values due to integer overflow in negation operation."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with hardcoded input, no security vulnerabilities present."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation error but no security vulnerabilities; safe memory operations and proper bounds checking."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Go's memory safety prevents buffer overflows despite missing input validation."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic flaw with negative numbers is a functional bug, not a security vulnerability."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Uses safe built-in functions with controlled inputs and hardcoded format strings."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with hardcoded format strings and no external input processing."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Code uses hardcoded values with safe formatting operations."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Array accesses are bounds-safe due to controlled integer input domain."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Weak PRNG used but not for security purposes in this number formatting utility."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in e10() and abs() functions can cause incorrect calculations and unexpected behavior."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe mathematical operations and string formatting without security risks."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with proper input handling and no exploitable vulnerabilities."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic error with zero handling but no exploitable security vulnerability present."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe string operations and type-safe parameters with Go's memory safety."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Pure computational function with safe string operations, no external input or unsafe practices detected."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Go's standard library with proper type safety."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating math.MinInt, causing wraparound and incorrect behavior."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Go standard library with hardcoded input, no security risks present."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating math.MinInt causes infinite loop, leading to denial of service."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Go operations with proper bounds checking and no unsafe memory operations."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code has logical bugs but uses safe Go operations and standard library functions."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles bounds checking, uses safe standard library functions, and has no security vulnerabilities."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Static format strings and controlled integer inputs prevent injection attacks."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Format strings are hardcoded and no external input is processed."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with bounded input and no unsafe operations."
+    }
+}

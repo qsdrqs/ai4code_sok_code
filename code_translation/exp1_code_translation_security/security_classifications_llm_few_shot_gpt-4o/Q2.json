@@ -1,0 +1,142 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses secure cryptographic library and practices."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No explicit vulnerability without details on signing_key implementation."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure use of cryptography library for ECDSA signing."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct vulnerability; ensure library is secure and maintained."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Non-standard cryptographic library used for ECDSA operations."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Insufficient information to determine vulnerability."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure key generation and cryptographic library usage."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Security depends on the ellipticcurve library's implementation."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure ecdsa library and weak NIST192p curve."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Insufficient context to determine vulnerability."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses secure cryptographic library and algorithm."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Python ecdsa library should not be used in production settings."
+    }
+}

@@ -1,0 +1,187 @@
+{
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-703",
+        "explanation": "Verify function lacks handling of exceptions during public key parsing, risking DoS with malformed keys."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1138",
+        "explanation": "Private key is directly used without proper validation or generation, leading to potential weak key exposure."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses ECDSA for signing with a generated key."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses ECDSA correctly with proper key handling."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1138",
+        "explanation": "Private key not validated for correct length or strength, leading to potential weak key usage."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses ECDSA correctly with secure curve and proper signing/verification."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses ECDSA correctly with secure key generation and signature verification."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-665",
+        "explanation": "Signs hardcoded 'message' instead of input, leading to incorrect signature generation."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Function directly uses provided key to sign message without exposing key management or algorithm details."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Missing message hashing before ECDSA signing/verification can enable signature forgery."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability found"
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses ECDSA with proper key generation and signing, assuming the library handles secure defaults."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1209",
+        "explanation": "Private key exposed via print statement in main function."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function in ECDSA, which is cryptographically weak."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses user-provided curve (key) without validation, potentially allowing weak curves."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Use of broken PKCS1_v1_5 padding vulnerable to Bleichenbacher attacks; PSS should be used instead."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses ECDSA with SECP256k1 and SHA-256 correctly. The private key is valid and hardcoded for testing, but no active vulnerability exists in the provided implementation."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1216",
+        "explanation": "Private key generation allows zero value, violating ECDSA key requirements and risking cryptographic failure."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows ECDSA signing/verification steps securely."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses NIST192p curve with insufficient security strength (96-bit)"
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses ECDSA with deterministic nonces (RFC 6979) and secure NIST384p curve."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1209",
+        "explanation": "Missing message hashing before ECDSA signing"
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerability found. Uses ECDSA with SHA-256 correctly."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses secure SHA-256 and ECDSA with DER encoding correctly."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses weak NIST192p curve and SHA-1 hash, both insecure for modern cryptography."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 (weak hash) in ECDSA signing, risking collision attacks."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Function uses ECDSA with SHA-256 correctly; no vulnerabilities in signing process."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 with SECP256k1 ECDSA, which is insecure."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Function directly uses unvalidated private key (sk) without ensuring secure key management or cryptographic strength."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Function signs a static string instead of the input message, leading to incorrect cryptographic signatures."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "ECDSA requires hashing the message before signing; failing to do so allows signature forgery."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 via ECDSA's default settings, which is a weak cryptographic hash function."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 by default for ECDSA signing, which is cryptographically weak."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses NIST192p curve with insufficient security strength (192-bit)"
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function for ECDSA, which is cryptographically weak."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Incorrect API usage for ECDSA signing leads to failure in cryptographic operations, compromising data integrity."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA with SHA256 and proper key generation."
+    }
+}

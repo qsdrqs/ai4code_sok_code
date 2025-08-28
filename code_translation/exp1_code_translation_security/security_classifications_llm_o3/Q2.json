@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses safe curve and library API; no weakness or misuse detected."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses ECDSA-P256 with SHA-256 correctly; no weak randomness or misuse detected."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "key.sign defaults to SHA-1; using a broken hash algorithm weakens the ECDSA signature."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hard-coded, predictable ECDSA private key allows signature forgery and key compromise."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Relies on library default SHA-1 hash for ECDSA signatures, a broken cryptographic algorithm."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing defaults to SHA-1, a broken hash algorithm."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses secure library; properly generates key and signs message; no misuse observed."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-328",
+        "explanation": "Default SHA-1 hash in ecdsa.sign; weak hash function compromises signature strength."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Relies on library defaults (SHA-1, non-deterministic k) making ECDSA signatures weak or forgeable."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses cryptography\u2019s ECDSA correctly; no weak randomness, key exposure, or misuse."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Wrapper delegates to external sign(); no direct flaw in snippet"
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses standard ECDSA signing; no nonce reuse, no key leakage, no exploitable flaw."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Default SHA-1 in ecdsa.sign is a broken hash, weakening signatures."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Standard ECDSA usage; secure randomness and deterministic nonce; no misuse detected."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key printed to console, exposing secret."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Passing SHA-256 digest to sign() causes silent SHA-1 rehash, downgrading to weak algorithm."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses default SHA-1 in ecdsa.sign; SHA-1 is a broken hash algorithm."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Standard ECDSA sign/verify demo; secure random and hashing used; no misuse or leak."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses standard ECDSA signing; no nonce reuse, key leak, or unsafe hashing detected."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA sign() defaults to SHA-1, a broken hash algorithm."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Wrapper only delegates to sk.sign; no independent insecure logic."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "SigningKey.sign defaults to SHA-1, a broken hash algorithm, making signatures vulnerable."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Standard library ECDSA with SHA-256; no misuse or flaw detected."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Default ECDSA signing uses SHA-1, a broken hash algorithm."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA defaults to SHA-1; code omits stronger hash, using broken algorithm."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses default NIST192p curve and SHA-1; both are considered weak cryptographic choices."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signature defaults to SHA-1, a deprecated and collision-prone hash."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses SHA-256 and library ECDSA signing correctly; no insecure practices identified."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Function signs constant string, ignoring input, enabling signature misuse."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses library-safe defaults; no misuse or leakage in shown snippet."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ecdsa.SigningKey.sign default SHA-1, a broken hash algorithm, making signatures weak."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "verify() swaps parameter order, breaking signature validation and enabling bypass."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses PKCS#1 v1.5 padding; modern guidance favors RSASSA-PSS."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses deprecated signer API but not insecure; no exploitable weakness found."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ECDSA with default SHA-1 hash, a broken algorithm."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-628",
+        "explanation": "Signs constant string, ignoring supplied message; integrity check can be bypassed."
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Library uses secure randomness; no key exposure or weak parameters apparent."
+    }
+}

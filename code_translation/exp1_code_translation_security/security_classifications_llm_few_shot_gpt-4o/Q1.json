@@ -1,0 +1,167 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption algorithm vulnerable to cryptanalysis."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES-CBC encryption with random key and IV."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "XOR encryption with static key is insecure."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure use of cryptography library's Fernet module."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption algorithm vulnerable to attacks."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES encryption with proper nonce handling."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure AES encryption with proper key and nonce handling."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Incorrect function usage; no security vulnerability."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure key derivation and encryption practices are used."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No immediate vulnerabilities; SHA-256 for key derivation is not recommended."
+    },
+    "1015": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logical error in decrypt function; no security vulnerability."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption using XOR without cryptographic strength."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "AES in EAX mode is used securely with proper nonce handling."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses secure cryptography library; no inherent vulnerabilities."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure use of Fernet for encryption and decryption."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Uses hardcoded cryptographic key and IV."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Insecure encryption using XOR without cryptographic measures."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES in ECB mode, which is insecure."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure use of cryptography library for encryption."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Caesar cipher is a weak encryption method."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Use of non-standard cryptographic library."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Fixed encryption key can lead to unauthorized access."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption algorithm (Caesar cipher)."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure use of cryptography library's Fernet module."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses secure cryptography library for encryption and decryption."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "XOR encryption is insecure for cryptographic purposes."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Caesar cipher is a weak encryption algorithm."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak encryption (Caesar cipher)."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure Vigen\u00e8re cipher for encryption."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "AES in EAX mode is used securely with nonce management."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses secure cryptography library for encryption and decryption."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "Hardcoded cryptographic key in the code."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak encryption method; easily breakable."
+    }
+}

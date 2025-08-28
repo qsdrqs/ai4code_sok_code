@@ -1,0 +1,202 @@
+{
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes undefined behavior or panic in Rust."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust standard library functions with no unsafe operations or security risks."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure RNG, type-safe output, and has no user input or unsafe operations."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code contains logical bugs but no security vulnerabilities due to Rust's memory safety guarantees."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust patterns with proper memory management and no unsafe operations or input validation issues."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust practices with proper bounds checking and no unsafe operations or potential overflow conditions."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with proper type safety and memory management, no vulnerabilities present."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Unsafe UTF-8 conversion is justified and safe since input contains only ASCII digits from to_string()."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow and uses memory-safe operations throughout."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses memory-safe Rust operations with proper bounds checking and no unsafe practices."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities found. All operations are memory-safe with controlled i32 input and valid UTF-8 handling."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust practices with proper error handling and secure string formatting."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely formats hardcoded numbers using validated locale data with proper fallback mechanisms."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Rust's safe abstractions preventing memory safety issues and buffer overflows."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe error handling, type safety, and proper fallbacks with no apparent security vulnerabilities."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using Rust standard library with no external input or unsafe operations."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes panic or incorrect wraparound behavior."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly validates array bounds and uses safe Rust practices with controlled error handling."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Rust's memory safety and proper integer overflow handling eliminate the original C code's vulnerabilities."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust patterns with automatic memory management and standard library functions, no vulnerabilities present."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe Rust code with hardcoded values, no external input, and proper memory management."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses proper bounds checking, safe memory operations, and Rust's memory safety prevents common vulnerabilities."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust practices with built-in methods, no unsafe operations or external inputs present."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes panic or incorrect results"
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when calling abs() on i32::MIN, causing panic or wraparound behavior."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating i32::MIN causes panic or infinite recursion, leading to denial of service."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code is memory-safe with proper bounds checking. The unwrap() usage is safe due to guaranteed UTF-8 validity."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Rust's memory safety prevents common issues, and all operations are bounds-safe."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles edge cases and uses safe Rust practices with no security vulnerabilities."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles integer overflow and uses safe Rust memory management with appropriate type casting."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No infinite loop occurs; negative inputs safely return 0 without entering the while loop condition."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust practices with automatic memory management and no unsafe operations or user input handling."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe error handling with fallbacks and type-safe operations throughout."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Rust operations with proper bounds checking and memory safety guarantees."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Rust's memory safety and type system prevent common vulnerabilities; no unsafe operations present."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles edge cases, uses safe memory management, and prevents integer overflow vulnerabilities."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes undefined behavior or panic."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when calling abs() on i32::MIN causes panic or incorrect behavior."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop vulnerability when negative integers are passed to convert_int function"
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe arithmetic, proper UTF-8 string handling, and Rust's memory safety guarantees prevent common vulnerabilities."
+    }
+}

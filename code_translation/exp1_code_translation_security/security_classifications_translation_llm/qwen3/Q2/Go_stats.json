@@ -1,0 +1,187 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices with secure random generation, proper hashing, and standard ECDSA implementation."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows cryptographic best practices using secure libraries, proper randomness, and standard ECDSA implementation."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Private key truncation in pad32 function can lead to weak cryptographic keys when oversized values are processed."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash function for message signing, enabling potential collision attacks and signature forgery."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has critical functional bug causing panic, but no exploitable security vulnerability exists."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash function, enabling potential collision attacks and signature forgery."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation error but no security vulnerabilities; uses secure cryptographic practices throughout."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak P-192 elliptic curve providing only 96-bit security strength, below recommended 112-bit minimum."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices; implementation error prevents compilation but doesn't create security vulnerability."
+    },
+    "1016": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper hashing, key validation, and established libraries."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Function signs raw message data instead of cryptographic hash, violating ECDSA security best practices."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash function which is vulnerable to collision attacks in signature schemes."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses nil for random source but Go defaults to secure crypto/rand.Reader internally."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Unchecked error from cryptographic key generation could lead to invalid keys or system crashes."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure cryptographic practices with proper key generation, hashing, and signature operations using established libraries."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-754",
+        "explanation": "Improper error handling in cryptographic operations could lead to undefined behavior or security compromise."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "Sign method returns original message unchanged, providing no cryptographic protection or authentication."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw messages instead of hash digests, enabling potential signature forgery attacks."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed through console output, compromising cryptographic security."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated PKCS#1 v1.5 padding scheme instead of more secure PSS padding for RSA signatures."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Private key is hardcoded in source code, exposing cryptographic credentials to unauthorized access."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signs raw message data instead of cryptographic hash, violating ECDSA security best practices and assumptions."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly implements ECDSA signatures using secure libraries and cryptographic best practices."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements ECDSA signatures using secure cryptographic primitives and standard library functions."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials, enabling unauthorized access and signature forgery."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper ECDSA implementation, strong algorithms, and secure randomness."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash function for ECDSA signature generation, enabling potential collision attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA1 hash function for digital signatures, enabling potential signature forgery attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation and error handling could allow signing of invalid data or mask signing failures."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Passing nil entropy to ecdsa.Sign() causes weak nonce generation, enabling private key recovery attacks."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Unchecked return values from cryptographic operations can cause panics or silent failures, compromising security."
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Uses secure cryptographic primitives correctly, though has design flaw with key management."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper randomness and standard cryptographic practices."
+    }
+}

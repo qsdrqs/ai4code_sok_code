@@ -1,0 +1,202 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fixed buffer size adequate for all integers, Java bounds checking prevents overflows, safe string operations used."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Hardcoded format string with primitive input eliminates format injection risks. No security vulnerabilities present."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe integer-to-string conversion using standard Java library methods with no security risks."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles Integer.MIN_VALUE overflow case before using Math.abs(), preventing integer overflow vulnerabilities."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to missing bounds checking on input buffer parameter."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely formats integers using locale-dependent NumberFormat without exploitable vulnerabilities."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Format string is hardcoded and safe, input properly bounded."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper input validation, exception handling, and bounds checking with no apparent security vulnerabilities."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe String.format with hardcoded format string and primitive parameter, no security risks identified."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect behavior and potential infinite loop."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating Integer.MIN_VALUE, causing unexpected behavior and incorrect results."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe operations on bounded primitive types with proper bounds checking."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with no external input or exploitable operations."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses hardcoded values and safe string formatting with no external input or risky operations."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Integer overflow with MIN_VALUE causes infinite recursion, leading to stack overflow and denial of service."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Java library methods with hardcoded input, no security vulnerabilities present."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses locale-dependent formatting but has no exploitable security vulnerabilities or unsafe operations."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in itoa() method when negating Integer.MIN_VALUE causes incorrect string conversion."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes infinite loop, leading to potential denial of service."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code only formats hard-coded numbers using standard APIs with no user input or external data processing."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in methods for integer-to-string conversion with no unsafe operations or external input."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes infinite loop, leading to denial of service."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe string manipulation with bounded input and no injection or overflow risks."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Non-cryptographic random usage appears appropriate for formatting demonstration purposes."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when processing Integer.MIN_VALUE in abs() and intToStr() methods without proper bounds checking."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe operations with controlled inputs and proper bounds checking."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in Math.abs(Integer.MIN_VALUE) causes infinite loop, leading to denial of service."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when converting Integer.MIN_VALUE from negative to positive, causing unexpected behavior."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null check in reverseStr() method can cause NullPointerException leading to potential denial of service."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Edge case with Integer.MIN_VALUE is a logic issue, not security risk."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library methods with no unsafe operations or user input processing."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating Integer.MIN_VALUE, causing wraparound and potential infinite loop or incorrect behavior."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library methods with controlled inputs, no security vulnerabilities present."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect string conversion and unexpected behavior."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Format string is hardcoded, resources properly managed, input type-safe."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations with proper bounds checking and no external input vulnerabilities."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string formatting with hardcoded format specifier and controlled inputs."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Locale dependency causes inconsistent formatting but no exploitable security risk."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating Integer.MIN_VALUE, causing wraparound and potential infinite loops or incorrect behavior."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe string formatting with hardcoded format string and primitive integer parameter. No injection vectors present."
+    }
+}

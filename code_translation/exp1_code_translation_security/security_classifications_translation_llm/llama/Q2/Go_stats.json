@@ -1,0 +1,182 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper signature encoding creates incompatible format that breaks standard verification processes."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Uses public key instead of private key for ECDSA signing, breaking signature generation completely."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Flawed DER encoding implementation could enable signature malleability attacks if code were functional."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Incorrect ECDSA private key construction uses same bytes for Y-coordinate and private scalar D, breaking cryptographic security."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incorrect cryptographic implementation: signing with public key instead of private key, causing signature verification failures."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw message bytes instead of cryptographic hash, violating proper cryptographic implementation."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow due to hard-coded array indexing without bounds checking in signature parsing."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has implementation error but no security vulnerability; uses secure cryptographic functions correctly otherwise."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation error but no security vulnerabilities in cryptographic implementation."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code compromises cryptographic security completely."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incorrect ECDSA signature implementation could lead to invalid signatures and authentication bypass."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper signature encoding allows ambiguous parsing, potentially enabling signature forgery or verification bypass attacks."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has compilation errors and logic flaws but no exploitable security vulnerabilities in cryptographic implementation."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private ECDSA key is printed to console, exposing sensitive cryptographic material that enables signature forgery."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to console, exposing sensitive cryptographic material through information disclosure."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signature applied to raw message instead of cryptographic hash, violating secure cryptographic practices."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incorrect parameter passed to ecdsa.SignASN1 - uses public key instead of private key for signing operation."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses broken cryptographic implementation with unhashed message signing and incorrect ECDSA API usage."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA implementation lacks proper message hashing, enabling signature malleability attacks and cryptographic weaknesses."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incorrect ASN.1 signature parsing leads to invalid signature generation, enabling potential signature verification bypass."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incorrect public key generation breaks ECDSA signatures, enabling signature verification bypass attacks."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Programming error in signature handling, but no cryptographic security vulnerability present."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing raw message instead of hash violates cryptographic standards and enables potential attacks."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with proper random generation, error handling, and cryptographic best practices."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code and insufficient input validation causing potential runtime panics."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Mismatched signature formats between signing and verification functions cause cryptographic verification failures."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Signs raw message without hashing, violating ECDSA security best practices and potentially enabling signature attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials and compromises security."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incorrect curve validation allows wrong cryptographic curve usage, potentially compromising signature security."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing raw message instead of message hash violates cryptographic standards and security practices."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper signature encoding mixing ECDSA with RSA PKCS#1 v1.5 format causes verification failures."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-704",
+        "explanation": "Incorrect API usage in ECDSA signing and key marshaling causes implementation failures and potential security issues."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses incorrect hash function elliptic.P256().New() instead of cryptographic hash like SHA-256 for ECDSA signatures."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Missing cryptographic hash before ECDSA signing, using raw message bytes instead of proper hash digest."
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Cryptographic implementation is secure, though functionally flawed due to ephemeral key generation per signature."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signs raw message bytes instead of cryptographic hash, violating security assumptions and enabling potential attacks."
+    }
+}

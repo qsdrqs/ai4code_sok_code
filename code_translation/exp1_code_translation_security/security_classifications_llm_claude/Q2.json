@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic primitives and proper implementation with no significant vulnerabilities identified."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA signing without secure nonce generation can lead to private key recovery through cryptographic attacks."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA signature uses potentially weak random nonce generation, risking private key exposure through nonce reuse attacks."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses weak, predictable private key and lacks proper cryptographic key validation."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses potentially weak randomness for ECDSA key generation and signature nonce without specifying secure entropy source."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST192p curve providing only ~96 bits security, below modern 128-bit minimum recommendations."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Raw message signing without hashing violates cryptographic best practices and ECDSA security standards."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function by default, which is cryptographically weak and vulnerable to collision attacks."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic standards and reputable library with proper ECDSA implementation."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Potential weak random number generation in private key creation could lead to predictable keys."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is exposed through console output, violating cryptographic key confidentiality requirements."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Function lacks input validation but delegates security to signing_key implementation. No direct vulnerability present."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Potential weak random number generation in ECDSA nonce creation, risking private key recovery through nonce reuse."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA signature generation may use weak randomness for nonces, potentially allowing private key recovery."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows proper ECDSA practices with correct key separation and standard cryptographic operations."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Relies on potentially weak random number generation in third-party library for ECDSA operations."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST192p curve providing only 96-bit security, below modern 128-bit minimum standards."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with deterministic nonce generation and strong NIST P-384 curve."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-670",
+        "explanation": "Function ignores input message parameter and always signs hardcoded string, breaking signature functionality."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material in logs or output."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Raw message signing without proper hashing violates cryptographic best practices for ECDSA implementation."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA signing uses potentially weak random nonce generation, enabling private key recovery attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA library may use weak nonce generation, potentially allowing private key recovery through nonce reuse."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated PKCS#1 v1.5 padding scheme vulnerable to cryptographic attacks; should use PSS instead."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Raw message passed to ECDSA without proper hashing validation, potentially enabling weak cryptographic signatures."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerabilities; lacks input validation and error handling but cryptographic implementation is sound."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-670",
+        "explanation": "Function generates new random key instead of using provided signing key, breaking intended security model."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-670",
+        "explanation": "Function ignores message parameter and signs hardcoded string, causing logic error and potential authentication issues."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Weak random number generation for ECDSA nonce can lead to private key recovery attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA signing without proper nonce generation can lead to private key recovery through weak randomness."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerability; lacks input validation but delegates crypto operations to key object."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Potential weak nonce generation in ECDSA signing without explicit secure configuration."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak NIST192p elliptic curve by default, providing insufficient cryptographic strength for modern security requirements."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No direct security vulnerability; lacks input validation but cryptographic implementation is secure."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA defaults; verification correctly fails with different messages, no cryptographic vulnerability present."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing without explicit hash function specification can lead to weak or predictable signatures."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "ECDSA signing without explicit secure randomness may enable private key recovery through signature analysis attacks."
+    }
+}

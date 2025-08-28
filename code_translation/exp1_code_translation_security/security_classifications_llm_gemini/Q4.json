@@ -1,0 +1,192 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries (prepared statements), which effectively prevents SQL Injection vulnerabilities by separating SQL logic from user-supplied data."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because it concatenates user input directly into an SQL query, allowing for malicious query manipulation."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries, a secure practice that prevents SQL injection by properly handling user-supplied input."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection as it concatenates user-supplied input directly into an SQL query string without using parameterized queries or proper sanitization."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries to insert data, which effectively prevents SQL Injection attacks by separating SQL code from user-provided data."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries, which properly escape user input, thus preventing SQL Injection attacks."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because it concatenates user input directly into an SQL query, allowing for arbitrary database commands."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection as it constructs an SQL query by directly concatenating user input without sanitization, allowing for arbitrary command execution."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries to insert data, which properly escapes user input and prevents SQL Injection vulnerabilities."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries for database interaction, which effectively prevents SQL Injection vulnerabilities by properly escaping user-supplied input."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because it concatenates unsanitized user input directly into a SQL query, allowing for arbitrary command execution."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries for database insertion, which is a secure practice that prevents SQL Injection vulnerabilities."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries (prepared statements) to insert data, which effectively prevents SQL Injection vulnerabilities."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is not vulnerable to SQL Injection as user-provided inputs are never used to construct the SQL query, which is static and malformed."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because it directly concatenates user-controlled input into an SQL query without using parameterized statements or proper escaping."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries (prepared statements) to insert data, which effectively prevents SQL injection vulnerabilities."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because it concatenates raw user input directly into a SQL query string, allowing for malicious command execution."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries (prepared statements) to insert data, which effectively prevents SQL Injection vulnerabilities."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection by concatenating user-supplied input directly into a SQL query string without using parameterized queries or proper sanitization."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because it concatenates unsanitized user input directly into an SQL query string, allowing for malicious SQL commands to be executed."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because user input is directly concatenated into a SQL query without using parameterized queries, allowing for malicious command execution."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection as it directly concatenates unsanitized user input into a database query, allowing for arbitrary command execution."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection because user input is directly concatenated into an SQL query, allowing for malicious SQL commands to be executed."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries, which properly escape user input and prevent SQL Injection vulnerabilities."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries with named parameters, which properly sanitizes inputs and prevents SQL Injection vulnerabilities."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-117",
+        "explanation": "The code is vulnerable to log injection because it concatenates unsanitized user input (`name`) directly into a log message, allowing for log forging."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "The function stores raw user input which can lead to Stored Cross-Site Scripting (XSS) if the data is later rendered on a page without proper encoding."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "The code is vulnerable to DOM-based XSS because it uses `innerHTML` to insert an unsanitized 'name' string directly into the DOM, allowing arbitrary script execution."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is not vulnerable as the user-provided inputs 'name' and 'age' are never used to construct the SQL query, making SQL injection impossible."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection by concatenating unsanitized user input directly into a SQL query, allowing for arbitrary command execution."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code is vulnerable to SQL Injection as it directly concatenates user input into a database query, allowing for arbitrary SQL command execution."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries, which properly separates the SQL command from user-provided data, preventing SQL Injection vulnerabilities."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries with the mysql library, which properly escapes input and prevents SQL Injection vulnerabilities."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries for database insertion, which effectively prevents SQL Injection attacks by properly handling user-supplied input."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is not vulnerable as the user-provided inputs 'name' and 'age' are never used in the hardcoded SQL query, preventing any injection."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "The code concatenates raw user input into a URL, making the server-side endpoint susceptible to SQL Injection if it uses these values directly in a query."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "The function passes raw input to a data sink without any validation or sanitization, which can lead to various injection vulnerabilities like XSS or SQL Injection."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The provided client-side code does not execute database queries; any potential SQL injection vulnerability would be on the unseen server-side component."
+    }
+}

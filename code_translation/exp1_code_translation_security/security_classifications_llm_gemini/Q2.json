@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses the cryptography library with strong primitives (ECDSA, SHA256, SECP384R1). The library's implementation securely handles nonce generation, preventing common ECDSA vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses standard cryptographic libraries and secure practices for ECDSA signing and verification, including robust error handling."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "The private key is derived from a predictable, low-entropy string, making the cryptographic signature insecure and easy to forge."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "The code uses a hard-coded, predictable string as a private key, which has insufficient entropy and can be easily guessed, compromising the signature's integrity."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-754",
+        "explanation": "The code uses an `assert` statement for signature verification, which can be disabled in production, bypassing a critical security check and potentially returning an invalid signature."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses a standard cryptographic library (ecdsa) with a strong curve (NIST384p) for signing, following secure practices."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a weak cryptographic curve (NIST192p) by default, which is susceptible to attacks and has been deprecated by standards bodies like NIST."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses the ecdsa library's sign function, which defaults to the cryptographically broken SHA-1 hash algorithm, making the signature scheme weak."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses a signing key object. Security depends on the underlying cryptographic library's implementation, not this function's logic."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "The code uses a library with a cryptographically weak PRNG for ECDSA nonce generation, which can lead to private key recovery."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses a secure, high-level cryptography library (cryptography.io) with strong algorithms (ECDSA with SHA256), which correctly handles nonce generation, mitigating common pitfalls."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "The ECDSA signing uses a cryptographically weak PRNG (random.randrange) to generate the nonce 'k', which can lead to private key disclosure."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-200",
+        "explanation": "The code prints the secret private key to standard output, exposing sensitive information that should remain confidential."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code securely delegates the signing operation to the provided key object, a standard practice. Its security depends on the caller providing a secure key."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "The code contains a hard-coded ECDSA private key in the main function, exposing sensitive cryptographic material directly in the source code."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses a strong cryptographic library and curve (NIST384p). The signing process is secure by default (RFC 6979), preventing vulnerabilities like nonce reuse."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The 'ellipticcurve' library uses a weak, predictable nonce for ECDSA signing, allowing potential private key recovery from multiple signatures."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "The code contains a hardcoded private key in the example usage block, which is an insecure practice exposing sensitive credentials."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses the ecdsa library's default SHA-1 hash for signing, which is a cryptographically weak algorithm and considered insecure."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is a simple wrapper for a signing function. Security depends on the cryptographic implementation of the key object, which is not shown."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses a standard cryptographic library (cryptography.hazmat) for ECDSA signing, which securely handles nonce generation (RFC 6979), preventing key compromise vulnerabilities."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "The code uses a weak elliptic curve (NIST192p) by default, which is considered cryptographically insecure due to its inadequate 192-bit key size."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses the ecdsa library, which handles secure key generation and prevents nonce reuse vulnerabilities by default, following best practices for digital signatures."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses the ECDSA library. Signature verification fails for a different message as expected, which is secure behavior, not a vulnerability."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "The code uses an ephemeral key that is immediately discarded, making the generated signature impossible to verify and thus cryptographically useless."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses the ecdsa library which defaults to the weak SHA-1 hash algorithm for the SECP256k1 curve, making the signature scheme insecure."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-312",
+        "explanation": "The code prints the private key to standard output, exposing sensitive cryptographic material that must be kept secret to prevent signature forgery."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses the outdated PKCS#1 v1.5 padding for signatures, which is weaker than the recommended PSS padding, making it a risky cryptographic choice."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses a standard cryptographic library and a secure algorithm (ECDSA with SHA256) to generate a digital signature, preventing common pitfalls."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "The function ignores the input message and signs a hardcoded string, breaking the integrity and non-repudiation guarantees of the digital signature."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "The function generates a new, ephemeral key for signing, ignoring the provided key. The resulting signature is unverifiable and cryptographically useless, representing a key management error."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "The function generates an ephemeral private key for signing, making the signature unverifiable as the corresponding public key is lost, rendering the cryptography useless."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses strong cryptographic primitives (SHA-256, ECDSA) and correctly implements the standard hash-then-sign process via a secure library."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses the ecdsa library for cryptographic signing, following standard secure practices without introducing any discernible vulnerabilities."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "Function uses a global verification key to verify a signature from a parameter-supplied signing key, causing an unhandled exception and potential Denial of Service if keys mismatch."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code is a simple wrapper around a cryptographic library. It does not implement any cryptographic logic itself and contains no inherent vulnerabilities; security depends on the underlying library."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-693",
+        "explanation": "The function signs a hardcoded string instead of the provided message, returning a signature for the wrong data, thus failing the protection mechanism."
+    }
+}

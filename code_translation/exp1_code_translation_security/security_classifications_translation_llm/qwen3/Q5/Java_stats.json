@@ -1,0 +1,202 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer to string conversion using secure Java standard library method with no unsafe operations."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe mathematical formatting with no external input processing or unsafe operations."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer to string conversion using safe standard library method with no security risks."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly handles edge cases, uses safe arithmetic operations, and has no external input processing vulnerabilities."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow in copying loop when buf[n-k] writes beyond destination array bounds for large numbers."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Uses safe hardcoded format string and controlled integer output."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating Integer.MIN_VALUE, causing incorrect absolute value calculation and program behavior."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical bugs but no security vulnerabilities. Proper bounds checking and safe string operations prevent security issues."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using standard Java library with no external input or unsafe operations."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect string conversion, returning only '-' instead of proper value."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when handling Integer.MIN_VALUE and potential buffer overflow from incorrect length calculations."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation allows negative numbers causing incorrect array size calculation and potential infinite loops."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in methods with hardcoded input and simple console output operations."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion with no external input or unsafe operations."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes infinite recursion and stack overflow."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using secure Java standard library method with no external input or unsafe operations."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe hardcoded format strings and locale formatting without external input or dangerous operations."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in Math.abs(Integer.MIN_VALUE) causes incorrect string formatting for minimum integer value."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code contains logic errors but no security vulnerabilities; Java's memory safety prevents buffer overflows."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code only formats hard-coded number with locale-specific formatting, no security vulnerabilities present."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in methods with hardcoded input, no external data processing or unsafe operations present."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow vulnerability when handling Integer.MIN_VALUE produces incorrect string representation due to improper negative number handling."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe string operations with proper bounds checking on controlled input."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Array bounds cannot be exceeded due to input constraints and sufficient buffer size."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in abs() function when handling Integer.MIN_VALUE causes incorrect behavior and potential infinite loops."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe operations with bounded inputs and standard library methods."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical bugs but no security vulnerabilities; performs safe operations without dangerous side effects."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect formatting and potential data integrity issues."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has infinite loop bug with negative inputs but no security vulnerabilities present."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Improper input validation allows negative numbers to produce malformed output with invalid characters."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No user input processed, hardcoded format strings, safe integer-to-string conversion with matching parameter types."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in power method and MIN_VALUE handling causes incorrect calculations and potential application malfunction."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Integer.toString() always returns non-empty string, making charAt(0) safe. No user input processed."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect string conversion and unexpected behavior."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Array index out of bounds due to incorrect decrementing logic causing negative array access."
+    },
+    "178": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Bounds checking prevents buffer overflow; Java runtime catches array access violations with exceptions."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations with proper bounds checking and handles all integer edge cases correctly."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Format string is hardcoded and safe; user input properly parameterized as data, not format specification."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when Math.abs(Integer.MIN_VALUE) causes NegativeArraySizeException, enabling potential denial of service attacks."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations with proper bounds checking and no external input handling vulnerabilities."
+    }
+}

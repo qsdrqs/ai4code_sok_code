@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a Vigen\u00e8re cipher, a weak and broken cryptographic algorithm susceptible to cryptanalysis, making it insecure for protecting sensitive data."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses AES-CBC encryption without a Message Authentication Code (MAC), making the ciphertext malleable and lacking integrity protection against tampering."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a repeating key XOR cipher, a weak cryptographic algorithm that is easily broken through cryptanalysis and should not be used for secure communication."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses the cryptography library's Fernet symmetric encryption, a secure standard. Key generation and usage follow best practices for this self-contained example."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code implements a weak, custom encryption scheme (Vigen\u00e8re cipher) which is insecure and easily broken, instead of using standard, vetted cryptographic libraries."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses a strong authenticated encryption mode (AES-EAX) with a cryptographically secure random generator for the key and nonce, preventing common cryptographic vulnerabilities."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "The code uses an authenticated encryption mode (AES-EAX) but fails to verify the authentication tag during decryption, allowing for potential ciphertext manipulation."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-354",
+        "explanation": "The code uses AES-CBC encryption without a Message Authentication Code (MAC), making the ciphertext malleable and allowing undetected tampering with the encrypted data."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "",
+        "explanation": "The decryption function is non-functional; it uses an undefined variable `plain_text` instead of its parameter, causing a runtime error and preventing any decryption."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a repeating key XOR cipher, which is a weak and broken cryptographic algorithm vulnerable to well-known cryptanalytic attacks like frequency analysis."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-755",
+        "explanation": "The decrypt function lacks exception handling, leading to a potential denial-of-service (DoS) if an invalid or tampered token is provided."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses the secure Fernet symmetric encryption scheme from the cryptography library with a securely generated key, showing no apparent vulnerabilities."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "The encrypt function allows a caller to specify an insecurely low number of iterations for key derivation, weakening resistance to brute-force attacks."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "The encryption key is generated ephemerally and not stored, making the encrypted data permanently irrecoverable. This is a key management error."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "The code contains a hardcoded cryptographic key and initialization vector, making them easily discoverable and compromising the encryption's security."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a repeating-key XOR cipher, a weak and broken cryptographic algorithm that is susceptible to cryptanalysis, making it insecure for protecting data."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a custom, insecure Caesar cipher for encryption, which is easily breakable and not a standard, cryptographically secure algorithm."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "The decrypt function makes authentication tag verification optional, defeating the integrity protection of the AEAD cipher mode and allowing chosen-ciphertext attacks."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses AES in the insecure ECB mode by default, which deterministically encrypts identical plaintext blocks to identical ciphertext blocks, revealing data patterns."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses the secure Fernet symmetric encryption scheme from the cryptography library, including proper key generation, making it secure."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a repeating key XOR cipher, which is a weak and insecure cryptographic algorithm susceptible to cryptanalysis."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a weak, custom Caesar cipher-like encryption, which is insecure and easily broken, violating cryptographic best practices."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "The code uses a hardcoded, weak cryptographic key ('wow') for encryption, which can be easily compromised by attackers with access to the source code."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a custom, insecure Caesar cipher for encryption, which is easily breakable and provides no real confidentiality."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a weak, custom-built encryption algorithm (Caesar cipher) which is easily breakable and provides no real security."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-248",
+        "explanation": "The decrypt function does not handle exceptions. A malformed token can crash the application, leading to a Denial of Service (DoS) vulnerability."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses AES in EAX mode, a secure authenticated encryption scheme. Nonce and authentication tags are handled properly, preventing common cryptographic attacks."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a Vigen\u00e8re cipher, a classical and cryptographically weak algorithm that is easily broken and provides no meaningful security."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code correctly uses the Fernet symmetric encryption scheme from the cryptography library, which provides authenticated encryption and is considered secure. No vulnerabilities are present in this implementation."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-354",
+        "explanation": "The code uses authenticated encryption (AES-EAX) but discards the authentication tag, failing to verify ciphertext integrity and allowing for manipulation."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses a strong cryptographic library (Fernet) correctly and generates a new key for each execution, avoiding hardcoded key vulnerabilities."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "The AES-CTR implementation reuses a static nonce (initial counter value) for every encryption, which can lead to a catastrophic loss of confidentiality."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses the insecure AES ECB mode, which is deterministic and leaks plaintext patterns, making it vulnerable to analysis."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-354",
+        "explanation": "The code uses AES-CBC mode without a Message Authentication Code (MAC), making the ciphertext malleable and lacking integrity protection against active attackers."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "The code uses AES in CBC mode without a random Initialization Vector (IV), leading to IV reuse for the same key, which compromises confidentiality."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a weak, custom-made additive cipher which is cryptographically insecure and easily breakable, providing no confidentiality."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a broken cryptographic algorithm. The decryption function does not use the key, allowing anyone to trivially decrypt the message without the secret."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses AES in ECB mode, which is insecure because it encrypts identical plaintext blocks into identical ciphertext blocks, leaking data patterns."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses AES in ECB mode, which is insecure because identical plaintext blocks encrypt to identical ciphertext blocks, revealing patterns in the data."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses weak classical ciphers (Caesar, custom Vigen\u00e8re-like) which are insecure and easily broken, instead of modern, standardized cryptographic algorithms."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The code uses a weak, custom-built Caesar cipher which is trivial to break and does not provide any meaningful confidentiality."
+    }
+}
