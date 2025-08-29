@@ -2,9 +2,12 @@
 
 This repository contains the experimental code for evaluating the robustness of LLMs during code translation tasks across different programming languages.
 
-The attack code and parts of the processing code are from the code for original paper [CodeRobustness](https://github.com/nchen909/CodeRobustness) and [CodeXGLUE](https://github.com/microsoft/CodeXGLUE).
+**The attack code and parts of the processing code are from the code for original paper [CodeRobustness](https://github.com/nchen909/CodeRobustness) and [CodeXGLUE](https://github.com/microsoft/CodeXGLUE)**.
 
-**Original dataset from [here](https://github.com/NeilAPerry/Do-Users-Write-More-Insecure-Code-with-AI-Assistants)**
+Code from 3rd parties:
+- `fractions.py`: from CPython's standard library in Python 3.7,
+- `bleu.py`, `calc_code_bleu.py`: from CodeXGLUE.
+- `evaluator/`, `dataflow_match.py`, `syntax_match.py`, `weighted_ngram_match.py`: from CodeRobustness original dataset repo.
 
 ## Overview
 
@@ -76,11 +79,6 @@ The experiments evaluate LLM robustness under adversarial conditions:
 - **Attack Effectiveness**: Measurement of how different modifications affect model performance
 - **Model Comparison**: Robustness evaluation across different LLMs
 - **Prompting Strategy Impact**: Analysis of how different prompting approaches affect robustness
-
-### Adversarial Attack Types
-- **BFS/DFS**: Modified traversal order in code structure
-- **Function Name**: Identifier renaming perturbations
-- **Subtree**: Structural modifications to code trees
 
 ## License
 

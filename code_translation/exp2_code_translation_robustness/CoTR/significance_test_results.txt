@@ -1,0 +1,19 @@
+Statistical Significance Testing Results
+==================================================
+
+Task: Java->Python
+Reasoning Models - Mean: 12.74%, Std: 2.52%
+Non-reasoning Models - Mean: 7.15%, Std: 2.44%
+Cohen's d: 2.255
+Mann-Whitney U p-value: 0.0001
+Significant: Yes
+------------------------------
+
+Task: Python->Java
+Reasoning Models - Mean: 19.40%, Std: 18.94%
+Non-reasoning Models - Mean: 6.40%, Std: 1.62%
+Cohen's d: 0.967
+Mann-Whitney U p-value: 0.0001
+Significant: Yes
+------------------------------
+
