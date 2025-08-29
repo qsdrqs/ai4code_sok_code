@@ -23,7 +23,7 @@ This project investigates how code translation between different programming lan
 ├── security_classifications/          # Ground truth security classifications
 ├── security_classifications_llm_*/    # LLM-based security classifications
 ├── security_classifications_translation_llm/ # Translation security classifications
-├── translated_solutions_*/            # Translated code solutions by different models
+└── translated_solutions_*/            # Translated code solutions by different models
 ```
 
 ## Usage
