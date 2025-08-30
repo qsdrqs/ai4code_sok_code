@@ -1,0 +1,42 @@
+void ModifiablePixelBuffer::fillRect(const Rect& r, const void* pix)
+{
+  int stride;
+  U8 *buf;
+  int w, h, b;
+
+  w = r.width();
+  h = r.height();
+  b = format.bpp/8;
+
+  if (h == 0)
+    return;
+
+  buf = getBufferRW(r, &stride);
+
+  if (b == 1) {
+    while (h--) {
+      memset(buf, *(const U8*)pix, w);
+      buf += stride * b;
+    }
+  } else {
+    U8 *start;
+    int w1;
+
+    start = buf;
+
+    w1 = w;
+    while (w1--) {
+      memcpy(buf, pix, b);
+      buf += b;
+    }
+    buf += (stride - w) * b;
+    h--;
+
+    while (h--) {
+      memcpy(buf, start, w * b);
+      buf += stride * b;
+    }
+  }
+
+  commitBufferRW(r);
+}

@@ -1,0 +1,16 @@
+static boolean my_fill_input_buffer_fn(j_decompress_ptr cinfo)
+{
+	struct iwjpegrcontext *rctx = (struct iwjpegrcontext*)cinfo->src;
+	size_t bytesread = 0;
+	int ret;
+
+	ret = (*rctx->iodescr->read_fn)(rctx->ctx,rctx->iodescr,
+		rctx->buffer,rctx->buffer_len,&bytesread);
+	if(!ret) return FALSE;
+
+	rctx->pub.next_input_byte = rctx->buffer;
+	rctx->pub.bytes_in_buffer = bytesread;
+
+	if(bytesread<1) return FALSE;
+	return TRUE;
+}

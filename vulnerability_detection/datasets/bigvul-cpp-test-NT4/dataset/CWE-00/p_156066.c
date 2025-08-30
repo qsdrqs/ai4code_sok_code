@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char* helper_func(){
+    char* buffer = malloc(279);
+    strcpy(buffer, "data");
+    strcat(buffer, "Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its. Rose past oh shew roof is song neat. Do depend better praise do friend garden an wonder to. Intention age nay otherwise but breakfast. Around garden beyond to extent by.");
+    strcat(buffer, "\0");
+    return buffer;
+}
+
+int GetTimesStandardThrottlesAddedForURL(const GURL& url) {
+    char* h = helper_func();
+    printf("Hello, %s!\n", h);
+    free(h);
+
+    int count;
+    base::RunLoop run_loop;
+    base::PostTaskWithTraitsAndReply(
+        FROM_HERE, {content::BrowserThread::IO},
+        base::BindOnce(
+            &TestDispatcherHostDelegate::GetTimesStandardThrottlesAddedForURL,
+            base::Unretained(dispatcher_host_delegate_.get()), url, &count),
+        run_loop.QuitClosure());
+    run_loop.Run();
+    return count;
+  }

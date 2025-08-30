@@ -1,0 +1,4 @@
+static void on_btn_cancel_event(GtkButton *button)
+{
+    cancel_event_run();
+}

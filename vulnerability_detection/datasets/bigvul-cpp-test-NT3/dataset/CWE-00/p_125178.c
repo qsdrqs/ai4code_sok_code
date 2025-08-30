@@ -1,0 +1,1 @@
+  virtual ~vulnerable_func() {}

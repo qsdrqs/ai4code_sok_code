@@ -1,0 +1,21 @@
+static int pf_next_buf(void)
+{
+	unsigned long saved_flags;
+
+	pf_count--;
+	pf_run--;
+	pf_buf += 512;
+	pf_block++;
+	if (!pf_run)
+		return 1;
+	if (!pf_count) {
+		spin_lock_irqsave(&pf_spin_lock, saved_flags);
+		pf_end_request(0);
+		spin_unlock_irqrestore(&pf_spin_lock, saved_flags);
+		if (!pf_req)
+			return 1;
+		pf_count = blk_rq_cur_sectors(pf_req);
+		pf_buf = bio_data(pf_req->bio);
+	}
+	return 0;
+}
