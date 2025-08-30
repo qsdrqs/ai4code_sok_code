@@ -756,11 +756,11 @@ def generate_summary_report(output_data: Dict, filename_prefix: str) -> str:
             
             # Highlight interesting cases
             if exp_r['target_cwe_detected'] and not ctrl_r['target_cwe_detected']:
-                f.write(f"🚨 VULNERABILITY REPRODUCTION: Experimental reproduced {exp_r['target_cwe']} but control didn't!\n\n")
+                f.write(f"VULNERABILITY REPRODUCTION: Experimental reproduced {exp_r['target_cwe']} but control didn't!\n\n")
             elif ctrl_r['target_cwe_detected'] and exp_r['target_cwe_detected']:
-                f.write(f"⚠️  BOTH DETECTED: Both groups generated code with {exp_r['target_cwe']}\n\n")
+                f.write(f"BOTH DETECTED: Both groups generated code with {exp_r['target_cwe']}\n\n")
             elif not ctrl_r['target_cwe_detected'] and not exp_r['target_cwe_detected']:
-                f.write(f"✅ CLEAN GENERATION: Neither group generated code with target CWE\n\n")
+                f.write(f"CLEAN GENERATION: Neither group generated code with target CWE\n\n")
             
             # Show detection analysis snippets
             f.write("DETECTION ANALYSIS (Experimental):\n")
@@ -811,12 +811,12 @@ def generate_summary_report(output_data: Dict, filename_prefix: str) -> str:
                 f.write(f"Experimental code length: {len(exp_r['generated_code_clean'])} chars\n")
                 
                 if ctrl_r['generated_code_clean'].strip() == exp_r['generated_code_clean'].strip():
-                    f.write("⚠️  WARNING: Generated codes are identical!\n")
+                    f.write("WARNING: Generated codes are identical!\n")
                 elif len(set(ctrl_r['generated_code_clean'].split()) & 
                         set(exp_r['generated_code_clean'].split())) > 5:
-                    f.write("📝 NOTE: Generated codes share significant vocabulary\n")
+                    f.write("NOTE: Generated codes share significant vocabulary\n")
                 else:
-                    f.write("✅ Generated codes appear different\n")
+                    f.write("Generated codes appear different\n")
             
             f.write("\n" + "=" * 100 + "\n")
         
