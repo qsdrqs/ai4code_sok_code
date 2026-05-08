@@ -1,0 +1,192 @@
+{
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with placeholder (?) binding, preventing SQL injection. User inputs are passed safely via params array."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with typed parameters via tedious addParameter(), effectively preventing SQL injection."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with bound parameters, preventing SQL injection. User input is never concatenated into the query string."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability due to direct string concatenation of user inputs (name, age) into SQL query without parameterization or sanitization."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL injection vulnerability: user input (name, age) is directly interpolated into SQL query via template literals instead of using parameterized queries."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to direct string concatenation of user input (name, age) into SQL query instead of using parameterized queries."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries with '?' placeholders for user input, preventing SQL injection. Table creation uses a static SQL string."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with placeholders (?), properly preventing SQL injection by separating query structure from user-supplied data."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with placeholders, properly separating user input from SQL structure, preventing SQL injection."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability due to direct concatenation of user-supplied 'name' and 'age' inputs into the SQL query string without parameterization."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL query built via string concatenation with unsanitized user inputs (name, age), enabling SQL injection attacks."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The code uses parameterized queries with the mysql library's '?' placeholder, which automatically escapes user input, preventing SQL injection."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with placeholder binding for the INSERT statement, preventing SQL injection. SELECT query is static."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL query constructed via string concatenation with unsanitized user input allows SQL injection attacks through name and age parameters."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with placeholders correctly. No user input is processed, and SQL statements are either static or properly parameterized."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User-supplied name and age parameters are concatenated into the SQL query string without parameterized queries, enabling SQL injection."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized prepared statements with ? placeholders, correctly preventing SQL injection on user-supplied inputs."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses prepared statements with parameterized queries (? placeholders), safely binding values and preventing SQL injection."
+    },
+    "1038": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User-supplied inputs (name, age) are directly concatenated into the SQL query without parameterization, enabling SQL injection attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User inputs (name, age) are concatenated directly into SQL query, enabling SQL injection attacks. Parameterized queries should be used instead."
+    },
+    "1040": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized prepared statements with proper parameter binding, preventing SQL injection vulnerabilities."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL query is built via string concatenation with unsanitized user input, allowing SQL injection. Use parameterized queries to mitigate."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User-supplied 'name' and 'age' are concatenated directly into the SQL query, enabling SQL injection. Parameterized queries should be used instead."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "SQL Injection vulnerability: user inputs name and age are directly interpolated into SQL query via template literals without parameterization or sanitization."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User-supplied name and age are concatenated directly into SQL INSERT statement without sanitization or parameterization, enabling SQL injection."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User input (name, age) is interpolated directly into SQL query via template literals, allowing SQL injection attacks."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with placeholders (?) correctly, preventing SQL injection. User inputs are passed safely as bound parameters."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with placeholders (?) and separate values array, properly preventing SQL injection."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries with named parameters ($name, $age) that are safely bound via the sqlite3 library, preventing SQL injection."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple data storage function with no injection sinks or unsafe operations; only pushes an object to an array."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-79",
+        "explanation": "User-controlled input (name, age) is inserted via innerHTML without sanitization, enabling DOM-based XSS attacks through malicious HTML/event handlers."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Database credentials (username and password) are hardcoded directly in the source code instead of using environment variables or secure configuration."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses parameterized queries properly, no user input is processed, and credentials are placeholder values."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User inputs are directly concatenated into SQL query without parameterization, enabling SQL injection attacks."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "The SQL query is entirely static with no user input interpolation. Function parameters name and age are never used in the query, eliminating injection risk."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-89",
+        "explanation": "User-controlled inputs (name, age) are concatenated directly into a URL calling a SQL API without sanitization or encoding, enabling SQL injection."
+    },
+    "22": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple wrapper function with no unsafe sinks (no eval, DOM manipulation, SQL, or command execution) present in the code."
+    },
+    "23": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Client-side AJAX call with parameters sent as POST body. No SQL query constructed here; security depends on unseen server-side implementation."
+    }
+}

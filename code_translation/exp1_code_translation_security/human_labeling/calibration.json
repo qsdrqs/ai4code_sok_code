@@ -1,0 +1,1052 @@
+{
+  "derivation": {
+    "n_agree": 121,
+    "n_disagree": 21,
+    "n_labeled": 150,
+    "n_uncertain": 8,
+    "n_used_for_binary_f1": 142
+  },
+  "evaluators": {
+    "opus47_high": {
+      "accuracy": 0.0,
+      "confusion_matrix": {
+        "fn": 0.0,
+        "fp": 0.0,
+        "tn": 0.0,
+        "tp": 0.0
+      },
+      "f1_equal_weight": 0.0,
+      "f1_equal_weight_ci_95": [
+        0.0,
+        0.0
+      ],
+      "f1_reweighted": 0.0,
+      "f1_reweighted_ci_95": [
+        0.0,
+        0.0
+      ],
+      "n_predictions_matched": 0.0,
+      "name": "opus47_high",
+      "per_family_class": {
+        "A": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "B": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "E": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "F": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_language": {
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Go": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Java": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Python": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Rust": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_model": {
+        "claude": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gemini": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gpt-4o": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "llama": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "o3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "opus47": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "qwen3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_question": {
+        "Q1": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q2": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q4": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q5": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "opus47_low": {
+      "accuracy": 0.0,
+      "confusion_matrix": {
+        "fn": 0.0,
+        "fp": 0.0,
+        "tn": 0.0,
+        "tp": 0.0
+      },
+      "f1_equal_weight": 0.0,
+      "f1_equal_weight_ci_95": [
+        0.0,
+        0.0
+      ],
+      "f1_reweighted": 0.0,
+      "f1_reweighted_ci_95": [
+        0.0,
+        0.0
+      ],
+      "n_predictions_matched": 0.0,
+      "name": "opus47_low",
+      "per_family_class": {
+        "A": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "B": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "E": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "F": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_language": {
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Go": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Java": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Python": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Rust": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_model": {
+        "claude": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gemini": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gpt-4o": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "llama": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "o3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "opus47": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "qwen3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_question": {
+        "Q1": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q2": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q4": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q5": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "opus47_max": {
+      "accuracy": 0.0,
+      "confusion_matrix": {
+        "fn": 0.0,
+        "fp": 0.0,
+        "tn": 0.0,
+        "tp": 0.0
+      },
+      "f1_equal_weight": 0.0,
+      "f1_equal_weight_ci_95": [
+        0.0,
+        0.0
+      ],
+      "f1_reweighted": 0.0,
+      "f1_reweighted_ci_95": [
+        0.0,
+        0.0
+      ],
+      "n_predictions_matched": 0.0,
+      "name": "opus47_max",
+      "per_family_class": {
+        "A": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "B": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "E": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "F": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_language": {
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Go": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Java": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Python": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Rust": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_model": {
+        "claude": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gemini": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gpt-4o": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "llama": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "o3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "opus47": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "qwen3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_question": {
+        "Q1": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q2": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q4": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q5": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "opus47_medium": {
+      "accuracy": 0.0,
+      "confusion_matrix": {
+        "fn": 0.0,
+        "fp": 0.0,
+        "tn": 0.0,
+        "tp": 0.0
+      },
+      "f1_equal_weight": 0.0,
+      "f1_equal_weight_ci_95": [
+        0.0,
+        0.0
+      ],
+      "f1_reweighted": 0.0,
+      "f1_reweighted_ci_95": [
+        0.0,
+        0.0
+      ],
+      "n_predictions_matched": 0.0,
+      "name": "opus47_medium",
+      "per_family_class": {
+        "A": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "B": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "E": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "F": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_language": {
+        "C": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Go": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Java": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Python": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Rust": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_model": {
+        "claude": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gemini": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "gpt-4o": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "llama": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "o3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "opus47": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "qwen3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "per_question": {
+        "Q1": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q2": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q3": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q4": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "Q5": {
+          "accuracy": 0.0,
+          "f1": 0.0,
+          "n": 0.0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      },
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "sonnet4": {
+      "accuracy": 0.852112676056338,
+      "confusion_matrix": {
+        "fn": 4.0,
+        "fp": 17.0,
+        "tn": 50.0,
+        "tp": 71.0
+      },
+      "f1_equal_weight": 0.871165644171779,
+      "f1_equal_weight_ci_95": [
+        0.8129032258064517,
+        0.923076923076923
+      ],
+      "f1_reweighted": 0.8952162498248486,
+      "f1_reweighted_ci_95": [
+        0.8434768865684975,
+        0.9396341608082543
+      ],
+      "n_predictions_matched": 142.0,
+      "name": "sonnet4",
+      "per_family_class": {
+        "A": {
+          "accuracy": 0.9333333333333333,
+          "f1": 0.0,
+          "n": 30.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "B": {
+          "accuracy": 0.9444444444444444,
+          "f1": 0.9714285714285714,
+          "n": 36.0,
+          "precision": 0.9444444444444444,
+          "recall": 1.0
+        },
+        "C": {
+          "accuracy": 0.6666666666666666,
+          "f1": 0.8,
+          "n": 21.0,
+          "precision": 0.6666666666666666,
+          "recall": 1.0
+        },
+        "E": {
+          "accuracy": 0.9166666666666666,
+          "f1": 0.0,
+          "n": 24.0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        "F": {
+          "accuracy": 0.7419354838709677,
+          "f1": 0.8518518518518519,
+          "n": 31.0,
+          "precision": 0.7419354838709677,
+          "recall": 1.0
+        }
+      },
+      "per_language": {
+        "C": {
+          "accuracy": 0.7931034482758621,
+          "f1": 0.8636363636363636,
+          "n": 29.0,
+          "precision": 0.8260869565217391,
+          "recall": 0.9047619047619048
+        },
+        "Go": {
+          "accuracy": 0.9375,
+          "f1": 0.9411764705882353,
+          "n": 32.0,
+          "precision": 0.9411764705882353,
+          "recall": 0.9411764705882353
+        },
+        "Java": {
+          "accuracy": 0.7567567567567568,
+          "f1": 0.7804878048780487,
+          "n": 37.0,
+          "precision": 0.6666666666666666,
+          "recall": 0.9411764705882353
+        },
+        "Python": {
+          "accuracy": 0.9285714285714286,
+          "f1": 0.923076923076923,
+          "n": 14.0,
+          "precision": 0.8571428571428571,
+          "recall": 1.0
+        },
+        "Rust": {
+          "accuracy": 0.9,
+          "f1": 0.9032258064516129,
+          "n": 30.0,
+          "precision": 0.8235294117647058,
+          "recall": 1.0
+        }
+      },
+      "per_model": {
+        "claude": {
+          "accuracy": 0.8235294117647058,
+          "f1": 0.8421052631578948,
+          "n": 17.0,
+          "precision": 0.8,
+          "recall": 0.8888888888888888
+        },
+        "gemini": {
+          "accuracy": 0.9047619047619048,
+          "f1": 0.9166666666666666,
+          "n": 21.0,
+          "precision": 0.8461538461538461,
+          "recall": 1.0
+        },
+        "gpt-4o": {
+          "accuracy": 0.9,
+          "f1": 0.9166666666666666,
+          "n": 20.0,
+          "precision": 0.8461538461538461,
+          "recall": 1.0
+        },
+        "llama": {
+          "accuracy": 0.8421052631578947,
+          "f1": 0.8571428571428572,
+          "n": 19.0,
+          "precision": 0.8181818181818182,
+          "recall": 0.9
+        },
+        "o3": {
+          "accuracy": 0.7272727272727273,
+          "f1": 0.7692307692307692,
+          "n": 22.0,
+          "precision": 0.6666666666666666,
+          "recall": 0.9090909090909091
+        },
+        "opus47": {
+          "accuracy": 0.9047619047619048,
+          "f1": 0.9166666666666666,
+          "n": 21.0,
+          "precision": 0.8461538461538461,
+          "recall": 1.0
+        },
+        "qwen3": {
+          "accuracy": 0.8636363636363636,
+          "f1": 0.8799999999999999,
+          "n": 22.0,
+          "precision": 0.8461538461538461,
+          "recall": 0.9166666666666666
+        }
+      },
+      "per_question": {
+        "Q1": {
+          "accuracy": 0.6571428571428571,
+          "f1": 0.7599999999999999,
+          "n": 35.0,
+          "precision": 0.6333333333333333,
+          "recall": 0.95
+        },
+        "Q2": {
+          "accuracy": 0.88,
+          "f1": 0.8421052631578948,
+          "n": 25.0,
+          "precision": 0.8,
+          "recall": 0.8888888888888888
+        },
+        "Q3": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "n": 17.0,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "Q4": {
+          "accuracy": 0.8181818181818182,
+          "f1": 0.8571428571428572,
+          "n": 33.0,
+          "precision": 0.8181818181818182,
+          "recall": 0.9
+        },
+        "Q5": {
+          "accuracy": 1.0,
+          "f1": 1.0,
+          "n": 32.0,
+          "precision": 1.0,
+          "recall": 1.0
+        }
+      },
+      "precision": 0.8068181818181818,
+      "recall": 0.9466666666666667
+    }
+  },
+  "figure15_comparison": {
+    "by_evaluator": {
+      "opus47_max": {
+        "f1_in_fig15_ci_check": false,
+        "figure15_f1": 0.887,
+        "translated_f1_equal_weight": 0.0,
+        "translated_f1_equal_weight_ci_95": [
+          0.0,
+          0.0
+        ],
+        "two_proportion_z_p_precision": 1.0,
+        "two_proportion_z_p_recall": 1.0
+      },
+      "sonnet4": {
+        "f1_in_fig15_ci_check": true,
+        "figure15_f1": 0.875,
+        "translated_f1_equal_weight": 0.871165644171779,
+        "translated_f1_equal_weight_ci_95": [
+          0.8129032258064517,
+          0.923076923076923
+        ],
+        "two_proportion_z_p_precision": 0.6964565188848839,
+        "two_proportion_z_p_recall": 0.6335702998951152
+      }
+    },
+    "test_type": "ci_overlap_and_two_proportion_z"
+  },
+  "natural_population": {
+    "A": 1090,
+    "B": 1743,
+    "C": 361,
+    "E": 659,
+    "F": 1149
+  },
+  "pairwise_mcnemar": [
+    {
+      "a": "sonnet4",
+      "a_better_count": 0,
+      "b": "opus47_low",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "sonnet4",
+      "a_better_count": 0,
+      "b": "opus47_medium",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "sonnet4",
+      "a_better_count": 0,
+      "b": "opus47_high",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "sonnet4",
+      "a_better_count": 0,
+      "b": "opus47_max",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "opus47_low",
+      "a_better_count": 0,
+      "b": "opus47_medium",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "opus47_low",
+      "a_better_count": 0,
+      "b": "opus47_high",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "opus47_low",
+      "a_better_count": 0,
+      "b": "opus47_max",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "opus47_medium",
+      "a_better_count": 0,
+      "b": "opus47_high",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "opus47_medium",
+      "a_better_count": 0,
+      "b": "opus47_max",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    },
+    {
+      "a": "opus47_high",
+      "a_better_count": 0,
+      "b": "opus47_max",
+      "b_better_count": 0,
+      "n_disagreements": 0,
+      "p_value_exact": 1.0
+    }
+  ]
+}

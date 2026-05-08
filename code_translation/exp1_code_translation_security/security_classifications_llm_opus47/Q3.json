@@ -1,0 +1,217 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Weak path validation: 'startswith(/safedir)' matches paths like /safedirectory/secret outside intended dir; no canonicalization or symlink protection."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Path is resolved before checks, preventing traversal and symlink escape. relative_to uses component matching, preventing prefix confusion."
+    },
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Path is properly canonicalized via resolve() which handles both '..' traversal and symlinks before exact-match validation on the directory component."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation using startswith() can be bypassed with '../' sequences or similar prefixes (e.g., /safedirbackup), allowing access to files outside /safedir."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "String prefix check doesn't enforce directory boundary; paths like /safedir_evil/file bypass validation since they share the /safedir prefix."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code properly uses os.path.realpath to resolve symlinks and os.path.commonpath for correct path containment check, preventing path traversal."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses string matching without canonicalization (os.path.realpath), allowing symlink-based bypass to write files outside /safedir/."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check 'safedir in path' is insufficient; paths like '/safedir/../etc/passwd' bypass validation, enabling path traversal."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "open() uses unvalidated string concatenation (SAFE+path) instead of the validated resolved test_path, enabling TOCTOU symlink-based path traversal bypass."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal possible: startswith check can be bypassed with '/safedir/../etc/passwd' or '/safedirmalicious/' without path normalization."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check '/safedir' in path allows path traversal (e.g., '/safedir/../etc/passwd') since path is not canonicalized before validation."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path prefix check is bypassable via '../' traversal sequences; path is not canonicalized before validation, allowing access outside /safedir/."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses startswith() without normalizing the path, allowing traversal attacks like '/safedir/../../etc/passwd' to bypass the check."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "startswith('/safedir') without trailing slash allows access to paths like /safedirectory/file, bypassing the directory restriction."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check for '/safedir' is bypassable via path traversal (e.g., '/safedir/../../etc/passwd') due to missing path canonicalization."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check '/safedir' in path is insufficient; allows path traversal via '../' sequences to access files outside the intended directory."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check '/safedir' in path allows path traversal via '../' sequences, enabling access to files outside the intended directory."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-367",
+        "explanation": "TOCTOU race condition: check uses realpath(path) but open uses original path, allowing symlink replacement between check and use to bypass /safedir restriction."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation via startswith() is bypassable using '..' sequences (e.g., /safedir/../etc/passwd) or prefix confusion (e.g., /safedirX)."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses only startswith() without normalizing the path, allowing traversal via '..' sequences (e.g., /safedir/../etc/passwd)."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses unresolved dirname comparison; symbolic links in /safedir can be followed by open() to access files outside the intended directory."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses startswith() without canonicalization, allowing traversal attacks like '/safedir/../etc/passwd' to bypass access controls."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses startswith() without path normalization, allowing traversal like '/safedir/../etc/passwd' to bypass the check."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability: startswith check can be bypassed with '../' sequences like '/safedir/../etc/passwd' to access files outside /safedir."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "The startswith check is insufficient; paths like '/safedir/../etc/passwd' bypass validation, allowing path traversal to sensitive files."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path validation uses only startswith() without normalizing the path, allowing traversal via '..' sequences or prefix bypass (e.g., /safedirMalicious)."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix-only path validation allows path traversal using '../' sequences to access files outside /safedir."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability: startswith check allows '../' sequences and prefix confusion (e.g., /safedir/../etc/passwd) to escape the intended directory."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability: startswith() check can be bypassed with '../' sequences like '/safedir/../etc/passwd' to access unauthorized files."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path check uses unnormalized Path.parts; attacker can use '..' (e.g., /safedir/../etc/passwd) to bypass the safedir restriction."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Flawed startswith check allows prefix bypass (e.g., /safedirextra), and abspath doesn't resolve symlinks, enabling path traversal."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-772",
+        "explanation": "File handle returned by openFile() is never closed, resulting in a resource leak (missing release of resource)."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "startswith() validation is bypassable via path traversal sequences like '/safedir/../etc/passwd', allowing access outside the intended directory."
+    },
+    "1038": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple getter function with no file operations, user input processing, or dangerous sinks. No exploitable vulnerability in this isolated snippet."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix-only path validation allows path traversal using '../' sequences (e.g., /safedir/../etc/passwd) to access files outside the allowed directory."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Prefix check allows /safedirEVIL/ bypass; normpath doesn't resolve symlinks, enabling path traversal outside intended directory."
+    },
+    "2003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Path is canonicalized via resolve() before validation, correctly preventing path traversal via .. or symlinks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Input path is used in file open without validation/sanitization, allowing path traversal attacks to access unauthorized files."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Substring check '/safedir' in path allows path traversal using '..' sequences to access files outside the safe directory."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal: full path is not normalized before validation, allowing '../' sequences to bypass safedir restriction and access arbitrary files."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "Path traversal vulnerability: '/safedir' prefix check can be bypassed using '../' sequences to access files outside the intended directory."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Input is hardcoded, search is restricted to /safedir, no user-controlled data flows into regex or file paths."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-22",
+        "explanation": "User-controlled path is concatenated without sanitization, allowing '../' traversal to access files outside /safedir."
+    }
+}

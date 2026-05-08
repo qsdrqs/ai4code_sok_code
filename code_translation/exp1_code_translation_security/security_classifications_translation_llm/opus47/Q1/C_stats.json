@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithm - simple additive cipher vulnerable to frequency analysis and pattern attacks."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "IV reuse vulnerability in CBC mode allows pattern detection and potential plaintext recovery attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when key parameter is NULL, causing strlen() to crash."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Base64 decoder lacks input validation, causing integer overflow when invalid characters produce -1 values cast to uint32_t."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() called on unchecked parameters, causing segmentation fault."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Missing authentication verification in EAX decryption allows acceptance of tampered ciphertext as valid plaintext."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Decrypt function skips authentication tag verification, allowing ciphertext tampering without detection in authenticated encryption scheme."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-208",
+        "explanation": "HMAC verification uses memcmp which is vulnerable to timing attacks, potentially allowing authentication bypass."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-208",
+        "explanation": "HMAC verification uses memcmp() which is vulnerable to timing attacks, allowing potential authentication bypass."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Improper PKCS7 padding validation enables padding oracle attacks; weak key derivation without salt."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Missing PKCS#7 padding validation enables padding oracle attacks allowing ciphertext decryption without key knowledge."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, easily breakable through cryptanalysis and known plaintext attacks."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements secure AES-EAX encryption with proper authentication and error handling. Minor memory clearing issue exists."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-119",
+        "explanation": "Buffer overflow vulnerabilities due to insufficient bounds checking in decrypt function and inadequate input validation."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in encrypt() due to insufficient ciphertext allocation for AES-CBC padding requirements."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key and IV compromise encryption security and enable trivial decryption by attackers."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, vulnerable to cryptanalysis and frequency attacks."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() is called on unvalidated input parameters."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices including constant-time tag verification and proper error handling."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES ECB mode which reveals patterns in encrypted data, making it cryptographically weak and vulnerable to analysis attacks."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-208",
+        "explanation": "HMAC verification uses memcmp() which is vulnerable to timing attacks, allowing potential authentication bypass."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow risk in encrypt() function due to insufficient ciphertext buffer allocation for PKCS7 padding."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in character arithmetic can cause unpredictable encryption results and data corruption."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() called on unchecked input parameters."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Unchecked malloc return value can cause null pointer dereference if allocation fails."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing validation of decoded cryptographic parameter lengths in decode_str function allows malformed input processing."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Unchecked malloc() return values can cause null pointer dereference and program crashes."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Heap buffer overflow in base64_url_decode due to incorrect buffer allocation after padding input length modification."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference possible when strlen() called on unchecked parameters, malloc failure not handled."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in b64url_decode buffer calculation can cause heap buffer overflow during base64 decoding."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-345",
+        "explanation": "Missing authentication tag verification in EAX mode enables tampering attacks and breaks integrity guarantees."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key in test function poses security risk if used in production."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-ECB mode which reveals patterns in encrypted data, making it cryptographically insecure."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Incomplete PKCS7 padding validation enables padding oracle attacks allowing ciphertext decryption without keys."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Decrypt function generates new random IV instead of using encryption IV, making decryption impossible."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Out-of-bounds read when key length is shorter than text length in encrypt/decrypt functions."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES ECB mode and lacks proper padding validation, enabling cryptographic attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak cryptographic algorithms (Caesar cipher) and flawed decryption logic with improper character handling."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Missing null termination in encrypt function causes buffer over-read vulnerability when string is used."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB mode, hardcoded keys, and lacks proper input validation causing potential buffer overflows."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to insufficient bounds checking in array access operations during encryption/decryption."
+    }
+}

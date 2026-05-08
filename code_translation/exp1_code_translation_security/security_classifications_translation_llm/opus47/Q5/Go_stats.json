@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Go operations with proper bounds checking and no unsafe memory access."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow possible when input equals minimum int value on 64-bit systems due to incomplete overflow handling."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value in line 'value = -value'"
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe formatting with no user input or unsafe operations."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in power function due to unchecked multiplication can cause wraparound with large inputs."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses proper bounds checking, safe string operations, and handles all integer edge cases securely."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion with hardcoded format string and strong typing."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating most negative int value causes runtime panic and potential DoS."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe, hardcoded format specifier with type-safe input parameter."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe, hardcoded format specifier with proper type safety."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Format string is hardcoded, no user input, proper type safety maintained."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. String operations are safe with controlled input and proper index calculations."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow due to unchecked writes to input buffer without capacity validation."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating minimum integer value, causing undefined behavior and incorrect string conversion."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Incorrect length calculation leads to potential out-of-bounds write when filling the byte slice with digits and commas."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No exploitable vulnerability; bounds checking prevents buffer overflow despite logic flaws."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion with no user input or unsafe operations."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Go's escape analysis safely moves local variable to heap when address is returned, preventing memory issues."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities found. Uses hardcoded values and safe format strings with Go standard library functions."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow occurs when negating math.MinInt32 value, causing undefined behavior."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion with static inputs and no external data sources or unsafe operations."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Hardcoded format string with proper type matching prevents format string vulnerabilities."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum signed integer value in itoa function causes undefined behavior."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow in convertInt due to fixed buffer size and flawed loop termination condition."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Format strings are hardcoded and data flow is controlled and safe."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Out-of-bounds read when input is zero causes runtime panic due to negative slice index access."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow in numToStr function when shifting characters to insert commas without bounds checking."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in e10() function can cause incorrect calculations and unpredictable behavior with large inputs."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Negative array indexing when input is 0 causes runtime panic due to improper bounds checking."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Improper input validation in getLength() function causes incorrect behavior for zero and negative inputs."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow occurs when loop writes beyond allocated slice boundaries, accessing index 7 in 7-element slice."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop occurs with negative input values, causing denial of service through resource exhaustion."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size adequate for max input, Go memory safety prevents overflows, weak RNG acceptable for formatting demo."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe standard library functions with hardcoded input, no security vulnerabilities present."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe integer-to-string conversion with no user input or unsafe operations."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Buffer size adequate for all possible integer inputs, Go provides bounds checking."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop possible with zero/negative inputs due to unsafe math.Log10 operations without input validation."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating minimum integer value in strOfInt function."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size correctly calculated, bounds checking prevents overflows, no security vulnerabilities identified."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to incorrect size calculation and unsafe array indexing beyond allocated memory bounds."
+    }
+}

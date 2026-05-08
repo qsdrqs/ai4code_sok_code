@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses strong cryptographic primitives: SECP384R1 curve, SHA-256 hash, and ECDSA signing with secure key generation."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Standard ECDSA implementation using NIST P-256 and SHA-256 with proper exception handling on verification. Library uses secure RNG for nonce generation."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Default ecdsa.sign() uses SHA-1, a broken hash algorithm. Should use sign_deterministic() with SHA-256 (RFC 6979) for secure signing."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The ecdsa library's default hashfunc is SHA-1, which is cryptographically broken. Code doesn't specify a stronger hash like SHA-256."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses ecdsa library defaults: NIST192p curve (~96-bit security) and SHA-1 hash, both providing inadequate cryptographic strength."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The sk.sign() call uses the ecdsa library's default hash function (SHA-1), which is cryptographically broken and unsuitable for secure digital signatures."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "SigningKey.generate() defaults to NIST192p curve, providing only ~96 bits of security, which is below modern cryptographic strength requirements."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The ecdsa library's sign() method defaults to SHA-1, a broken hash function, when no hashfunc parameter is specified."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA sign() uses SHA-1 by default in python-ecdsa, a broken hash algorithm; hashfunc and deterministic signing should be explicitly set."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA with SHA-256 from the trusted cryptography library. No hardcoded keys, weak algorithms, or insecure practices are present."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple delegation wrapper with no insecure defaults or cryptographic decisions made within the function itself."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly uses ECDSA library with secure defaults (SECP256k1, SHA-256), does not expose private key, and has no nonce reuse."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ecdsa library's sk.sign() which defaults to SHA-1 hash function, a broken cryptographic algorithm. A stronger hash like SHA-384 should be specified explicitly."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly uses ECDSA with secure library defaults (secp256k1 curve, RFC 6979 deterministic signing), with proper key handling and verification."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure randomness (secrets), SHA3-256, and pycoin's RFC 6979 deterministic ECDSA signing on secp256k1. No cryptographic weaknesses identified."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "The main function contains a hardcoded ECDSA private key, exposing cryptographic credentials in source code."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-328",
+        "explanation": "The ecdsa library's default sign() uses SHA-1, a weak hash function, mismatched with NIST384p, reducing effective cryptographic security."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses reputable ECDSA library with secure defaults, proper key generation, and no insecure handling or storage of cryptographic material."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "ECDSA private key is hardcoded directly in the source code, exposing cryptographic credentials to anyone accessing the code."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ecdsa.SigningKey.sign() defaults to SHA-1 as hash function when hashfunc is not specified, which is a broken cryptographic primitive for digital signatures."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple wrapper function that delegates signing to the key object; no insecure patterns or cryptographic weaknesses present in this code."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Default NIST192p curve provides only ~96 bits of security, below the modern recommended minimum of 112-128 bits."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA with SHA-256 from the cryptography library, which safely handles nonce generation internally. No vulnerability identified."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "SigningKey.generate() uses default NIST192p curve, providing only ~96-bit security, below modern cryptographic standards."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses ecdsa library defaults: NIST192p curve (~96-bit security) and SHA-1 hash, both considered weak/risky cryptographic choices."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "SigningKey.generate() defaults to NIST192p curve, which provides only ~96 bits of security and is disallowed by NIST for signature generation."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing uses default SHA-1 hash function (broken/risky cryptographic algorithm); hashfunc should be explicitly set to SHA-256 or stronger."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses SHA-256 and ECDSA properly. The ecdsa library's sign_digest defaults to a secure RNG (SystemRandom/os.urandom) for nonce generation."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "The sign function ignores the msg parameter and signs a hardcoded byte string, breaking message authenticity and enabling signature misuse."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA signing uses library default hash function (SHA-1), which is cryptographically broken. No explicit secure hash (e.g., SHA-256) specified."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses non-deterministic ECDSA signing instead of sign_deterministic (RFC 6979); weak or reused nonces can leak the private key."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA sign/verify called without specifying hash function, defaulting to broken SHA-1 in python-ecdsa library."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses outdated PKCS#1 v1.5 padding for RSA signing instead of the recommended RSA-PSS padding scheme, which is a risky cryptographic practice."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA signing algorithm with SHA-256 hash, both of which are cryptographically strong and appropriate choices."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "The ecdsa library's sign() method defaults to SHA-1 hash function when not specified, which is cryptographically broken and unsuitable for signatures."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Function ignores the 'message' parameter and signs a hardcoded string 'b\"message\"', producing signatures that don't bind to the intended data."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Default sk.sign() uses SHA-1 as the hash function, which is a broken/risky cryptographic algorithm unsuitable for digital signatures."
+    }
+}

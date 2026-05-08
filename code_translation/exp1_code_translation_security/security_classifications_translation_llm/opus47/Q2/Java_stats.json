@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic algorithms and proper implementation practices without direct security vulnerabilities."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "DER parsing lacks bounds checking, allowing potential buffer overflow through malicious length values in signature data."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses broken SHA-1 hash algorithm and accepts weak string-based private keys without validation."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash function and secp192r1 curve with insufficient security strength."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Secure ECDSA implementation using strong curve secp384r1 and SHA-384, following proper cryptographic practices."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash function and 192-bit elliptic curve, both deprecated for security."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA/SHA-256 algorithms correctly with standard JCA APIs. No security vulnerabilities identified."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements ECDSA signing with secure SHA256withECDSA algorithm following proper cryptographic patterns."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements Ed25519 signing with proper cryptographic practices, though lacks input validation."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly uses ECDSA library without cryptographic API misuse or obvious security flaws."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA library with proper key generation and deterministic signatures, no vulnerabilities detected."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper key generation, deterministic nonce, and secure hashing."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes sensitive cryptographic material, enabling unauthorized signing operations."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements ECDSA with strong cryptographic parameters and proper API usage."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly implements ECDSA workflow using established library. No implementation vulnerabilities detected in demonstration code."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials and enables unauthorized access."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and deprecated for security applications."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null check on SigningKey parameter can cause NullPointerException leading to application crash."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash and weak secp192r1 curve providing insufficient cryptographic strength."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for null parameters could cause runtime exceptions and unexpected behavior."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA1 hash and secp192r1 curve provide insufficient security strength."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash function and secp192r1 curve provide insufficient security strength."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak SHA1 hash and insufficient 192-bit elliptic curve, both cryptographically inadequate for secure applications."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses NONEwithECDSA with manual hashing instead of SHA256withECDSA, enabling potential signature forgery attacks."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 algorithm which is cryptographically weak and vulnerable to collision attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash algorithm for ECDSA signature generation, enabling potential signature forgery attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation allows wrong key types, potentially causing cryptographic failures or unexpected behavior."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak PKCS#1 v1.5 padding scheme instead of more secure PSS padding for RSA signatures."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure ECDSA implementation with SHA-256, following proper JCA practices without security vulnerabilities."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-320",
+        "explanation": "Generates new key pair for each signature, making verification impossible and defeating cryptographic purpose."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 algorithm for digital signatures, which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    }
+}

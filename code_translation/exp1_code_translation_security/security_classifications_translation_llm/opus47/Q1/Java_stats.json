@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm vulnerable to cryptanalysis attacks, violating cryptographic security standards."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "Uses AES/CBC/NoPadding which requires exact block-size data and can leak plaintext length information."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with key reuse, making it cryptographically insecure and easily breakable."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "Missing timestamp validation allows tokens to remain valid indefinitely, violating time-based security controls."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak custom encryption algorithm vulnerable to cryptanalysis instead of proven cryptographic standards."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "Potential nonce reuse vulnerability in EAX mode encryption without proper nonce management safeguards."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for key length and null parameters could lead to weak encryption or runtime failures."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Iteration parameter ignored during encryption but used in decryption, causing key derivation mismatch and potential security bypass."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-294",
+        "explanation": "Disabled timestamp validation allows indefinite token reuse, enabling replay attacks and removing freshness guarantees."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-696",
+        "explanation": "Padding oracle vulnerability in unpad() method allows attackers to decrypt ciphertext without knowing the key."
+    },
+    "1015": {
+        "is_vulnerable": true,
+        "cwe": "CWE-208",
+        "explanation": "HMAC comparison uses Arrays.equals() which is vulnerable to timing attacks for authentication bypass."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, vulnerable to cryptanalysis and known plaintext attacks."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "No validation of AES key size, potentially allowing weak encryption with invalid key lengths."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-294",
+        "explanation": "Missing timestamp validation during decryption allows indefinite token reuse and replay attacks."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-324",
+        "explanation": "TTL validation is disabled, allowing indefinite token reuse and potential replay attacks."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded cryptographic key and static IV compromise encryption security completely."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR encryption with repeating key, easily breakable through cryptanalysis and frequency analysis attacks."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that is easily breakable through cryptanalysis or brute force attacks."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded encryption key embedded in source code compromises all encrypted data security."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure AES/ECB mode which reveals patterns in encrypted data and implements flawed custom padding."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "Custom validator sets infinite token TTL, enabling replay attacks and removing temporal security controls."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Fernet encryption correctly with secure key generation, authenticated encryption, and proper validation during decryption."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that is easily breakable through frequency analysis or brute force attacks."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak XOR cipher with repeating key, vulnerable to cryptanalysis and frequency attacks."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Caesar cipher encryption that can be easily broken through brute force or frequency analysis."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation in decrypt method allows ArrayIndexOutOfBoundsException via malformed input strings."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak encryption algorithm (simple character shift) that can be easily broken through analysis."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "Extremely long TTL (100 years) effectively disables token expiration, enabling indefinite token replay attacks."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak Vigen\u00e8re cipher algorithm and lacks proper input validation for cryptographic operations."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-613",
+        "explanation": "TTL validation disabled allows indefinite token validity, enabling replay attacks and extended compromise windows."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-326",
+        "explanation": "No key length validation allows potentially weak encryption with inappropriate key sizes."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-329",
+        "explanation": "Fixed IV reuse in AES-CTR mode enables keystream reuse attacks and plaintext recovery."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure ECB encryption mode that reveals patterns in encrypted data, making it vulnerable to cryptographic attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation for key length and ciphertext minimum size, unused keySize parameter creates confusion."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-330",
+        "explanation": "Decrypt method generates new random IV instead of using encryption IV, breaking decryption functionality completely."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Array index out of bounds when key shorter than text causes denial of service."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak ECB encryption mode and has padding oracle vulnerability in decrypt method."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak Caesar and Vigen\u00e8re ciphers that provide no meaningful security against modern attacks."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Weak custom encryption algorithm and information disclosure through console output during encryption process."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak AES ECB mode without padding, revealing patterns in encrypted data and compromising confidentiality."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Improper array bounds validation leads to potential IndexOutOfBoundsException in decrypt method causing application crashes."
+    }
+}

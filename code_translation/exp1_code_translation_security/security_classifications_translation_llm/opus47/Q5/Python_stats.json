@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Safe integer formatting with predictable string operations."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No bounds checking but buffer size sufficient for practical integer inputs, preventing actual overflow."
+    },
+    "1010": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Code uses safe string operations and lacks sensitive data exposure."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No vulnerabilities found. Uses hardcoded values with safe locale operations and secure string formatting."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-407",
+        "explanation": "Power function vulnerable to algorithmic complexity attacks via large exponents causing excessive computation and memory usage."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python's safety mechanisms prevent memory issues and logic is properly bounded."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-807",
+        "explanation": "Function relies on potentially attacker-controllable environment variables for locale setting, creating unpredictable behavior."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow possible due to incorrect index calculation during comma insertion in digit processing loop."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Hardcoded format string prevents injection attacks, exceptions are safe failure mode."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Function uses safe str() conversion; no inherent vulnerability introduced by the code itself."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Locale dependency only affects number formatting, no code execution or injection risks present."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe string operations and mathematical functions with no user input processing vulnerabilities."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-124",
+        "explanation": "Buffer underflow occurs when index k becomes negative, causing out-of-bounds array access in tmp[k] operations."
+    },
+    "1014": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Python's arbitrary precision integers and memory safety prevent overflow and buffer vulnerabilities despite lacking input validation."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-193",
+        "explanation": "Incorrect length calculation in comma placement logic leads to potential array bounds issues and runtime errors."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper bounds checking and Python's memory safety prevents buffer overflows or access violations."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python's str() function is safe and no user input is processed."
+    },
+    "1019": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code safely converts number to string using Python's built-in str() function with no external input or unsafe operations."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Uses hardcoded values with safe string formatting operation."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Unbounded recursion with large numbers can cause stack overflow, leading to denial of service."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe type conversion using built-in str() function with no external input or dangerous operations."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Trusts user environment variables for locale setting without validation, enabling potential locale injection attacks."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe Python built-ins with proper bounds checking and no unsafe operations."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Logic error prevents buffer writes, eliminating potential overflow. Python's memory safety provides additional protection."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Input is hardcoded integer literal, preventing exploitation of potential code injection through malicious objects."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop occurs with negative input values, causing denial of service vulnerability."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer is adequately sized and all array accesses remain within allocated bounds despite C-style manipulation patterns."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Array bounds are mathematically constrained within valid ranges, no exploitable vulnerabilities present."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Improper array index validation when input is zero causes incorrect size calculation and index manipulation."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logical bugs but no exploitable security vulnerabilities present."
+    },
+    "1036": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Array bounds are correct despite confusing logic. Python prevents buffer overflows automatically."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Missing input validation allows negative integers causing chr() exceptions and application crashes."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Uses predictable time-based seed for random number generation, making output predictable to attackers."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Hardcoded format string with safe %d specifier eliminates injection risks. Type-safe operation."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities present. Python's safe string handling prevents buffer overflows and injection attacks."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Fixed buffer size without bounds checking allows buffer overflow with large integers, causing IndexError crashes."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-20",
+        "explanation": "Insufficient input validation allows math.log10() to crash on zero/negative values causing denial of service."
+    },
+    "106": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fixed buffer size is sufficient for any integer representation in Python's arbitrary precision system."
+    },
+    "177": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Python's memory safety and proper bounds checking prevent exploitation."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Incorrect buffer size calculation and indexing logic can cause out-of-bounds array access."
+    }
+}

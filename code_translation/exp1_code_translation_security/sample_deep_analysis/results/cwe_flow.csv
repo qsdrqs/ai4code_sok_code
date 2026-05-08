@@ -1,0 +1,363 @@
+orig_cwe,trans_cwe,orig_category,trans_category,count
+CWE-22,CWE-22,File Handling Issues,File Handling Issues,921
+CWE-327,CWE-327,Cryptographic Issues,Cryptographic Issues,475
+CWE-89,CWE-89,Data Neutralization Issues,Data Neutralization Issues,267
+CWE-89,CWE-798,Data Neutralization Issues,Credentials Management Errors,119
+CWE-190,CWE-190,Numeric Errors,Numeric Errors,98
+CWE-338,CWE-327,Random Number Issues,Cryptographic Issues,80
+CWE-338,CWE-798,Random Number Issues,Credentials Management Errors,77
+CWE-22,CWE-367,File Handling Issues,Concurrency Issues,51
+CWE-798,CWE-798,Credentials Management Errors,Credentials Management Errors,40
+CWE-787,CWE-190,Memory Buffer Errors,Numeric Errors,38
+CWE-532,CWE-532,Information Management Errors,Information Management Errors,33
+CWE-327,CWE-190,Cryptographic Issues,Numeric Errors,32
+CWE-327,CWE-476,Cryptographic Issues,Pointer Issues,29
+CWE-20,CWE-20,Data Validation Issues,Data Validation Issues,27
+CWE-120,CWE-190,Memory Buffer Errors,Numeric Errors,24
+CWE-327,CWE-20,Cryptographic Issues,Data Validation Issues,23
+CWE-367,CWE-367,Concurrency Issues,Concurrency Issues,23
+CWE-367,CWE-22,Concurrency Issues,File Handling Issues,23
+CWE-1333,CWE-1333,Complexity Issues,Complexity Issues,21
+CWE-787,CWE-787,Memory Buffer Errors,Memory Buffer Errors,21
+CWE-562,CWE-190,Bad Coding Practices,Numeric Errors,21
+CWE-670,CWE-327,Other,Cryptographic Issues,21
+CWE-79,CWE-79,Data Neutralization Issues,Data Neutralization Issues,19
+CWE-323,CWE-329,Key Management Errors,Cryptographic Issues,18
+CWE-327,CWE-798,Cryptographic Issues,Credentials Management Errors,18
+CWE-347,CWE-798,Data Integrity Issues,Credentials Management Errors,17
+CWE-338,CWE-347,Random Number Issues,Data Integrity Issues,17
+CWE-327,CWE-248,Cryptographic Issues,"Error Conditions, Return Values, Status Codes",16
+CWE-327,CWE-125,Cryptographic Issues,Memory Buffer Errors,15
+CWE-327,CWE-129,Cryptographic Issues,Other,15
+CWE-338,CWE-338,Random Number Issues,Random Number Issues,15
+CWE-670,CWE-347,Other,Data Integrity Issues,15
+CWE-327,CWE-120,Cryptographic Issues,Memory Buffer Errors,15
+CWE-347,CWE-347,Data Integrity Issues,Data Integrity Issues,12
+CWE-125,CWE-120,Memory Buffer Errors,Memory Buffer Errors,12
+CWE-327,CWE-347,Cryptographic Issues,Data Integrity Issues,11
+CWE-190,CWE-674,Numeric Errors,Other,11
+CWE-798,CWE-916,Credentials Management Errors,Credentials Management Errors,10
+CWE-120,CWE-20,Memory Buffer Errors,Data Validation Issues,10
+CWE-120,CWE-120,Memory Buffer Errors,Memory Buffer Errors,10
+CWE-345,CWE-345,Other,Other,10
+CWE-20,CWE-798,Data Validation Issues,Credentials Management Errors,9
+CWE-327,CWE-532,Cryptographic Issues,Information Management Errors,9
+CWE-20,CWE-319,Data Validation Issues,Information Management Errors,9
+CWE-89,CWE-209,Data Neutralization Issues,Information Management Errors,9
+CWE-20,CWE-89,Data Validation Issues,Data Neutralization Issues,9
+CWE-329,CWE-329,Cryptographic Issues,Cryptographic Issues,9
+CWE-354,CWE-347,Data Integrity Issues,Data Integrity Issues,8
+CWE-120,CWE-338,Memory Buffer Errors,Random Number Issues,8
+CWE-338,CWE-476,Random Number Issues,Pointer Issues,8
+CWE-798,CWE-329,Credentials Management Errors,Cryptographic Issues,7
+CWE-798,CWE-327,Credentials Management Errors,Cryptographic Issues,7
+CWE-338,CWE-326,Random Number Issues,Other,7
+CWE-338,CWE-252,Random Number Issues,"Error Conditions, Return Values, Status Codes",7
+CWE-338,CWE-20,Random Number Issues,Data Validation Issues,6
+CWE-787,CWE-125,Memory Buffer Errors,Memory Buffer Errors,6
+CWE-120,CWE-787,Memory Buffer Errors,Memory Buffer Errors,6
+CWE-20,CWE-248,Data Validation Issues,"Error Conditions, Return Values, Status Codes",6
+CWE-20,CWE-476,Data Validation Issues,Pointer Issues,6
+CWE-562,CWE-20,Bad Coding Practices,Data Validation Issues,6
+CWE-532,CWE-327,Information Management Errors,Cryptographic Issues,6
+CWE-327,CWE-252,Cryptographic Issues,"Error Conditions, Return Values, Status Codes",5
+CWE-345,CWE-20,Other,Data Validation Issues,5
+CWE-327,CWE-338,Cryptographic Issues,Random Number Issues,5
+CWE-338,CWE-226,Random Number Issues,Other,5
+CWE-125,CWE-787,Memory Buffer Errors,Memory Buffer Errors,5
+CWE-120,CWE-835,Memory Buffer Errors,Behavioral Problems,5
+CWE-347,CWE-916,Data Integrity Issues,Credentials Management Errors,5
+CWE-20,CWE-613,Data Validation Issues,User Session Errors,5
+CWE-532,CWE-338,Information Management Errors,Random Number Issues,5
+CWE-562,CWE-120,Bad Coding Practices,Memory Buffer Errors,5
+CWE-209,CWE-248,Information Management Errors,"Error Conditions, Return Values, Status Codes",5
+CWE-327,CWE-329,Cryptographic Issues,Cryptographic Issues,5
+CWE-20,CWE-120,Data Validation Issues,Memory Buffer Errors,4
+CWE-329,CWE-327,Cryptographic Issues,Cryptographic Issues,4
+CWE-404,CWE-22,Other,File Handling Issues,4
+CWE-787,CWE-835,Memory Buffer Errors,Behavioral Problems,4
+CWE-354,CWE-209,Data Integrity Issues,Information Management Errors,4
+CWE-670,CWE-338,Other,Random Number Issues,4
+CWE-670,CWE-345,Other,Other,4
+CWE-327,CWE-704,Cryptographic Issues,Other,4
+CWE-20,CWE-74,Data Validation Issues,Other,4
+CWE-209,CWE-613,Information Management Errors,User Session Errors,4
+CWE-120,CWE-129,Memory Buffer Errors,Other,4
+CWE-345,CWE-798,Other,Credentials Management Errors,3
+CWE-628,CWE-120,Bad Coding Practices,Memory Buffer Errors,3
+CWE-323,CWE-330,Key Management Errors,Other,3
+CWE-209,CWE-294,Information Management Errors,Authentication Errors,3
+CWE-628,CWE-208,Bad Coding Practices,Information Management Errors,3
+CWE-209,CWE-532,Information Management Errors,Information Management Errors,3
+CWE-665,CWE-327,Other,Cryptographic Issues,3
+CWE-670,CWE-670,Other,Other,3
+CWE-338,CWE-330,Random Number Issues,Other,3
+CWE-798,CWE-89,Credentials Management Errors,Data Neutralization Issues,3
+CWE-20,CWE-352,Data Validation Issues,Other,3
+CWE-562,CWE-129,Bad Coding Practices,Other,3
+CWE-120,CWE-94,Memory Buffer Errors,Data Neutralization Issues,3
+CWE-120,CWE-248,Memory Buffer Errors,"Error Conditions, Return Values, Status Codes",3
+CWE-120,CWE-401,Memory Buffer Errors,Other,3
+CWE-209,CWE-787,Information Management Errors,Memory Buffer Errors,3
+CWE-20,CWE-787,Data Validation Issues,Memory Buffer Errors,3
+CWE-323,CWE-323,Key Management Errors,Key Management Errors,3
+CWE-754,CWE-294,Other,Authentication Errors,3
+CWE-209,CWE-20,Information Management Errors,Data Validation Issues,3
+CWE-338,CWE-532,Random Number Issues,Information Management Errors,3
+CWE-338,CWE-320,Random Number Issues,Other,3
+CWE-787,CWE-20,Memory Buffer Errors,Data Validation Issues,3
+CWE-787,CWE-400,Memory Buffer Errors,Other,3
+CWE-120,CWE-400,Memory Buffer Errors,Other,3
+CWE-562,CWE-835,Bad Coding Practices,Behavioral Problems,3
+CWE-628,CWE-330,Bad Coding Practices,Other,3
+CWE-209,CWE-329,Information Management Errors,Cryptographic Issues,3
+CWE-345,CWE-330,Other,Other,3
+CWE-20,CWE-327,Data Validation Issues,Cryptographic Issues,3
+CWE-327,CWE-681,Cryptographic Issues,Type Errors,3
+CWE-338,CWE-704,Random Number Issues,Other,3
+CWE-22,CWE-59,File Handling Issues,File Handling Issues,3
+CWE-345,CWE-327,Other,Cryptographic Issues,3
+CWE-628,CWE-327,Bad Coding Practices,Cryptographic Issues,3
+CWE-347,CWE-327,Data Integrity Issues,Cryptographic Issues,3
+CWE-798,CWE-20,Credentials Management Errors,Data Validation Issues,3
+CWE-20,CWE-294,Data Validation Issues,Authentication Errors,3
+CWE-327,CWE-226,Cryptographic Issues,Other,2
+CWE-327,CWE-369,Cryptographic Issues,Numeric Errors,2
+CWE-345,CWE-120,Other,Memory Buffer Errors,2
+CWE-754,CWE-248,Other,"Error Conditions, Return Values, Status Codes",2
+CWE-347,CWE-696,Data Integrity Issues,Other,2
+CWE-798,CWE-330,Credentials Management Errors,Other,2
+CWE-323,CWE-798,Key Management Errors,Credentials Management Errors,2
+CWE-628,CWE-326,Bad Coding Practices,Other,2
+CWE-329,CWE-20,Cryptographic Issues,Data Validation Issues,2
+CWE-665,CWE-532,Other,Information Management Errors,2
+CWE-338,CWE-617,Random Number Issues,"Error Conditions, Return Values, Status Codes",2
+CWE-327,CWE-325,Cryptographic Issues,Cryptographic Issues,2
+CWE-532,CWE-208,Information Management Errors,Information Management Errors,2
+CWE-670,CWE-316,Other,Other,2
+CWE-20,CWE-770,Data Validation Issues,Resource Management Errors,2
+CWE-134,CWE-120,String Errors,Memory Buffer Errors,2
+CWE-120,CWE-682,Memory Buffer Errors,Other,2
+CWE-562,CWE-787,Bad Coding Practices,Memory Buffer Errors,2
+CWE-125,CWE-191,Memory Buffer Errors,Numeric Errors,2
+CWE-327,CWE-787,Cryptographic Issues,Memory Buffer Errors,2
+CWE-329,CWE-347,Cryptographic Issues,Data Integrity Issues,2
+CWE-628,CWE-916,Bad Coding Practices,Credentials Management Errors,2
+CWE-20,CWE-532,Data Validation Issues,Information Management Errors,2
+CWE-338,CWE-316,Random Number Issues,Other,2
+CWE-20,CWE-116,Data Validation Issues,Other,2
+CWE-20,CWE-200,Data Validation Issues,Other,2
+CWE-347,CWE-329,Data Integrity Issues,Cryptographic Issues,2
+CWE-20,CWE-125,Data Validation Issues,Memory Buffer Errors,2
+CWE-327,CWE-119,Cryptographic Issues,Other,2
+CWE-20,CWE-329,Data Validation Issues,Cryptographic Issues,2
+CWE-329,CWE-330,Cryptographic Issues,Other,2
+CWE-327,CWE-696,Cryptographic Issues,Other,2
+CWE-209,CWE-327,Information Management Errors,Cryptographic Issues,2
+CWE-347,CWE-330,Data Integrity Issues,Other,2
+CWE-670,CWE-476,Other,Pointer Issues,2
+CWE-338,CWE-325,Random Number Issues,Cryptographic Issues,2
+CWE-338,CWE-200,Random Number Issues,Other,2
+CWE-22,CWE-125,File Handling Issues,Memory Buffer Errors,2
+CWE-562,CWE-248,Bad Coding Practices,"Error Conditions, Return Values, Status Codes",2
+CWE-787,CWE-131,Memory Buffer Errors,Memory Buffer Errors,2
+CWE-327,CWE-416,Cryptographic Issues,Other,2
+CWE-20,CWE-119,Data Validation Issues,Other,2
+CWE-754,CWE-532,Other,Information Management Errors,2
+CWE-347,CWE-209,Data Integrity Issues,Information Management Errors,2
+CWE-628,CWE-400,Bad Coding Practices,Other,2
+CWE-327,CWE-323,Cryptographic Issues,Key Management Errors,2
+CWE-338,CWE-787,Random Number Issues,Memory Buffer Errors,2
+CWE-532,CWE-347,Information Management Errors,Data Integrity Issues,2
+CWE-338,CWE-129,Random Number Issues,Other,2
+CWE-134,CWE-190,String Errors,Numeric Errors,2
+CWE-120,CWE-762,Memory Buffer Errors,Other,2
+CWE-122,CWE-190,Other,Numeric Errors,2
+CWE-754,CWE-613,Other,User Session Errors,2
+CWE-665,CWE-613,Other,User Session Errors,2
+CWE-22,CWE-863,File Handling Issues,Other,2
+CWE-20,CWE-732,Data Validation Issues,Other,2
+CWE-20,CWE-400,Data Validation Issues,Other,2
+CWE-125,CWE-190,Memory Buffer Errors,Numeric Errors,2
+CWE-787,CWE-193,Memory Buffer Errors,Numeric Errors,2
+CWE-787,CWE-129,Memory Buffer Errors,Other,2
+CWE-120,CWE-807,Memory Buffer Errors,Bad Coding Practices,2
+CWE-209,CWE-120,Information Management Errors,Memory Buffer Errors,2
+CWE-354,CWE-20,Data Integrity Issues,Data Validation Issues,2
+CWE-347,CWE-345,Data Integrity Issues,Other,2
+CWE-89,CWE-306,Data Neutralization Issues,Authentication Errors,2
+CWE-125,CWE-125,Memory Buffer Errors,Memory Buffer Errors,2
+CWE-754,CWE-208,Other,Information Management Errors,1
+CWE-347,CWE-129,Data Integrity Issues,Other,1
+CWE-209,CWE-125,Information Management Errors,Memory Buffer Errors,1
+CWE-665,CWE-191,Other,Numeric Errors,1
+CWE-209,CWE-476,Information Management Errors,Pointer Issues,1
+CWE-20,CWE-665,Data Validation Issues,Other,1
+CWE-628,CWE-203,Bad Coding Practices,Other,1
+CWE-209,CWE-252,Information Management Errors,"Error Conditions, Return Values, Status Codes",1
+CWE-20,CWE-696,Data Validation Issues,Other,1
+CWE-329,CWE-209,Cryptographic Issues,Information Management Errors,1
+CWE-20,CWE-321,Data Validation Issues,Other,1
+CWE-209,CWE-353,Information Management Errors,Data Integrity Issues,1
+CWE-20,CWE-838,Data Validation Issues,Data Neutralization Issues,1
+CWE-347,CWE-326,Data Integrity Issues,Other,1
+CWE-798,CWE-521,Credentials Management Errors,Credentials Management Errors,1
+CWE-670,CWE-697,Other,Other,1
+CWE-22,CWE-401,File Handling Issues,Other,1
+CWE-1333,CWE-22,Complexity Issues,File Handling Issues,1
+CWE-79,CWE-20,Data Neutralization Issues,Data Validation Issues,1
+CWE-89,CWE-117,Data Neutralization Issues,Audit / Logging Errors,1
+CWE-20,CWE-362,Data Validation Issues,Other,1
+CWE-190,CWE-125,Numeric Errors,Memory Buffer Errors,1
+CWE-120,CWE-200,Memory Buffer Errors,Other,1
+CWE-122,CWE-20,Other,Data Validation Issues,1
+CWE-134,CWE-704,String Errors,Other,1
+CWE-121,CWE-190,Other,Numeric Errors,1
+CWE-122,CWE-120,Other,Memory Buffer Errors,1
+CWE-754,CWE-316,Other,Other,1
+CWE-327,CWE-170,Cryptographic Issues,Data Neutralization Issues,1
+CWE-354,CWE-401,Data Integrity Issues,Other,1
+CWE-20,CWE-347,Data Validation Issues,Data Integrity Issues,1
+CWE-329,CWE-170,Cryptographic Issues,Data Neutralization Issues,1
+CWE-798,CWE-125,Credentials Management Errors,Memory Buffer Errors,1
+CWE-345,CWE-1104,Other,Bad Coding Practices,1
+CWE-345,CWE-532,Other,Information Management Errors,1
+CWE-628,CWE-521,Bad Coding Practices,Credentials Management Errors,1
+CWE-329,CWE-798,Cryptographic Issues,Credentials Management Errors,1
+CWE-670,CWE-798,Other,Credentials Management Errors,1
+CWE-338,CWE-119,Random Number Issues,Other,1
+CWE-338,CWE-670,Random Number Issues,Other,1
+CWE-670,CWE-330,Other,Other,1
+CWE-22,CWE-758,File Handling Issues,Other,1
+CWE-22,CWE-78,File Handling Issues,Data Neutralization Issues,1
+CWE-89,CWE-416,Data Neutralization Issues,Other,1
+CWE-20,CWE-650,Data Validation Issues,Other,1
+CWE-327,CWE-124,Cryptographic Issues,Memory Buffer Errors,1
+CWE-754,CWE-226,Other,Other,1
+CWE-354,CWE-129,Data Integrity Issues,Other,1
+CWE-329,CWE-120,Cryptographic Issues,Memory Buffer Errors,1
+CWE-327,CWE-457,Cryptographic Issues,Other,1
+CWE-665,CWE-120,Other,Memory Buffer Errors,1
+CWE-628,CWE-129,Bad Coding Practices,Other,1
+CWE-209,CWE-798,Information Management Errors,Credentials Management Errors,1
+CWE-354,CWE-696,Data Integrity Issues,Other,1
+CWE-665,CWE-294,Other,Authentication Errors,1
+CWE-798,CWE-704,Credentials Management Errors,Other,1
+CWE-345,CWE-323,Other,Key Management Errors,1
+CWE-20,CWE-353,Data Validation Issues,Data Integrity Issues,1
+CWE-754,CWE-327,Other,Cryptographic Issues,1
+CWE-628,CWE-323,Bad Coding Practices,Key Management Errors,1
+CWE-20,CWE-330,Data Validation Issues,Other,1
+CWE-665,CWE-338,Other,Random Number Issues,1
+CWE-798,CWE-323,Credentials Management Errors,Key Management Errors,1
+CWE-347,CWE-323,Data Integrity Issues,Key Management Errors,1
+CWE-20,CWE-704,Data Validation Issues,Other,1
+CWE-532,CWE-416,Information Management Errors,Other,1
+CWE-327,CWE-200,Cryptographic Issues,Other,1
+CWE-338,CWE-707,Random Number Issues,Other,1
+CWE-670,CWE-532,Other,Information Management Errors,1
+CWE-670,CWE-838,Other,Data Neutralization Issues,1
+CWE-338,CWE-321,Random Number Issues,Other,1
+CWE-404,CWE-404,Other,Other,1
+CWE-562,CWE-119,Bad Coding Practices,Other,1
+CWE-190,CWE-400,Numeric Errors,Other,1
+CWE-787,CWE-415,Memory Buffer Errors,Other,1
+CWE-120,CWE-415,Memory Buffer Errors,Other,1
+CWE-754,CWE-908,Other,Resource Management Errors,1
+CWE-345,CWE-329,Other,Cryptographic Issues,1
+CWE-354,CWE-798,Data Integrity Issues,Credentials Management Errors,1
+CWE-329,CWE-129,Cryptographic Issues,Other,1
+CWE-665,CWE-326,Other,Other,1
+CWE-209,CWE-121,Information Management Errors,Other,1
+CWE-347,CWE-704,Data Integrity Issues,Other,1
+CWE-20,CWE-345,Data Validation Issues,Other,1
+CWE-209,CWE-345,Information Management Errors,Other,1
+CWE-665,CWE-353,Other,Data Integrity Issues,1
+CWE-798,CWE-345,Credentials Management Errors,Other,1
+CWE-327,CWE-353,Cryptographic Issues,Data Integrity Issues,1
+CWE-754,CWE-522,Other,Other,1
+CWE-209,CWE-312,Information Management Errors,Information Management Errors,1
+CWE-209,CWE-502,Information Management Errors,Resource Management Errors,1
+CWE-20,CWE-312,Data Validation Issues,Information Management Errors,1
+CWE-323,CWE-20,Key Management Errors,Data Validation Issues,1
+CWE-345,CWE-321,Other,Other,1
+CWE-798,CWE-326,Credentials Management Errors,Other,1
+CWE-665,CWE-330,Other,Other,1
+CWE-347,CWE-321,Data Integrity Issues,Other,1
+CWE-209,CWE-330,Information Management Errors,Other,1
+CWE-338,CWE-477,Random Number Issues,API / Function Errors,1
+CWE-327,CWE-676,Cryptographic Issues,API / Function Errors,1
+CWE-532,CWE-200,Information Management Errors,Other,1
+CWE-670,CWE-676,Other,API / Function Errors,1
+CWE-367,CWE-59,Concurrency Issues,File Handling Issues,1
+CWE-22,CWE-670,File Handling Issues,Other,1
+CWE-22,CWE-248,File Handling Issues,"Error Conditions, Return Values, Status Codes",1
+CWE-22,CWE-209,File Handling Issues,Information Management Errors,1
+CWE-79,CWE-120,Data Neutralization Issues,Memory Buffer Errors,1
+CWE-89,CWE-319,Data Neutralization Issues,Information Management Errors,1
+CWE-121,CWE-129,Other,Other,1
+CWE-120,CWE-476,Memory Buffer Errors,Pointer Issues,1
+CWE-120,CWE-125,Memory Buffer Errors,Memory Buffer Errors,1
+CWE-122,CWE-762,Other,Other,1
+CWE-345,CWE-252,Other,"Error Conditions, Return Values, Status Codes",1
+CWE-20,CWE-208,Data Validation Issues,Information Management Errors,1
+CWE-20,CWE-316,Data Validation Issues,Other,1
+CWE-345,CWE-200,Other,Other,1
+CWE-628,CWE-670,Bad Coding Practices,Other,1
+CWE-354,CWE-345,Data Integrity Issues,Other,1
+CWE-209,CWE-316,Information Management Errors,Other,1
+CWE-20,CWE-324,Data Validation Issues,Credentials Management Errors,1
+CWE-338,CWE-120,Random Number Issues,Memory Buffer Errors,1
+CWE-670,CWE-20,Other,Data Validation Issues,1
+CWE-532,CWE-704,Information Management Errors,Other,1
+CWE-670,CWE-120,Other,Memory Buffer Errors,1
+CWE-89,CWE-120,Data Neutralization Issues,Memory Buffer Errors,1
+CWE-89,CWE-22,Data Neutralization Issues,File Handling Issues,1
+CWE-190,CWE-476,Numeric Errors,Pointer Issues,1
+CWE-120,CWE-193,Memory Buffer Errors,Numeric Errors,1
+CWE-190,CWE-770,Numeric Errors,Resource Management Errors,1
+CWE-754,CWE-190,Other,Numeric Errors,1
+CWE-665,CWE-208,Other,Information Management Errors,1
+CWE-20,CWE-190,Data Validation Issues,Numeric Errors,1
+CWE-754,CWE-252,Other,"Error Conditions, Return Values, Status Codes",1
+CWE-628,CWE-347,Bad Coding Practices,Data Integrity Issues,1
+CWE-345,CWE-326,Other,Other,1
+CWE-327,CWE-326,Cryptographic Issues,Other,1
+CWE-20,CWE-326,Data Validation Issues,Other,1
+CWE-209,CWE-324,Information Management Errors,Credentials Management Errors,1
+CWE-665,CWE-248,Other,"Error Conditions, Return Values, Status Codes",1
+CWE-670,CWE-320,Other,Other,1
+CWE-338,CWE-248,Random Number Issues,"Error Conditions, Return Values, Status Codes",1
+CWE-338,CWE-287,Random Number Issues,Other,1
+CWE-327,CWE-316,Cryptographic Issues,Other,1
+CWE-22,CWE-285,File Handling Issues,Other,1
+CWE-562,CWE-400,Bad Coding Practices,Other,1
+CWE-125,CWE-124,Memory Buffer Errors,Memory Buffer Errors,1
+CWE-120,CWE-407,Memory Buffer Errors,Other,1
+CWE-190,CWE-787,Numeric Errors,Memory Buffer Errors,1
+CWE-562,CWE-682,Bad Coding Practices,Other,1
+CWE-754,CWE-120,Other,Memory Buffer Errors,1
+CWE-628,CWE-696,Bad Coding Practices,Other,1
+CWE-354,CWE-330,Data Integrity Issues,Other,1
+CWE-665,CWE-252,Other,"Error Conditions, Return Values, Status Codes",1
+CWE-347,CWE-401,Data Integrity Issues,Other,1
+CWE-209,CWE-416,Information Management Errors,Other,1
+CWE-209,CWE-696,Information Management Errors,Other,1
+CWE-665,CWE-200,Other,Other,1
+CWE-209,CWE-209,Information Management Errors,Information Management Errors,1
+CWE-20,CWE-209,Data Validation Issues,Information Management Errors,1
+CWE-327,CWE-191,Cryptographic Issues,Numeric Errors,1
+CWE-670,CWE-704,Other,Other,1
+CWE-338,CWE-754,Random Number Issues,Other,1
+CWE-338,CWE-125,Random Number Issues,Memory Buffer Errors,1
+CWE-22,CWE-835,File Handling Issues,Behavioral Problems,1
+CWE-22,CWE-416,File Handling Issues,Other,1
+CWE-22,CWE-120,File Handling Issues,Memory Buffer Errors,1
+CWE-79,CWE-476,Data Neutralization Issues,Pointer Issues,1
+CWE-20,CWE-598,Data Validation Issues,Other,1
+CWE-562,CWE-209,Bad Coding Practices,Information Management Errors,1
+CWE-562,CWE-681,Bad Coding Practices,Type Errors,1
+CWE-122,CWE-476,Other,Pointer Issues,1
+CWE-120,CWE-824,Memory Buffer Errors,Pointer Issues,1
+CWE-562,CWE-908,Bad Coding Practices,Resource Management Errors,1
+CWE-120,CWE-170,Memory Buffer Errors,Data Neutralization Issues,1

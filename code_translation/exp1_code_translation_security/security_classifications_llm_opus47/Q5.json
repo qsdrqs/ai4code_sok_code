@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffers are sufficiently sized for max int64_t representation with commas. No buffer overflow, format string injection, or memory leak present."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "printf(str) uses a non-literal format string, which is a format string vulnerability/insecure coding practice."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Negating value when it equals INT_MIN causes signed integer overflow (undefined behavior), producing incorrect output and unreliable program behavior."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "printf(snum) uses a variable as the format string, creating an externally-controlled format string vulnerability that could lead to information disclosure or memory corruption."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-131",
+        "explanation": "Buffer size calculation omits space for the negative sign, causing a 1-byte heap buffer overflow when writing the null terminator for negative inputs."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-401",
+        "explanation": "Memory allocated by int_to_string via malloc is never freed in main, causing memory leaks on each call."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-120",
+        "explanation": "Buffer overflow via sprintf: malloc size (16 bytes) may be insufficient for large integers with locale thousands separators, especially multi-byte ones."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-124",
+        "explanation": "Buffer underwrite: when digit count is a multiple of 3 (e.g., 999), a comma is written to str[-1], before the allocated buffer."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "snprintf bounds writes safely. Minor truncation bug for INT_MIN (buffer 11 vs needed 12 bytes) is a functional issue, not an exploitable vulnerability."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-690",
+        "explanation": "The return value of malloc is not checked for NULL before being dereferenced by sprintf, leading to potential NULL pointer dereference."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Format string is constant, no user input, type matches format specifier."
+    },
+    "1012": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Returns addresses of stack-allocated local arrays (buff, str) causing dangling pointers; also has buffer overflow in undersized buff[conum]."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Off-by-one in final copy loop causes out-of-bounds write to buf[14] and read from tmp[14]; also missing null termination."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Signed integer overflow when negating INT_MIN in `num = -num` causes undefined behavior and incorrect output."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Heap buffer overflow: len is incremented after malloc for negative numbers, so str[len]='\\0' writes one byte past the allocated buffer."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer underflow writes to result[-1] when digit count is divisible by 3; also missing null terminator causes out-of-bounds read."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-122",
+        "explanation": "Heap buffer overflow: malloc(3) allocates only 3 bytes, but snprintf writes len+1 (7) bytes for 700000, overflowing the heap buffer."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-131",
+        "explanation": "Incorrect buffer size calculation and type confusion (char** vs char*) cause sprintf to write to an uninitialized/garbage pointer address, leading to OOB write."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size (33) exceeds maximum possible integer string representation (~21 bytes for 64-bit), and input is hardcoded. No overflow possible."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Negating INT_MIN via -num causes signed integer overflow (undefined behavior) since |INT_MIN| > INT_MAX in two's complement."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack-allocated buffer, resulting in dangling pointer and undefined behavior after function return."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No user input, hardcoded values and literal format strings. No buffer operations or exploitable vectors present in the code."
+    },
+    "1028": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Hardcoded num=7000 with 100-byte buffer never triggers overflow; printf uses safe format specifier; INT_MIN UB path not reached."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "convertInt returns pointer to local stack array 'output'; also reads uninitialized buffer memory in loop condition causing undefined behavior."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "sprintf with %d format and int input is bounded (~12-21 chars); 50-byte buffer is safe. Bugs exist but no exploitable vulnerability."
+    },
+    "1032": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Memory allocation is correctly sized, loop bounds are valid, and array indexing stays within allocated ranges for the given test case."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "Shift loop overwrites the null terminator without appending a new one, causing printf %s to read past buffer into stack memory."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Out-of-bounds write to out[16] in 16-byte buffer (valid indices 0-15) occurs on first loop iteration of every call to int_to_str."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-121",
+        "explanation": "Stack buffer overflow: sprintf writes null terminator past s[digits]; infinite loop (digits never decremented) causes index underflow and return of stack address."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "printf(convertToString(5)) uses a non-literal string as format specifier, creating a format string vulnerability."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack-allocated VLA, creating dangling pointer. Also has buffer overflow, uninitialized reads, and missing null terminator."
+    },
+    "1041": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer (num+1 bytes) is always sufficient for positive input. No user-controlled input; hardcoded value 1000000 works safely."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "The commas array is never null-terminated before being printed with %s, causing printf to read past buffer bounds into stack memory."
+    },
+    "1043": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns a pointer to a local stack-allocated array, creating a dangling pointer used after the function returns."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns local stack-allocated buffer 'buf', causing dangling pointer/undefined behavior when caller uses the returned value."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "malloc return value is not checked for NULL before dereferencing str[i], causing potential NULL pointer dereference on allocation failure."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-562",
+        "explanation": "Function returns pointer to local stack-allocated array 'result', creating a dangling pointer that leads to undefined behavior when dereferenced."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-134",
+        "explanation": "printf() is called with a non-literal format string (result of strOfInt), representing a format string vulnerability pattern."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-170",
+        "explanation": "Returned buffer lacks null terminator and space for one; contains uninitialized bytes and leaks memory (str never freed)."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-125",
+        "explanation": "Loop iterates beyond allocated buffer size of 'string', causing heap out-of-bounds read at string[i] when i equals buffer length."
+    }
+}

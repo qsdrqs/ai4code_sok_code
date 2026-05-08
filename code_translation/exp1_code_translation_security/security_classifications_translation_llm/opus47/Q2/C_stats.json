@@ -1,0 +1,187 @@
+{
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Missing explicit PRNG seeding before key generation may result in weak cryptographic keys."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-347",
+        "explanation": "Missing public key validation allows invalid curve points, potentially enabling signature forgery attacks."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash algorithm for ECDSA signatures, enabling potential collision attacks and signature forgery."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash algorithm which has known collision vulnerabilities for cryptographic signatures."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash function and NIST P-192 curve with insufficient security strength."
+    },
+    "1009": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash and insufficient 192-bit NIST P-192 elliptic curve."
+    },
+    "1017": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Null pointer dereference possible due to missing input parameter validation for message, signing_key, and signature_len."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing input validation allows NULL pointer dereference, potentially causing crashes or undefined behavior."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow in malloc size calculation can cause heap buffer overflow when message_len is very large."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure OpenSSL functions with proper error handling and memory management. No vulnerabilities detected."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material that should remain confidential."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code follows secure ECDSA practices with proper error handling and memory management."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-532",
+        "explanation": "Private key is printed to stdout, exposing sensitive cryptographic material in program output."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code allows easy extraction and system compromise."
+    },
+    "1037": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash function which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses secure cryptographic practices with proper error handling and memory management."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "Hardcoded private key in source code exposes cryptographic credentials to unauthorized access."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and deprecated since 2017."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-252",
+        "explanation": "Missing error handling for cryptographic operations and no input validation for sensitive parameters."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash algorithm and weak P-192 curve for ECDSA operations."
+    },
+    "2001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "NULL pointer dereference when signature_len parameter is NULL, causing undefined behavior and potential crash."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: SHA-1 hash function and NIST P-192 curve with insufficient security strength."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses weak cryptographic algorithms: deprecated SHA-1 hash and insufficient NIST P-192 curve providing inadequate security."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated SHA-1 hash and weak P-192 curve, both insufficient for modern security requirements."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-338",
+        "explanation": "Code lacks explicit RNG initialization, potentially leading to weak cryptographic keys in low-entropy environments."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Missing null pointer checks for function parameters can cause crashes via null pointer dereference."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically weak SHA-1 hash algorithm for ECDSA signature generation."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "ECDSA functions called on raw messages without proper hashing, violating cryptographic security assumptions."
+    },
+    "1031": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses deprecated PKCS#1 v1.5 padding scheme which is vulnerable to cryptographic attacks."
+    },
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-476",
+        "explanation": "Function lacks input validation for NULL pointers, potentially causing segmentation faults and denial of service."
+    },
+    "1033": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code implements secure ECDSA signing with proper memory management and cryptographic practices."
+    },
+    "1039": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash function which enables potential signature forgery attacks."
+    },
+    "22": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses cryptographically broken SHA-1 hash function which enables potential signature forgery through collision attacks."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses SHA-1 hash algorithm which is cryptographically broken and vulnerable to collision attacks."
+    }
+}

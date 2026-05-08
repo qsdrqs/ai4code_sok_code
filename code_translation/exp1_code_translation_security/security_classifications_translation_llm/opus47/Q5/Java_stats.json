@@ -1,0 +1,202 @@
+{
+    "1002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code performs safe string formatting with proper bounds checking and no external dependencies or unsafe operations."
+    },
+    "1004": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Buffer size adequate for max integer length, proper overflow handling, no bounds violations possible."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes logic failure and unexpected behavior."
+    },
+    "1030": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerability present. Hardcoded format string and static input prevent injection attacks."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect array sizing and potential runtime errors."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has proper bounds checking, safe string operations, and handles edge cases correctly without security vulnerabilities."
+    },
+    "2002": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe number formatting with hardcoded format string and bounded integer input. No security vulnerabilities present."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes incorrect array bounds calculation and potential out-of-bounds access."
+    },
+    "1003": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer to string conversion using secure Java standard library method with no vulnerability vectors."
+    },
+    "1001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Simple integer-to-string conversion using safe standard library method with no security risks."
+    },
+    "1008": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Static format string with hardcoded values, no external input processing, no security risks present."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Index calculations are mathematically sound and input is inherently safe."
+    },
+    "1005": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to unchecked writes to external buffer without size validation."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes infinite loop, leading to denial of service."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when processing Integer.MIN_VALUE leads to incorrect character conversion and malformed output string."
+    },
+    "1018": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to incorrect array indexing when inserting commas, potentially writing beyond array bounds."
+    },
+    "1013": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe built-in methods with type-safe parameters, no security vulnerabilities present."
+    },
+    "1019": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Improper array size calculation using log10 causes exceptions for zero, negative, and single-digit inputs."
+    },
+    "1020": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses hard-coded values with safe string formatting, no external input or dynamic content present."
+    },
+    "1022": {
+        "is_vulnerable": true,
+        "cwe": "CWE-674",
+        "explanation": "Integer overflow with MIN_VALUE causes infinite recursion, leading to stack overflow and denial of service."
+    },
+    "1024": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Safe integer-to-string conversion using hardcoded values with no external input or unsafe operations."
+    },
+    "1027": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Static format string with primitive parameter, no user input processing or dynamic content."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes infinite loop, leading to denial of service."
+    },
+    "1029": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Loop never executes due to initialization flaw, preventing potential buffer overflow exploitation."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Format strings are hardcoded and input is properly controlled."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Array index out of bounds when input is zero due to improper length calculation and validation."
+    },
+    "1033": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to unchecked array writes without bounds validation in numToStr method."
+    },
+    "1035": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Java's automatic bounds checking prevents buffer overflow; integer overflow causes incorrect results but no memory corruption."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes improper buffer size calculation and data inconsistency."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code has logic bugs but no exploitable security vulnerabilities. Simple math operations with no external interactions."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Array bounds violation due to assignment bug causes guaranteed ArrayIndexOutOfBoundsException crash."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-835",
+        "explanation": "Infinite loop with negative input causes buffer overflow vulnerability."
+    },
+    "1034": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "No security vulnerabilities found. Weak RNG used only for benign demonstration purposes, not security-sensitive operations."
+    },
+    "1043": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses hardcoded format strings and controlled input with no user-controllable data or unsafe operations."
+    },
+    "1046": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses safe operations with hardcoded format strings and primitive types, no security vulnerabilities present."
+    },
+    "1042": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Fixed buffer size of 100 chars is sufficient for any 32-bit integer, preventing buffer overflow."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-400",
+        "explanation": "Uncontrolled resource consumption via infinite loop when input is zero or negative integer."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-190",
+        "explanation": "Integer overflow when negating Integer.MIN_VALUE causes infinite loop and invalid character generation."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-129",
+        "explanation": "Array index calculation error causes potential negative array access leading to ArrayIndexOutOfBoundsException."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-787",
+        "explanation": "Buffer overflow due to incorrect array size calculation and flawed indexing logic causing out-of-bounds writes."
+    }
+}

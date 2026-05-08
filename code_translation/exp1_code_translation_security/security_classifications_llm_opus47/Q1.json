@@ -1,0 +1,207 @@
+{
+    "1001": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom Vigen\u00e8re-like cipher is cryptographically broken; trivially defeated by frequency analysis and known-plaintext attacks. No authentication or IV."
+    },
+    "1002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES-CBC is used without authentication (no HMAC/GCM), making ciphertext malleable and unable to detect tampering. Use authenticated encryption instead."
+    },
+    "1004": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses insecure custom XOR (Vigen\u00e8re-like) encryption, vulnerable to known-plaintext and frequency analysis attacks."
+    },
+    "1005": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly uses Fernet authenticated encryption with a cryptographically secure randomly generated key. No hardcoded credentials or weak cryptography issues."
+    },
+    "1008": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom Vigen\u00e8re-like cipher is a broken/risky cryptographic algorithm; vulnerable to frequency analysis and known-plaintext attacks, lacks authentication."
+    },
+    "1009": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses AES-EAX authenticated encryption with cryptographically secure random key and nonce; no hardcoded secrets or nonce reuse."
+    },
+    "1010": {
+        "is_vulnerable": true,
+        "cwe": "CWE-325",
+        "explanation": "EAX mode's authentication tag is discarded during encryption and never verified during decryption, removing integrity protection and enabling ciphertext tampering attacks."
+    },
+    "1013": {
+        "is_vulnerable": true,
+        "cwe": "CWE-916",
+        "explanation": "PBKDF2 uses only 100,000 iterations; OWASP recommends 600,000+ for SHA256. Also, iterations parameter is ignored in encrypt function."
+    },
+    "1012": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses Fernet (secure authenticated encryption) with a randomly generated key. No hardcoded secrets or weak algorithms; code has functional bugs but no security vulnerability."
+    },
+    "1014": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES-CBC without authentication (vulnerable to padding oracle/bit-flipping) and unsalted SHA-256 for password-based key derivation instead of a proper KDF."
+    },
+    "1015": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Fernet (secure AEAD) with cryptographically secure key generation via os.urandom. No hardcoded keys or weak crypto detected."
+    },
+    "1016": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses a custom XOR cipher (broken cryptographic algorithm), vulnerable to known-plaintext attacks and frequency analysis. Lacks authentication and IV/nonce."
+    },
+    "1017": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses AES-EAX authenticated encryption with auto-generated random nonce and proper tag verification via decrypt_and_verify."
+    },
+    "1022": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Fernet (authenticated encryption) with a cryptographically secure randomly generated key. No hardcoded secrets or weak cryptography."
+    },
+    "1018": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Uses Fernet (AES-128-CBC + HMAC-SHA256), an authenticated encryption scheme. No hardcoded keys; key is passed as parameter following secure practices."
+    },
+    "1024": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "AES encryption key and IV are hardcoded in source code, allowing anyone with source access to decrypt ciphertext."
+    },
+    "1028": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses a broken/risky cryptographic algorithm (custom XOR cipher with repeating key) vulnerable to known-plaintext and frequency analysis attacks."
+    },
+    "1032": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Code uses a Caesar cipher (character shift) as symmetric encryption, which is a broken/risky cryptographic algorithm trivially breakable by brute force or frequency analysis."
+    },
+    "1035": {
+        "is_vulnerable": true,
+        "cwe": "CWE-798",
+        "explanation": "The AES encryption key is hardcoded as a literal in the source code, exposing it to anyone with code access and preventing secure key rotation."
+    },
+    "1030": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES cipher uses default ECB mode (no mode specified in AES.new()), which is cryptographically insecure as identical plaintext blocks produce identical ciphertext."
+    },
+    "1031": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Fernet (AES-128-CBC + HMAC-SHA256) with a securely generated random key; no hardcoded credentials or weak cryptography detected."
+    },
+    "1037": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly uses Fernet (AES-128-CBC + HMAC-SHA256) with a securely generated random key. No vulnerability detected."
+    },
+    "1036": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Code implements a Caesar cipher, a broken/risky cryptographic algorithm that is trivially breakable and unsuitable for secure encryption."
+    },
+    "1040": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses a broken/risky custom XOR cipher with repeating key instead of a standard, vetted cryptographic algorithm like AES-GCM."
+    },
+    "1041": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom Caesar cipher is a broken/risky cryptographic algorithm \u2014 trivially breakable via brute force or frequency analysis."
+    },
+    "1034": {
+        "is_vulnerable": true,
+        "cwe": "CWE-321",
+        "explanation": "The cryptographic key 'wow' is hardcoded in source code, exposing encrypted data to anyone who views the code."
+    },
+    "1045": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom shift cipher (Caesar cipher variant) is a broken cryptographic algorithm, trivially breakable by brute force, frequency analysis, or known-plaintext attacks."
+    },
+    "1039": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code uses Fernet (secure authenticated encryption) correctly with no hardcoded keys or cryptographic misuse."
+    },
+    "106": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Code implements a Vigen\u00e8re cipher, a classical broken cryptographic algorithm easily defeated by frequency analysis and Kasiski examination."
+    },
+    "2001": {
+        "is_vulnerable": false,
+        "cwe": "",
+        "explanation": "Code correctly uses Fernet (AES-128-CBC + HMAC) with externally-provided key; no hardcoded secrets, weak algorithms, or missing authentication."
+    },
+    "177": {
+        "is_vulnerable": true,
+        "cwe": "CWE-354",
+        "explanation": "Authentication tag from EAX mode is discarded during encryption and not verified during decryption, eliminating integrity/authenticity protection."
+    },
+    "2002": {
+        "is_vulnerable": true,
+        "cwe": "CWE-323",
+        "explanation": "CTR mode initialized without a unique counter/nonce; reuse across encryptions with same key enables keystream reuse and plaintext recovery."
+    },
+    "1003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Use of AES in ECB mode is cryptographically insecure because identical plaintext blocks produce identical ciphertext, leaking data patterns."
+    },
+    "1020": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES-CBC used without authentication (MAC/HMAC), making ciphertext vulnerable to padding oracle attacks and tampering. Should use AES-GCM or Encrypt-then-MAC."
+    },
+    "1027": {
+        "is_vulnerable": true,
+        "cwe": "CWE-1204",
+        "explanation": "IV from encryption is not returned/stored; decryption generates a different random IV, breaking CBC mode cryptographic integrity."
+    },
+    "23": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom homegrown cipher (Vigen\u00e8re-like with simple character addition) is cryptographically broken and trivially reversible via frequency analysis."
+    },
+    "1029": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses AES in ECB mode, which doesn't hide data patterns and lacks semantic security or authentication."
+    },
+    "1042": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses broken classical ciphers (Caesar cipher and Vigen\u00e8re-like cipher), which are trivially breakable and unsuitable for secure encryption."
+    },
+    "1046": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Custom homegrown cipher is trivially broken; merely interleaves key chars and decrypt ignores the key entirely, offering no real encryption."
+    },
+    "2003": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "AES-ECB mode is cryptographically insecure as identical plaintext blocks produce identical ciphertext, leaking patterns and providing no semantic security or integrity."
+    },
+    "178": {
+        "is_vulnerable": true,
+        "cwe": "CWE-327",
+        "explanation": "Uses Caesar cipher, a broken cryptographic algorithm with only 26 possible keys, trivially breakable by brute force or frequency analysis."
+    }
+}

@@ -1,0 +1,70 @@
+{"key": "1003_Q2_Credentials Management Errors", "sample_id": "1003", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1004_Q2_Credentials Management Errors", "sample_id": "1004", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1005_Q4_Credentials Management Errors", "sample_id": "1005", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1008_Q2_Credentials Management Errors", "sample_id": "1008", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1013_Q1_Credentials Management Errors", "sample_id": "1013", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-521", "CWE-916"], "label": "yes"}
+{"key": "1014_Q1_Credentials Management Errors", "sample_id": "1014", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798", "CWE-916"], "label": "no"}
+{"key": "1015_Q4_Credentials Management Errors", "sample_id": "1015", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1016_Q2_Credentials Management Errors", "sample_id": "1016", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1017_Q1_Credentials Management Errors", "sample_id": "1017", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1018_Q2_Credentials Management Errors", "sample_id": "1018", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1020_Q2_Credentials Management Errors", "sample_id": "1020", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1027_Q1_Credentials Management Errors", "sample_id": "1027", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1028_Q4_Credentials Management Errors", "sample_id": "1028", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1031_Q4_Credentials Management Errors", "sample_id": "1031", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1032_Q2_Credentials Management Errors", "sample_id": "1032", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1035_Q1_Credentials Management Errors", "sample_id": "1035", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1036_Q2_Credentials Management Errors", "sample_id": "1036", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1038_Q4_Credentials Management Errors", "sample_id": "1038", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1040_Q2_Credentials Management Errors", "sample_id": "1040", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1042_Q2_Credentials Management Errors", "sample_id": "1042", "question": "Q2", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1043_Q4_Credentials Management Errors", "sample_id": "1043", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "1046_Q4_Credentials Management Errors", "sample_id": "1046", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "177_Q1_Credentials Management Errors", "sample_id": "177", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "178_Q4_Credentials Management Errors", "sample_id": "178", "question": "Q4", "orig_lang": "JavaScript", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "no"}
+{"key": "2001_Q1_Credentials Management Errors", "sample_id": "2001", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-324", "CWE-798"], "label": "no"}
+{"key": "2002_Q1_Credentials Management Errors", "sample_id": "2002", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "2003_Q1_Credentials Management Errors", "sample_id": "2003", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "23_Q1_Credentials Management Errors", "sample_id": "23", "question": "Q1", "orig_lang": "Python", "cwe_category": "Credentials Management Errors", "trans_cwes": ["CWE-798"], "label": "yes"}
+{"key": "1003_Q2_Cryptographic Issues", "sample_id": "1003", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "yes"}
+{"key": "1004_Q2_Cryptographic Issues", "sample_id": "1004", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "1005_Q1_Cryptographic Issues", "sample_id": "1005", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "1008_Q2_Cryptographic Issues", "sample_id": "1008", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "yes"}
+{"key": "1010_Q1_Cryptographic Issues", "sample_id": "1010", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "no"}
+{"key": "1013_Q1_Cryptographic Issues", "sample_id": "1013", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "yes"}
+{"key": "1014_Q2_Cryptographic Issues", "sample_id": "1014", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "no"}
+{"key": "1017_Q1_Cryptographic Issues", "sample_id": "1017", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-325", "CWE-327"], "label": "no"}
+{"key": "1018_Q1_Cryptographic Issues", "sample_id": "1018", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "no"}
+{"key": "1020_Q2_Cryptographic Issues", "sample_id": "1020", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "1022_Q1_Cryptographic Issues", "sample_id": "1022", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "no"}
+{"key": "1024_Q1_Cryptographic Issues", "sample_id": "1024", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "yes"}
+{"key": "1029_Q2_Cryptographic Issues", "sample_id": "1029", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "1030_Q2_Cryptographic Issues", "sample_id": "1030", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "1031_Q1_Cryptographic Issues", "sample_id": "1031", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "1032_Q2_Cryptographic Issues", "sample_id": "1032", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "yes"}
+{"key": "1033_Q2_Cryptographic Issues", "sample_id": "1033", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "1034_Q1_Cryptographic Issues", "sample_id": "1034", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "yes"}
+{"key": "1035_Q1_Cryptographic Issues", "sample_id": "1035", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "yes"}
+{"key": "1039_Q1_Cryptographic Issues", "sample_id": "1039", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "no"}
+{"key": "1040_Q2_Cryptographic Issues", "sample_id": "1040", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-325", "CWE-327"], "label": "no"}
+{"key": "177_Q1_Cryptographic Issues", "sample_id": "177", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "2001_Q1_Cryptographic Issues", "sample_id": "2001", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327", "CWE-329"], "label": "no"}
+{"key": "2002_Q1_Cryptographic Issues", "sample_id": "2002", "question": "Q1", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-329"], "label": "yes"}
+{"key": "2003_Q2_Cryptographic Issues", "sample_id": "2003", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "no"}
+{"key": "22_Q2_Cryptographic Issues", "sample_id": "22", "question": "Q2", "orig_lang": "Python", "cwe_category": "Cryptographic Issues", "trans_cwes": ["CWE-327"], "label": "yes"}
+{"key": "1004_Q5_Numeric Errors", "sample_id": "1004", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1005_Q5_Numeric Errors", "sample_id": "1005", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190", "CWE-191"], "label": "yes"}
+{"key": "1012_Q5_Numeric Errors", "sample_id": "1012", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1016_Q5_Numeric Errors", "sample_id": "1016", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1018_Q5_Numeric Errors", "sample_id": "1018", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1029_Q5_Numeric Errors", "sample_id": "1029", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1033_Q5_Numeric Errors", "sample_id": "1033", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1035_Q5_Numeric Errors", "sample_id": "1035", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "yes"}
+{"key": "1036_Q5_Numeric Errors", "sample_id": "1036", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1039_Q5_Numeric Errors", "sample_id": "1039", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1040_Q5_Numeric Errors", "sample_id": "1040", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "yes"}
+{"key": "1042_Q5_Numeric Errors", "sample_id": "1042", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}
+{"key": "1045_Q5_Numeric Errors", "sample_id": "1045", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "yes"}
+{"key": "177_Q5_Numeric Errors", "sample_id": "177", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-193"], "label": "yes"}
+{"key": "178_Q5_Numeric Errors", "sample_id": "178", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190", "CWE-193"], "label": "yes"}
+{"key": "2001_Q5_Numeric Errors", "sample_id": "2001", "question": "Q5", "orig_lang": "C", "cwe_category": "Numeric Errors", "trans_cwes": ["CWE-190"], "label": "no"}

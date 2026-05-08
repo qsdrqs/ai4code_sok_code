@@ -1,0 +1,593 @@
+{
+  "R1_overall_vulnerability": {
+    "label": "R1: Overall translated vulnerability (T18)",
+    "n": 5836,
+    "dv_pos_count": 3826,
+    "dv_pos_rate": 0.6555860178204249,
+    "pseudo_r2_full_mcfadden": 0.1703294874639889,
+    "factor_lr_tests": [
+      {
+        "factor": "model",
+        "lr_stat": 44.58324530836853,
+        "df": 6,
+        "p_value": 5.662922137978322e-08
+      },
+      {
+        "factor": "language",
+        "lr_stat": 125.58986468122112,
+        "df": 4,
+        "p_value": 3.414236289957321e-26
+      },
+      {
+        "factor": "question",
+        "lr_stat": 825.2859350715444,
+        "df": 4,
+        "p_value": 2.5589502829169464e-177
+      }
+    ],
+    "factor_r2_contributions": [
+      {
+        "factor": "model",
+        "delta_r2_mcfadden": 0.005931909761879628
+      },
+      {
+        "factor": "language",
+        "delta_r2_mcfadden": 0.01671003847169117
+      },
+      {
+        "factor": "question",
+        "delta_r2_mcfadden": 0.10980631088499893
+      }
+    ],
+    "coefficients": [
+      {
+        "name": "Intercept",
+        "coef": 1.1575660732444673,
+        "odds_ratio": 3.182178653087514,
+        "ci_low_or": 2.345707867067092,
+        "ci_high_or": 4.316931840633262,
+        "p_value": 1.0132422506578872e-13
+      },
+      {
+        "name": "C(model)[T.gemini]",
+        "coef": -0.3552671351937769,
+        "odds_ratio": 0.7009861601210153,
+        "ci_low_or": 0.560717041126922,
+        "ci_high_or": 0.8763450379421914,
+        "p_value": 0.0018166962171616914
+      },
+      {
+        "name": "C(model)[T.gpt-4o]",
+        "coef": 0.03988376844963187,
+        "odds_ratio": 1.0406898061727503,
+        "ci_low_or": 0.8301813621518335,
+        "ci_high_or": 1.3045767130505617,
+        "p_value": 0.729420771834252
+      },
+      {
+        "name": "C(model)[T.llama]",
+        "coef": 0.1692104032768361,
+        "odds_ratio": 1.1843693078934312,
+        "ci_low_or": 0.9431927287777034,
+        "ci_high_or": 1.487215300416685,
+        "p_value": 0.14524417735738235
+      },
+      {
+        "name": "C(model)[T.o3]",
+        "coef": -0.16994357965311074,
+        "odds_ratio": 0.84371241780082,
+        "ci_low_or": 0.6742496967033499,
+        "ci_high_or": 1.0557670955312253,
+        "p_value": 0.13739067321538936
+      },
+      {
+        "name": "C(model)[T.opus47]",
+        "coef": 0.19566980493277614,
+        "odds_ratio": 1.2161252804619547,
+        "ci_low_or": 0.9683325546925328,
+        "ci_high_or": 1.52732724993251,
+        "p_value": 0.09234531645465986
+      },
+      {
+        "name": "C(model)[T.qwen3]",
+        "coef": 0.272078946027367,
+        "odds_ratio": 1.312690628930876,
+        "ci_low_or": 1.04408788128738,
+        "ci_high_or": 1.6503942993364256,
+        "p_value": 0.01984179529518227
+      },
+      {
+        "name": "C(language)[T.C]",
+        "coef": 1.320358160730911,
+        "odds_ratio": 3.744762363927497,
+        "ci_low_or": 2.889224823671296,
+        "ci_high_or": 4.853635842872457,
+        "p_value": 1.9129055051375232e-23
+      },
+      {
+        "name": "C(language)[T.Go]",
+        "coef": 0.5462274023171014,
+        "odds_ratio": 1.7267264703081633,
+        "ci_low_or": 1.3761661923472728,
+        "ci_high_or": 2.16658737864888,
+        "p_value": 2.384341523921124e-06
+      },
+      {
+        "name": "C(language)[T.Java]",
+        "coef": 0.7483347585612427,
+        "odds_ratio": 2.11347763408181,
+        "ci_low_or": 1.6835826323039493,
+        "ci_high_or": 2.6531443268996764,
+        "p_value": 1.1214243114453046e-10
+      },
+      {
+        "name": "C(language)[T.Rust]",
+        "coef": 0.4411618867186819,
+        "odds_ratio": 1.5545123368749791,
+        "ci_low_or": 1.2389425611684046,
+        "ci_high_or": 1.9504605630930796,
+        "p_value": 0.00013857460994682341
+      },
+      {
+        "name": "C(question)[T.Q2]",
+        "coef": -1.5265526142047363,
+        "odds_ratio": 0.21728343748523918,
+        "ci_low_or": 0.17536019560475247,
+        "ci_high_or": 0.26922924009399507,
+        "p_value": 2.822540167042136e-44
+      },
+      {
+        "name": "C(question)[T.Q3]",
+        "coef": 0.21869408399684545,
+        "odds_ratio": 1.244450521121345,
+        "ci_low_or": 0.9680115874858278,
+        "ci_high_or": 1.599833224663605,
+        "p_value": 0.08795155957191081
+      },
+      {
+        "name": "C(question)[T.Q4]",
+        "coef": -1.562824879883888,
+        "odds_ratio": 0.2095432996887009,
+        "ci_low_or": 0.16992762829699357,
+        "ci_high_or": 0.25839467592454807,
+        "p_value": 2.1922274975001235e-48
+      },
+      {
+        "name": "C(question)[T.Q5]",
+        "coef": -2.2144446022291446,
+        "odds_ratio": 0.10921415470518711,
+        "ci_low_or": 0.08777914031468749,
+        "ci_high_or": 0.13588344047580925,
+        "p_value": 8.181430472420896e-88
+      }
+    ]
+  },
+  "R2_fix_rate": {
+    "label": "R2: Fix rate among originally-vulnerable (T19)",
+    "n": 4646,
+    "dv_pos_count": 1244,
+    "dv_pos_rate": 0.2677572105036591,
+    "pseudo_r2_full_mcfadden": 0.18344847852336466,
+    "factor_lr_tests": [
+      {
+        "factor": "model",
+        "lr_stat": 40.39585037559118,
+        "df": 6,
+        "p_value": 3.807804793721694e-07
+      },
+      {
+        "factor": "language",
+        "lr_stat": 100.71441634923394,
+        "df": 4,
+        "p_value": 6.930168158417946e-21
+      },
+      {
+        "factor": "question",
+        "lr_stat": 591.1943921617203,
+        "df": 4,
+        "p_value": 1.2471994683812601e-126
+      }
+    ],
+    "factor_r2_contributions": [
+      {
+        "factor": "model",
+        "delta_r2_mcfadden": 0.007482383500258982
+      },
+      {
+        "factor": "language",
+        "delta_r2_mcfadden": 0.01865498263121268
+      },
+      {
+        "factor": "question",
+        "delta_r2_mcfadden": 0.10950489033471
+      }
+    ],
+    "coefficients": [
+      {
+        "name": "Intercept",
+        "coef": -0.9791127247704478,
+        "odds_ratio": 0.3756442508696968,
+        "ci_low_or": 0.26078814278887336,
+        "ci_high_or": 0.5410851954480661,
+        "p_value": 1.451935620651321e-07
+      },
+      {
+        "name": "C(model)[T.gemini]",
+        "coef": 0.428504496123586,
+        "odds_ratio": 1.5349602671688358,
+        "ci_low_or": 1.1768245250585752,
+        "ci_high_or": 2.002085248580073,
+        "p_value": 0.0015718007893505816
+      },
+      {
+        "name": "C(model)[T.gpt-4o]",
+        "coef": -0.04888041222320397,
+        "odds_ratio": 0.9522950057318678,
+        "ci_low_or": 0.7240062097617779,
+        "ci_high_or": 1.2525662980711825,
+        "p_value": 0.7266737919210655
+      },
+      {
+        "name": "C(model)[T.llama]",
+        "coef": -0.09140532730161367,
+        "odds_ratio": 0.9126477148839903,
+        "ci_low_or": 0.692958661605043,
+        "ci_high_or": 1.2019849056417473,
+        "p_value": 0.5153301052463155
+      },
+      {
+        "name": "C(model)[T.o3]",
+        "coef": 0.15164111782247144,
+        "odds_ratio": 1.1637425150323357,
+        "ci_low_or": 0.8883948076924582,
+        "ci_high_or": 1.5244310632695774,
+        "p_value": 0.27095633209558145
+      },
+      {
+        "name": "C(model)[T.opus47]",
+        "coef": -0.2528442389362186,
+        "odds_ratio": 0.7765888347066331,
+        "ci_low_or": 0.5874163783603605,
+        "ci_high_or": 1.0266826741780606,
+        "p_value": 0.0758824042637456
+      },
+      {
+        "name": "C(model)[T.qwen3]",
+        "coef": -0.3279048212840793,
+        "odds_ratio": 0.7204315861954972,
+        "ci_low_or": 0.5437764921053735,
+        "ci_high_or": 0.9544761090694291,
+        "p_value": 0.02233715043696632
+      },
+      {
+        "name": "C(language)[T.C]",
+        "coef": -1.6195125440124143,
+        "odds_ratio": 0.1979951895049246,
+        "ci_low_or": 0.14125623245089627,
+        "ci_high_or": 0.2775247108528008,
+        "p_value": 5.438799696793497e-21
+      },
+      {
+        "name": "C(language)[T.Go]",
+        "coef": -0.8808275244964388,
+        "odds_ratio": 0.41443981064329716,
+        "ci_low_or": 0.31312905179919587,
+        "ci_high_or": 0.5485289712313213,
+        "p_value": 7.329398581086797e-10
+      },
+      {
+        "name": "C(language)[T.Java]",
+        "coef": -1.0145038199501557,
+        "odds_ratio": 0.36258229130633574,
+        "ci_low_or": 0.2736315371553345,
+        "ci_high_or": 0.48044870607996576,
+        "p_value": 1.6138882635011887e-12
+      },
+      {
+        "name": "C(language)[T.Rust]",
+        "coef": -0.7803746830322752,
+        "odds_ratio": 0.4582342865240844,
+        "ci_low_or": 0.34645560414399035,
+        "ci_high_or": 0.606076677169198,
+        "p_value": 4.504668059017542e-08
+      },
+      {
+        "name": "C(question)[T.Q2]",
+        "coef": 1.312864639554346,
+        "odds_ratio": 3.7168057852792957,
+        "ci_low_or": 2.912102553096726,
+        "ci_high_or": 4.743873195947432,
+        "p_value": 5.287588936462812e-26
+      },
+      {
+        "name": "C(question)[T.Q3]",
+        "coef": -0.23078867330439967,
+        "odds_ratio": 0.7939072220988105,
+        "ci_low_or": 0.6044793941292477,
+        "ci_high_or": 1.0426967129435085,
+        "p_value": 0.09704506536982502
+      },
+      {
+        "name": "C(question)[T.Q4]",
+        "coef": 0.6991043438224378,
+        "odds_ratio": 2.011949884893056,
+        "ci_low_or": 1.538692812337615,
+        "ci_high_or": 2.630767042559626,
+        "p_value": 3.230185878037683e-07
+      },
+      {
+        "name": "C(question)[T.Q5]",
+        "coef": 2.130073326317922,
+        "odds_ratio": 8.41548386526208,
+        "ci_low_or": 6.614817981505352,
+        "ci_high_or": 10.706321607714088,
+        "p_value": 2.335444642793843e-67
+      }
+    ]
+  },
+  "R1_interactions": {
+    "label": "R1 interactions",
+    "n": 5836,
+    "pseudo_r2_main_only": 0.1703294874639889,
+    "pseudo_r2_with_interactions": 0.17711172875443715,
+    "delta_r2_interactions": 0.006782241290448243,
+    "interaction_tests": [
+      {
+        "factor": "model:question",
+        "lr_stat": 50.97419538236227,
+        "df": 24,
+        "p_value": 0.0010625680378899601
+      }
+    ],
+    "note": "language:question interaction not testable: structural empty cells (source != target constraint)"
+  },
+  "R2_interactions": {
+    "label": "R2 interactions",
+    "n": 4646,
+    "pseudo_r2_main_only": 0.18344847852336466,
+    "pseudo_r2_with_interactions": 0.1957272850010635,
+    "delta_r2_interactions": 0.012278806477698856,
+    "interaction_tests": [
+      {
+        "factor": "model:question",
+        "lr_stat": 66.29075203734192,
+        "df": 24,
+        "p_value": 7.855956584784075e-06
+      }
+    ],
+    "note": "language:question interaction not testable: structural empty cells (source != target constraint)"
+  },
+  "R1_per_question": {
+    "label": "R1 per-question",
+    "by_question": [
+      {
+        "question": "Q1",
+        "n": 1148,
+        "pos_count": 997,
+        "pos_rate": 0.8684668989547039,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 18.71579784083235,
+          "df": 6,
+          "p_value": 0.004671525603244072
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 21.69299860777187,
+          "df": 3,
+          "p_value": 7.556398497213136e-05
+        },
+        "delta_r2_model": 0.020939312567497925,
+        "delta_r2_language": 0.02427021718429878,
+        "winner_by_delta_r2": "language"
+      },
+      {
+        "question": "Q2",
+        "n": 1034,
+        "pos_count": 619,
+        "pos_rate": 0.5986460348162476,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 26.586222056864017,
+          "df": 6,
+          "p_value": 0.00017306905684753312
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 87.23446937588437,
+          "df": 3,
+          "p_value": 8.599146495631934e-19
+        },
+        "delta_r2_model": 0.019086743882345547,
+        "delta_r2_language": 0.06262724997664548,
+        "winner_by_delta_r2": "language"
+      },
+      {
+        "question": "Q3",
+        "n": 1204,
+        "pos_count": 1073,
+        "pos_rate": 0.8911960132890365,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 8.366522152490347,
+          "df": 6,
+          "p_value": 0.21246161599090024
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 4.64585765953052,
+          "df": 3,
+          "p_value": 0.1996432968534888
+        },
+        "delta_r2_model": 0.010099982701375687,
+        "delta_r2_language": 0.005608433365630328,
+        "winner_by_delta_r2": "model"
+      },
+      {
+        "question": "Q4",
+        "n": 1330,
+        "pos_count": 736,
+        "pos_rate": 0.5533834586466165,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 21.45746222339585,
+          "df": 6,
+          "p_value": 0.0015177106466756289
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 48.16514713708466,
+          "df": 4,
+          "p_value": 8.718530353498644e-10
+        },
+        "delta_r2_model": 0.011734483980796795,
+        "delta_r2_language": 0.02634016742653722,
+        "winner_by_delta_r2": "language"
+      },
+      {
+        "question": "Q5",
+        "n": 1120,
+        "pos_count": 401,
+        "pos_rate": 0.3580357142857143,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 21.912752254128463,
+          "df": 6,
+          "p_value": 0.001255749036617067
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 27.39331422368332,
+          "df": 3,
+          "p_value": 4.869055806975938e-06
+        },
+        "delta_r2_model": 0.01499736946639163,
+        "delta_r2_language": 0.01874833656480268,
+        "winner_by_delta_r2": "language"
+      }
+    ],
+    "n_language_wins": 4,
+    "n_model_wins": 1,
+    "n_questions_analyzed": 5
+  },
+  "R2_per_question": {
+    "label": "R2 per-question",
+    "by_question": [
+      {
+        "question": "Q1",
+        "n": 1036,
+        "pos_count": 122,
+        "pos_rate": 0.11776061776061776,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 16.25845620114069,
+          "df": 6,
+          "p_value": 0.01243194677470647
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 14.016253750143505,
+          "df": 3,
+          "p_value": 0.0028831119112677894
+        },
+        "delta_r2_model": 0.021649818759775674,
+        "delta_r2_language": 0.018664093910733204,
+        "winner_by_delta_r2": "model"
+      },
+      {
+        "question": "Q2",
+        "n": 782,
+        "pos_count": 254,
+        "pos_rate": 0.3248081841432225,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 12.059483134976972,
+          "df": 6,
+          "p_value": 0.06065488866882744
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 46.78551648472944,
+          "df": 3,
+          "p_value": 3.8605733475531333e-10
+        },
+        "delta_r2_model": 0.01223059737484311,
+        "delta_r2_language": 0.047449364843769715,
+        "winner_by_delta_r2": "language"
+      },
+      {
+        "question": "Q3",
+        "n": 1176,
+        "pos_count": 113,
+        "pos_rate": 0.09608843537414966,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 11.68850310239452,
+          "df": 6,
+          "p_value": 0.0692897960639888
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 5.33135952771147,
+          "df": 3,
+          "p_value": 0.14908041318652926
+        },
+        "delta_r2_model": 0.015706587455398435,
+        "delta_r2_language": 0.0071640879883940745,
+        "winner_by_delta_r2": "model"
+      },
+      {
+        "question": "Q4",
+        "n": 700,
+        "pos_count": 177,
+        "pos_rate": 0.25285714285714284,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 43.09293543888191,
+          "df": 6,
+          "p_value": 1.1180686940735396e-07
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 46.29703216156361,
+          "df": 4,
+          "p_value": 2.1360806725765806e-09
+        },
+        "delta_r2_model": 0.05443547919786795,
+        "delta_r2_language": 0.05848293010180716,
+        "winner_by_delta_r2": "language"
+      },
+      {
+        "question": "Q5",
+        "n": 952,
+        "pos_count": 578,
+        "pos_rate": 0.6071428571428571,
+        "lr_model": {
+          "factor": "model",
+          "lr_stat": 24.674319971895102,
+          "df": 6,
+          "p_value": 0.0003922571687236304
+        },
+        "lr_language": {
+          "factor": "language",
+          "lr_stat": 41.77877952881158,
+          "df": 3,
+          "p_value": 4.4700920491199394e-09
+        },
+        "delta_r2_model": 0.01934183280535906,
+        "delta_r2_language": 0.032749764507336354,
+        "winner_by_delta_r2": "language"
+      }
+    ],
+    "n_language_wins": 3,
+    "n_model_wins": 2,
+    "n_questions_analyzed": 5
+  },
+  "_meta": {
+    "reference_model": "claude",
+    "reference_language": "Python",
+    "reference_question": "Q1",
+    "n_total_excl_D": 5836,
+    "n_orig_vulnerable": 4646
+  }
+}

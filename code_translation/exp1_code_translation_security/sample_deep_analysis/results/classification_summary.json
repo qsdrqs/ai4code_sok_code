@@ -1,0 +1,3205 @@
+{
+  "total_samples": 5838,
+  "by_classification_family": {
+    "A_removed": 1244,
+    "B_preserved": 2069,
+    "C_introduced": 424,
+    "D_uncertain": 2,
+    "E_clean": 766,
+    "F_changed": 1333
+  },
+  "by_classification_strict": {
+    "A_removed": 1244,
+    "B_preserved": 2011,
+    "C_introduced": 424,
+    "D_uncertain": 2,
+    "E_clean": 766,
+    "F_changed": 1391
+  },
+  "by_model": {
+    "claude": {
+      "family": {
+        "A_removed": 179,
+        "B_preserved": 311,
+        "C_introduced": 59,
+        "D_uncertain": 0,
+        "E_clean": 111,
+        "F_changed": 174
+      },
+      "strict": {
+        "A_removed": 179,
+        "B_preserved": 297,
+        "C_introduced": 59,
+        "D_uncertain": 0,
+        "E_clean": 111,
+        "F_changed": 188
+      },
+      "total": 834
+    },
+    "gemini": {
+      "family": {
+        "A_removed": 226,
+        "B_preserved": 254,
+        "C_introduced": 51,
+        "D_uncertain": 0,
+        "E_clean": 119,
+        "F_changed": 184
+      },
+      "strict": {
+        "A_removed": 226,
+        "B_preserved": 246,
+        "C_introduced": 51,
+        "D_uncertain": 0,
+        "E_clean": 119,
+        "F_changed": 192
+      },
+      "total": 834
+    },
+    "gpt-4o": {
+      "family": {
+        "A_removed": 174,
+        "B_preserved": 285,
+        "C_introduced": 60,
+        "D_uncertain": 0,
+        "E_clean": 110,
+        "F_changed": 205
+      },
+      "strict": {
+        "A_removed": 174,
+        "B_preserved": 282,
+        "C_introduced": 60,
+        "D_uncertain": 0,
+        "E_clean": 110,
+        "F_changed": 208
+      },
+      "total": 834
+    },
+    "llama": {
+      "family": {
+        "A_removed": 169,
+        "B_preserved": 267,
+        "C_introduced": 75,
+        "D_uncertain": 2,
+        "E_clean": 95,
+        "F_changed": 226
+      },
+      "strict": {
+        "A_removed": 169,
+        "B_preserved": 255,
+        "C_introduced": 75,
+        "D_uncertain": 2,
+        "E_clean": 95,
+        "F_changed": 238
+      },
+      "total": 834
+    },
+    "o3": {
+      "family": {
+        "A_removed": 195,
+        "B_preserved": 291,
+        "C_introduced": 49,
+        "D_uncertain": 0,
+        "E_clean": 121,
+        "F_changed": 178
+      },
+      "strict": {
+        "A_removed": 195,
+        "B_preserved": 287,
+        "C_introduced": 49,
+        "D_uncertain": 0,
+        "E_clean": 121,
+        "F_changed": 182
+      },
+      "total": 834
+    },
+    "opus47": {
+      "family": {
+        "A_removed": 154,
+        "B_preserved": 326,
+        "C_introduced": 63,
+        "D_uncertain": 0,
+        "E_clean": 107,
+        "F_changed": 184
+      },
+      "strict": {
+        "A_removed": 154,
+        "B_preserved": 314,
+        "C_introduced": 63,
+        "D_uncertain": 0,
+        "E_clean": 107,
+        "F_changed": 196
+      },
+      "total": 834
+    },
+    "qwen3": {
+      "family": {
+        "A_removed": 147,
+        "B_preserved": 335,
+        "C_introduced": 67,
+        "D_uncertain": 0,
+        "E_clean": 103,
+        "F_changed": 182
+      },
+      "strict": {
+        "A_removed": 147,
+        "B_preserved": 330,
+        "C_introduced": 67,
+        "D_uncertain": 0,
+        "E_clean": 103,
+        "F_changed": 187
+      },
+      "total": 834
+    }
+  },
+  "by_question": {
+    "Q1": {
+      "family": {
+        "A_removed": 122,
+        "B_preserved": 447,
+        "C_introduced": 83,
+        "D_uncertain": 0,
+        "E_clean": 29,
+        "F_changed": 467
+      },
+      "strict": {
+        "A_removed": 122,
+        "B_preserved": 424,
+        "C_introduced": 83,
+        "D_uncertain": 0,
+        "E_clean": 29,
+        "F_changed": 490
+      },
+      "total": 1148
+    },
+    "Q2": {
+      "family": {
+        "A_removed": 254,
+        "B_preserved": 160,
+        "C_introduced": 91,
+        "D_uncertain": 2,
+        "E_clean": 161,
+        "F_changed": 368
+      },
+      "strict": {
+        "A_removed": 254,
+        "B_preserved": 160,
+        "C_introduced": 91,
+        "D_uncertain": 2,
+        "E_clean": 161,
+        "F_changed": 368
+      },
+      "total": 1036
+    },
+    "Q3": {
+      "family": {
+        "A_removed": 113,
+        "B_preserved": 968,
+        "C_introduced": 10,
+        "D_uncertain": 0,
+        "E_clean": 18,
+        "F_changed": 95
+      },
+      "strict": {
+        "A_removed": 113,
+        "B_preserved": 966,
+        "C_introduced": 10,
+        "D_uncertain": 0,
+        "E_clean": 18,
+        "F_changed": 97
+      },
+      "total": 1204
+    },
+    "Q4": {
+      "family": {
+        "A_removed": 177,
+        "B_preserved": 330,
+        "C_introduced": 213,
+        "D_uncertain": 0,
+        "E_clean": 417,
+        "F_changed": 193
+      },
+      "strict": {
+        "A_removed": 177,
+        "B_preserved": 330,
+        "C_introduced": 213,
+        "D_uncertain": 0,
+        "E_clean": 417,
+        "F_changed": 193
+      },
+      "total": 1330
+    },
+    "Q5": {
+      "family": {
+        "A_removed": 578,
+        "B_preserved": 164,
+        "C_introduced": 27,
+        "D_uncertain": 0,
+        "E_clean": 141,
+        "F_changed": 210
+      },
+      "strict": {
+        "A_removed": 578,
+        "B_preserved": 131,
+        "C_introduced": 27,
+        "D_uncertain": 0,
+        "E_clean": 141,
+        "F_changed": 243
+      },
+      "total": 1120
+    }
+  },
+  "by_language": {
+    "C": {
+      "family": {
+        "A_removed": 95,
+        "B_preserved": 446,
+        "C_introduced": 131,
+        "D_uncertain": 0,
+        "E_clean": 93,
+        "F_changed": 348
+      },
+      "strict": {
+        "A_removed": 95,
+        "B_preserved": 442,
+        "C_introduced": 131,
+        "D_uncertain": 0,
+        "E_clean": 93,
+        "F_changed": 352
+      },
+      "total": 1113
+    },
+    "Go": {
+      "family": {
+        "A_removed": 305,
+        "B_preserved": 531,
+        "C_introduced": 77,
+        "D_uncertain": 1,
+        "E_clean": 189,
+        "F_changed": 290
+      },
+      "strict": {
+        "A_removed": 305,
+        "B_preserved": 513,
+        "C_introduced": 77,
+        "D_uncertain": 1,
+        "E_clean": 189,
+        "F_changed": 308
+      },
+      "total": 1393
+    },
+    "Java": {
+      "family": {
+        "A_removed": 281,
+        "B_preserved": 524,
+        "C_introduced": 105,
+        "D_uncertain": 0,
+        "E_clean": 161,
+        "F_changed": 322
+      },
+      "strict": {
+        "A_removed": 281,
+        "B_preserved": 509,
+        "C_introduced": 105,
+        "D_uncertain": 0,
+        "E_clean": 161,
+        "F_changed": 337
+      },
+      "total": 1393
+    },
+    "Python": {
+      "family": {
+        "A_removed": 239,
+        "B_preserved": 64,
+        "C_introduced": 43,
+        "D_uncertain": 0,
+        "E_clean": 125,
+        "F_changed": 75
+      },
+      "strict": {
+        "A_removed": 239,
+        "B_preserved": 57,
+        "C_introduced": 43,
+        "D_uncertain": 0,
+        "E_clean": 125,
+        "F_changed": 82
+      },
+      "total": 546
+    },
+    "Rust": {
+      "family": {
+        "A_removed": 324,
+        "B_preserved": 504,
+        "C_introduced": 68,
+        "D_uncertain": 1,
+        "E_clean": 198,
+        "F_changed": 298
+      },
+      "strict": {
+        "A_removed": 324,
+        "B_preserved": 490,
+        "C_introduced": 68,
+        "D_uncertain": 1,
+        "E_clean": 198,
+        "F_changed": 312
+      },
+      "total": 1393
+    }
+  },
+  "by_model_question_language": {
+    "claude|Q1|C": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 10,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 23
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 7,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 26
+      },
+      "total": 41
+    },
+    "claude|Q1|Go": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 19,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 14
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 17,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 16
+      },
+      "total": 41
+    },
+    "claude|Q1|Java": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 20,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 12
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 19,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 13
+      },
+      "total": 41
+    },
+    "claude|Q1|Rust": {
+      "family": {
+        "A_removed": 9,
+        "B_preserved": 17,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 11
+      },
+      "strict": {
+        "A_removed": 9,
+        "B_preserved": 16,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 12
+      },
+      "total": 41
+    },
+    "claude|Q2|C": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 6,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 6,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 15
+      },
+      "total": 37
+    },
+    "claude|Q2|Go": {
+      "family": {
+        "A_removed": 11,
+        "B_preserved": 6,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 11
+      },
+      "strict": {
+        "A_removed": 11,
+        "B_preserved": 5,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 12
+      },
+      "total": 37
+    },
+    "claude|Q2|Java": {
+      "family": {
+        "A_removed": 11,
+        "B_preserved": 5,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 12
+      },
+      "strict": {
+        "A_removed": 11,
+        "B_preserved": 4,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 13
+      },
+      "total": 37
+    },
+    "claude|Q2|Rust": {
+      "family": {
+        "A_removed": 17,
+        "B_preserved": 4,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 17,
+        "B_preserved": 5,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 6
+      },
+      "total": 37
+    },
+    "claude|Q3|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "claude|Q3|Go": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "total": 43
+    },
+    "claude|Q3|Java": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 37,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 37,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 3
+      },
+      "total": 43
+    },
+    "claude|Q3|Rust": {
+      "family": {
+        "A_removed": 6,
+        "B_preserved": 33,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 6,
+        "B_preserved": 33,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 3
+      },
+      "total": 43
+    },
+    "claude|Q4|C": {
+      "family": {
+        "A_removed": 1,
+        "B_preserved": 17,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 2
+      },
+      "strict": {
+        "A_removed": 1,
+        "B_preserved": 17,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 2
+      },
+      "total": 38
+    },
+    "claude|Q4|Go": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 9,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 15,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 9,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 15,
+        "F_changed": 7
+      },
+      "total": 38
+    },
+    "claude|Q4|Java": {
+      "family": {
+        "A_removed": 6,
+        "B_preserved": 7,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 10,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 6,
+        "B_preserved": 7,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 10,
+        "F_changed": 7
+      },
+      "total": 38
+    },
+    "claude|Q4|Python": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 9,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 9,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 4
+      },
+      "total": 38
+    },
+    "claude|Q4|Rust": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 11,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 11,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 7
+      },
+      "total": 38
+    },
+    "claude|Q5|Go": {
+      "family": {
+        "A_removed": 18,
+        "B_preserved": 8,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 18,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 9
+      },
+      "total": 40
+    },
+    "claude|Q5|Java": {
+      "family": {
+        "A_removed": 20,
+        "B_preserved": 8,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 20,
+        "B_preserved": 7,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 7
+      },
+      "total": 40
+    },
+    "claude|Q5|Python": {
+      "family": {
+        "A_removed": 24,
+        "B_preserved": 2,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 24,
+        "B_preserved": 0,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 10
+      },
+      "total": 40
+    },
+    "claude|Q5|Rust": {
+      "family": {
+        "A_removed": 14,
+        "B_preserved": 11,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 14,
+        "B_preserved": 9,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 11
+      },
+      "total": 40
+    },
+    "gemini|Q1|C": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 9,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 24
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 9,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 24
+      },
+      "total": 41
+    },
+    "gemini|Q1|Go": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 18,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 16,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 17
+      },
+      "total": 41
+    },
+    "gemini|Q1|Java": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 19,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 11
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 18,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 12
+      },
+      "total": 41
+    },
+    "gemini|Q1|Rust": {
+      "family": {
+        "A_removed": 8,
+        "B_preserved": 14,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 8,
+        "B_preserved": 12,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 17
+      },
+      "total": 41
+    },
+    "gemini|Q2|C": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 6,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 6,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 15
+      },
+      "total": 37
+    },
+    "gemini|Q2|Go": {
+      "family": {
+        "A_removed": 14,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 12
+      },
+      "strict": {
+        "A_removed": 14,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 12
+      },
+      "total": 37
+    },
+    "gemini|Q2|Java": {
+      "family": {
+        "A_removed": 11,
+        "B_preserved": 4,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 13
+      },
+      "strict": {
+        "A_removed": 11,
+        "B_preserved": 4,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 13
+      },
+      "total": 37
+    },
+    "gemini|Q2|Rust": {
+      "family": {
+        "A_removed": 10,
+        "B_preserved": 6,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 12
+      },
+      "strict": {
+        "A_removed": 10,
+        "B_preserved": 6,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 12
+      },
+      "total": 37
+    },
+    "gemini|Q3|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 33,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 33,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 7
+      },
+      "total": 43
+    },
+    "gemini|Q3|Go": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "total": 43
+    },
+    "gemini|Q3|Java": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 37,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 37,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "total": 43
+    },
+    "gemini|Q3|Rust": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 34,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 34,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 5
+      },
+      "total": 43
+    },
+    "gemini|Q4|C": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 9,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 9,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 6
+      },
+      "total": 38
+    },
+    "gemini|Q4|Go": {
+      "family": {
+        "A_removed": 8,
+        "B_preserved": 5,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 8,
+        "B_preserved": 5,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 7
+      },
+      "total": 38
+    },
+    "gemini|Q4|Java": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 3,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 10
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 3,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 10
+      },
+      "total": 38
+    },
+    "gemini|Q4|Python": {
+      "family": {
+        "A_removed": 14,
+        "B_preserved": 2,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 14,
+        "B_preserved": 2,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 4
+      },
+      "total": 38
+    },
+    "gemini|Q4|Rust": {
+      "family": {
+        "A_removed": 9,
+        "B_preserved": 4,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 9,
+        "B_preserved": 4,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 7
+      },
+      "total": 38
+    },
+    "gemini|Q5|Go": {
+      "family": {
+        "A_removed": 20,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 20,
+        "B_preserved": 6,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "total": 40
+    },
+    "gemini|Q5|Java": {
+      "family": {
+        "A_removed": 28,
+        "B_preserved": 3,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 28,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 4
+      },
+      "total": 40
+    },
+    "gemini|Q5|Python": {
+      "family": {
+        "A_removed": 30,
+        "B_preserved": 1,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 30,
+        "B_preserved": 0,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 4
+      },
+      "total": 40
+    },
+    "gemini|Q5|Rust": {
+      "family": {
+        "A_removed": 26,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 26,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 6
+      },
+      "total": 40
+    },
+    "gpt-4o|Q1|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 4,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 31
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 6,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 29
+      },
+      "total": 41
+    },
+    "gpt-4o|Q1|Go": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 16,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 17
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 16,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 17
+      },
+      "total": 41
+    },
+    "gpt-4o|Q1|Java": {
+      "family": {
+        "A_removed": 6,
+        "B_preserved": 16,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 6,
+        "B_preserved": 16,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 15
+      },
+      "total": 41
+    },
+    "gpt-4o|Q1|Rust": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 16,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 18
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 16,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 18
+      },
+      "total": 41
+    },
+    "gpt-4o|Q2|C": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 6,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 18
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 6,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 18
+      },
+      "total": 37
+    },
+    "gpt-4o|Q2|Go": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 9,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 12
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 9,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 12
+      },
+      "total": 37
+    },
+    "gpt-4o|Q2|Java": {
+      "family": {
+        "A_removed": 11,
+        "B_preserved": 5,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 12
+      },
+      "strict": {
+        "A_removed": 11,
+        "B_preserved": 5,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 12
+      },
+      "total": 37
+    },
+    "gpt-4o|Q2|Rust": {
+      "family": {
+        "A_removed": 17,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 17,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 9
+      },
+      "total": 37
+    },
+    "gpt-4o|Q3|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "gpt-4o|Q3|Go": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 37,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "gpt-4o|Q3|Java": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 35,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "gpt-4o|Q3|Rust": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 34,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 34,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "total": 43
+    },
+    "gpt-4o|Q4|C": {
+      "family": {
+        "A_removed": 1,
+        "B_preserved": 16,
+        "C_introduced": 11,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 1,
+        "B_preserved": 16,
+        "C_introduced": 11,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 3
+      },
+      "total": 38
+    },
+    "gpt-4o|Q4|Go": {
+      "family": {
+        "A_removed": 9,
+        "B_preserved": 5,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 9,
+        "B_preserved": 5,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 6
+      },
+      "total": 38
+    },
+    "gpt-4o|Q4|Java": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 5,
+        "C_introduced": 10,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 12
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 5,
+        "C_introduced": 10,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 12
+      },
+      "total": 38
+    },
+    "gpt-4o|Q4|Python": {
+      "family": {
+        "A_removed": 10,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 17,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 10,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 17,
+        "F_changed": 3
+      },
+      "total": 38
+    },
+    "gpt-4o|Q4|Rust": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 12,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 12,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 5
+      },
+      "total": 38
+    },
+    "gpt-4o|Q5|Go": {
+      "family": {
+        "A_removed": 19,
+        "B_preserved": 7,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 19,
+        "B_preserved": 5,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 10
+      },
+      "total": 40
+    },
+    "gpt-4o|Q5|Java": {
+      "family": {
+        "A_removed": 20,
+        "B_preserved": 9,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 20,
+        "B_preserved": 8,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 6
+      },
+      "total": 40
+    },
+    "gpt-4o|Q5|Python": {
+      "family": {
+        "A_removed": 24,
+        "B_preserved": 1,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 24,
+        "B_preserved": 0,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 10
+      },
+      "total": 40
+    },
+    "gpt-4o|Q5|Rust": {
+      "family": {
+        "A_removed": 18,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 18,
+        "B_preserved": 6,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 10
+      },
+      "total": 40
+    },
+    "llama|Q1|C": {
+      "family": {
+        "A_removed": 1,
+        "B_preserved": 9,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 27
+      },
+      "strict": {
+        "A_removed": 1,
+        "B_preserved": 6,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 30
+      },
+      "total": 41
+    },
+    "llama|Q1|Go": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 20,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 13
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 20,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 13
+      },
+      "total": 41
+    },
+    "llama|Q1|Java": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 21,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 14
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 18,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 17
+      },
+      "total": 41
+    },
+    "llama|Q1|Rust": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 13,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 19
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 11,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 21
+      },
+      "total": 41
+    },
+    "llama|Q2|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 5,
+        "C_introduced": 9,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 21
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 5,
+        "C_introduced": 9,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 21
+      },
+      "total": 37
+    },
+    "llama|Q2|Go": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 3,
+        "C_introduced": 8,
+        "D_uncertain": 1,
+        "E_clean": 1,
+        "F_changed": 19
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 3,
+        "C_introduced": 8,
+        "D_uncertain": 1,
+        "E_clean": 1,
+        "F_changed": 19
+      },
+      "total": 37
+    },
+    "llama|Q2|Java": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 5,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 19
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 5,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 19
+      },
+      "total": 37
+    },
+    "llama|Q2|Rust": {
+      "family": {
+        "A_removed": 14,
+        "B_preserved": 2,
+        "C_introduced": 3,
+        "D_uncertain": 1,
+        "E_clean": 6,
+        "F_changed": 11
+      },
+      "strict": {
+        "A_removed": 14,
+        "B_preserved": 2,
+        "C_introduced": 3,
+        "D_uncertain": 1,
+        "E_clean": 6,
+        "F_changed": 11
+      },
+      "total": 37
+    },
+    "llama|Q3|C": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 34,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 34,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "llama|Q3|Go": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 35,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 35,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 3
+      },
+      "total": 43
+    },
+    "llama|Q3|Java": {
+      "family": {
+        "A_removed": 0,
+        "B_preserved": 37,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 0,
+        "B_preserved": 37,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 5
+      },
+      "total": 43
+    },
+    "llama|Q3|Rust": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 36,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "llama|Q4|C": {
+      "family": {
+        "A_removed": 0,
+        "B_preserved": 16,
+        "C_introduced": 9,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 0,
+        "B_preserved": 16,
+        "C_introduced": 9,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 4
+      },
+      "total": 38
+    },
+    "llama|Q4|Go": {
+      "family": {
+        "A_removed": 10,
+        "B_preserved": 3,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 15,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 10,
+        "B_preserved": 3,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 15,
+        "F_changed": 7
+      },
+      "total": 38
+    },
+    "llama|Q4|Java": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 4,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 10,
+        "F_changed": 11
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 4,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 10,
+        "F_changed": 11
+      },
+      "total": 38
+    },
+    "llama|Q4|Python": {
+      "family": {
+        "A_removed": 10,
+        "B_preserved": 2,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 10,
+        "B_preserved": 2,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 8
+      },
+      "total": 38
+    },
+    "llama|Q4|Rust": {
+      "family": {
+        "A_removed": 9,
+        "B_preserved": 5,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 9,
+        "B_preserved": 5,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 6
+      },
+      "total": 38
+    },
+    "llama|Q5|Go": {
+      "family": {
+        "A_removed": 25,
+        "B_preserved": 3,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 25,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 7
+      },
+      "total": 40
+    },
+    "llama|Q5|Java": {
+      "family": {
+        "A_removed": 21,
+        "B_preserved": 5,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 21,
+        "B_preserved": 4,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 9
+      },
+      "total": 40
+    },
+    "llama|Q5|Python": {
+      "family": {
+        "A_removed": 30,
+        "B_preserved": 0,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 30,
+        "B_preserved": 0,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 4
+      },
+      "total": 40
+    },
+    "llama|Q5|Rust": {
+      "family": {
+        "A_removed": 12,
+        "B_preserved": 9,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 13
+      },
+      "strict": {
+        "A_removed": 12,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 15
+      },
+      "total": 40
+    },
+    "o3|Q1|C": {
+      "family": {
+        "A_removed": 6,
+        "B_preserved": 10,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 21
+      },
+      "strict": {
+        "A_removed": 6,
+        "B_preserved": 10,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 21
+      },
+      "total": 41
+    },
+    "o3|Q1|Go": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 19,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 13
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 18,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 14
+      },
+      "total": 41
+    },
+    "o3|Q1|Java": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 19,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 13
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 19,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 13
+      },
+      "total": 41
+    },
+    "o3|Q1|Rust": {
+      "family": {
+        "A_removed": 11,
+        "B_preserved": 18,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 11,
+        "B_preserved": 17,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 9
+      },
+      "total": 41
+    },
+    "o3|Q2|C": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 7,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 16
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 7,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 16
+      },
+      "total": 37
+    },
+    "o3|Q2|Go": {
+      "family": {
+        "A_removed": 10,
+        "B_preserved": 9,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 10,
+        "B_preserved": 9,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 9
+      },
+      "total": 37
+    },
+    "o3|Q2|Java": {
+      "family": {
+        "A_removed": 9,
+        "B_preserved": 9,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 10
+      },
+      "strict": {
+        "A_removed": 9,
+        "B_preserved": 9,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 10
+      },
+      "total": 37
+    },
+    "o3|Q2|Rust": {
+      "family": {
+        "A_removed": 13,
+        "B_preserved": 8,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 13,
+        "B_preserved": 9,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 6
+      },
+      "total": 37
+    },
+    "o3|Q3|C": {
+      "family": {
+        "A_removed": 8,
+        "B_preserved": 30,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 8,
+        "B_preserved": 30,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "o3|Q3|Go": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 33,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 2
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 33,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 2
+      },
+      "total": 43
+    },
+    "o3|Q3|Java": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 35,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 35,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "o3|Q3|Rust": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 34,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 34,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 5
+      },
+      "total": 43
+    },
+    "o3|Q4|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 15,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 15,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 3
+      },
+      "total": 38
+    },
+    "o3|Q4|Go": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 7,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 7,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 6
+      },
+      "total": 38
+    },
+    "o3|Q4|Java": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 5,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 5,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 8
+      },
+      "total": 38
+    },
+    "o3|Q4|Python": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 10,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 16,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 10,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 16,
+        "F_changed": 5
+      },
+      "total": 38
+    },
+    "o3|Q4|Rust": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 7,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 7,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 6
+      },
+      "total": 38
+    },
+    "o3|Q5|Go": {
+      "family": {
+        "A_removed": 18,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 18,
+        "B_preserved": 6,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 10
+      },
+      "total": 40
+    },
+    "o3|Q5|Java": {
+      "family": {
+        "A_removed": 18,
+        "B_preserved": 3,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 13
+      },
+      "strict": {
+        "A_removed": 18,
+        "B_preserved": 2,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 14
+      },
+      "total": 40
+    },
+    "o3|Q5|Python": {
+      "family": {
+        "A_removed": 26,
+        "B_preserved": 1,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 26,
+        "B_preserved": 0,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 8
+      },
+      "total": 40
+    },
+    "o3|Q5|Rust": {
+      "family": {
+        "A_removed": 20,
+        "B_preserved": 5,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 20,
+        "B_preserved": 5,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 9
+      },
+      "total": 40
+    },
+    "opus47|Q1|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 13,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 22
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 12,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 23
+      },
+      "total": 41
+    },
+    "opus47|Q1|Go": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 22,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 11
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 22,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 11
+      },
+      "total": 41
+    },
+    "opus47|Q1|Java": {
+      "family": {
+        "A_removed": 0,
+        "B_preserved": 18,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 19
+      },
+      "strict": {
+        "A_removed": 0,
+        "B_preserved": 18,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 19
+      },
+      "total": 41
+    },
+    "opus47|Q1|Rust": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 17,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 16,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 16
+      },
+      "total": 41
+    },
+    "opus47|Q2|C": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 10,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 10,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 15
+      },
+      "total": 37
+    },
+    "opus47|Q2|Go": {
+      "family": {
+        "A_removed": 13,
+        "B_preserved": 5,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 10
+      },
+      "strict": {
+        "A_removed": 13,
+        "B_preserved": 5,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 10
+      },
+      "total": 37
+    },
+    "opus47|Q2|Java": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 7,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 16
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 7,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 16
+      },
+      "total": 37
+    },
+    "opus47|Q2|Rust": {
+      "family": {
+        "A_removed": 11,
+        "B_preserved": 4,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 13
+      },
+      "strict": {
+        "A_removed": 11,
+        "B_preserved": 4,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 13
+      },
+      "total": 37
+    },
+    "opus47|Q3|C": {
+      "family": {
+        "A_removed": 9,
+        "B_preserved": 29,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 9,
+        "B_preserved": 28,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 5
+      },
+      "total": 43
+    },
+    "opus47|Q3|Go": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 35,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 2
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 35,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 2
+      },
+      "total": 43
+    },
+    "opus47|Q3|Java": {
+      "family": {
+        "A_removed": 6,
+        "B_preserved": 34,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 2
+      },
+      "strict": {
+        "A_removed": 6,
+        "B_preserved": 33,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 3
+      },
+      "total": 43
+    },
+    "opus47|Q3|Rust": {
+      "family": {
+        "A_removed": 6,
+        "B_preserved": 31,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 6,
+        "B_preserved": 31,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 5
+      },
+      "total": 43
+    },
+    "opus47|Q4|C": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 16,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 10,
+        "F_changed": 2
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 16,
+        "C_introduced": 8,
+        "D_uncertain": 0,
+        "E_clean": 10,
+        "F_changed": 2
+      },
+      "total": 38
+    },
+    "opus47|Q4|Go": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 14,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 14,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 14,
+        "F_changed": 3
+      },
+      "total": 38
+    },
+    "opus47|Q4|Java": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 11,
+        "C_introduced": 10,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 11,
+        "C_introduced": 10,
+        "D_uncertain": 0,
+        "E_clean": 8,
+        "F_changed": 6
+      },
+      "total": 38
+    },
+    "opus47|Q4|Python": {
+      "family": {
+        "A_removed": 7,
+        "B_preserved": 12,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 1
+      },
+      "strict": {
+        "A_removed": 7,
+        "B_preserved": 12,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 1
+      },
+      "total": 38
+    },
+    "opus47|Q4|Rust": {
+      "family": {
+        "A_removed": 1,
+        "B_preserved": 13,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 1,
+        "B_preserved": 13,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 6
+      },
+      "total": 38
+    },
+    "opus47|Q5|Go": {
+      "family": {
+        "A_removed": 15,
+        "B_preserved": 11,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 15,
+        "B_preserved": 9,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 10
+      },
+      "total": 40
+    },
+    "opus47|Q5|Java": {
+      "family": {
+        "A_removed": 16,
+        "B_preserved": 10,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 16,
+        "B_preserved": 8,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 10
+      },
+      "total": 40
+    },
+    "opus47|Q5|Python": {
+      "family": {
+        "A_removed": 22,
+        "B_preserved": 3,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 22,
+        "B_preserved": 1,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 11
+      },
+      "total": 40
+    },
+    "opus47|Q5|Rust": {
+      "family": {
+        "A_removed": 16,
+        "B_preserved": 11,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 16,
+        "B_preserved": 9,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 9
+      },
+      "total": 40
+    },
+    "qwen3|Q1|C": {
+      "family": {
+        "A_removed": 0,
+        "B_preserved": 10,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 27
+      },
+      "strict": {
+        "A_removed": 0,
+        "B_preserved": 12,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 25
+      },
+      "total": 41
+    },
+    "qwen3|Q1|Go": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 20,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 14
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 19,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 2,
+        "F_changed": 15
+      },
+      "total": 41
+    },
+    "qwen3|Q1|Java": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 23,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 10
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 22,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 11
+      },
+      "total": 41
+    },
+    "qwen3|Q1|Rust": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 17,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 16,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 16
+      },
+      "total": 41
+    },
+    "qwen3|Q2|C": {
+      "family": {
+        "A_removed": 5,
+        "B_preserved": 7,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 16
+      },
+      "strict": {
+        "A_removed": 5,
+        "B_preserved": 7,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 3,
+        "F_changed": 16
+      },
+      "total": 37
+    },
+    "qwen3|Q2|Go": {
+      "family": {
+        "A_removed": 8,
+        "B_preserved": 6,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 14
+      },
+      "strict": {
+        "A_removed": 8,
+        "B_preserved": 6,
+        "C_introduced": 4,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 14
+      },
+      "total": 37
+    },
+    "qwen3|Q2|Java": {
+      "family": {
+        "A_removed": 8,
+        "B_preserved": 5,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 15
+      },
+      "strict": {
+        "A_removed": 8,
+        "B_preserved": 5,
+        "C_introduced": 3,
+        "D_uncertain": 0,
+        "E_clean": 6,
+        "F_changed": 15
+      },
+      "total": 37
+    },
+    "qwen3|Q2|Rust": {
+      "family": {
+        "A_removed": 12,
+        "B_preserved": 7,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 9
+      },
+      "strict": {
+        "A_removed": 12,
+        "B_preserved": 7,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 7,
+        "F_changed": 9
+      },
+      "total": 37
+    },
+    "qwen3|Q3|C": {
+      "family": {
+        "A_removed": 4,
+        "B_preserved": 32,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 4,
+        "B_preserved": 32,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 0,
+        "F_changed": 6
+      },
+      "total": 43
+    },
+    "qwen3|Q3|Go": {
+      "family": {
+        "A_removed": 6,
+        "B_preserved": 32,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 6,
+        "B_preserved": 32,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 4
+      },
+      "total": 43
+    },
+    "qwen3|Q3|Java": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 38,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 2
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 38,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 2
+      },
+      "total": 43
+    },
+    "qwen3|Q3|Rust": {
+      "family": {
+        "A_removed": 2,
+        "B_preserved": 39,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "strict": {
+        "A_removed": 2,
+        "B_preserved": 39,
+        "C_introduced": 0,
+        "D_uncertain": 0,
+        "E_clean": 1,
+        "F_changed": 1
+      },
+      "total": 43
+    },
+    "qwen3|Q4|C": {
+      "family": {
+        "A_removed": 1,
+        "B_preserved": 15,
+        "C_introduced": 9,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 4
+      },
+      "strict": {
+        "A_removed": 1,
+        "B_preserved": 15,
+        "C_introduced": 9,
+        "D_uncertain": 0,
+        "E_clean": 9,
+        "F_changed": 4
+      },
+      "total": 38
+    },
+    "qwen3|Q4|Go": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 15,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 2
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 15,
+        "C_introduced": 5,
+        "D_uncertain": 0,
+        "E_clean": 13,
+        "F_changed": 2
+      },
+      "total": 38
+    },
+    "qwen3|Q4|Java": {
+      "family": {
+        "A_removed": 0,
+        "B_preserved": 15,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 5
+      },
+      "strict": {
+        "A_removed": 0,
+        "B_preserved": 15,
+        "C_introduced": 7,
+        "D_uncertain": 0,
+        "E_clean": 11,
+        "F_changed": 5
+      },
+      "total": 38
+    },
+    "qwen3|Q4|Python": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 14,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 3
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 14,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 3
+      },
+      "total": 38
+    },
+    "qwen3|Q4|Rust": {
+      "family": {
+        "A_removed": 3,
+        "B_preserved": 10,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 3,
+        "B_preserved": 10,
+        "C_introduced": 6,
+        "D_uncertain": 0,
+        "E_clean": 12,
+        "F_changed": 7
+      },
+      "total": 38
+    },
+    "qwen3|Q5|Go": {
+      "family": {
+        "A_removed": 16,
+        "B_preserved": 12,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 6
+      },
+      "strict": {
+        "A_removed": 16,
+        "B_preserved": 10,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 8
+      },
+      "total": 40
+    },
+    "qwen3|Q5|Java": {
+      "family": {
+        "A_removed": 20,
+        "B_preserved": 7,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 20,
+        "B_preserved": 6,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "total": 40
+    },
+    "qwen3|Q5|Python": {
+      "family": {
+        "A_removed": 27,
+        "B_preserved": 0,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 7
+      },
+      "strict": {
+        "A_removed": 27,
+        "B_preserved": 0,
+        "C_introduced": 2,
+        "D_uncertain": 0,
+        "E_clean": 4,
+        "F_changed": 7
+      },
+      "total": 40
+    },
+    "qwen3|Q5|Rust": {
+      "family": {
+        "A_removed": 15,
+        "B_preserved": 11,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 8
+      },
+      "strict": {
+        "A_removed": 15,
+        "B_preserved": 10,
+        "C_introduced": 1,
+        "D_uncertain": 0,
+        "E_clean": 5,
+        "F_changed": 9
+      },
+      "total": 40
+    }
+  },
+  "four_class_views": {
+    "strict_mode_family_primary": {
+      "A_removed": 1244,
+      "B_preserved": 2069,
+      "C_introduced": 424,
+      "D_uncertain": 2,
+      "E_clean_excluded": 766,
+      "F_changed_excluded": 1333,
+      "note": "Primary view. E and F excluded from A/B/C/D but counted in total. A+B+C+D+E+F = 5838."
+    },
+    "merged_mode": {
+      "A_removed": 2577,
+      "B_preserved": 2835,
+      "C_introduced": 1757,
+      "D_uncertain": 2,
+      "note": "E merged into B; F double-counted into A and C. Unique sample total = 5838."
+    },
+    "narrow_mode": {
+      "A_removed": 1244,
+      "B_preserved": 2069,
+      "C_introduced": 424,
+      "note": "Only A/B/C. D/E/F excluded. Covered = 3737 / 5838."
+    }
+  },
+  "uncertain_reason_breakdown": {
+    "missing_in_translated": 2
+  },
+  "compile_status_breakdown_within_each_family_class": {
+    "F_changed": {
+      "pass": 783,
+      "inconclusive": 360,
+      "fail": 6,
+      "unknown": 184
+    },
+    "B_preserved": {
+      "pass": 1484,
+      "fail": 8,
+      "inconclusive": 251,
+      "unknown": 326
+    },
+    "C_introduced": {
+      "inconclusive": 140,
+      "pass": 219,
+      "fail": 2,
+      "unknown": 63
+    },
+    "A_removed": {
+      "pass": 847,
+      "inconclusive": 235,
+      "fail": 8,
+      "unknown": 154
+    },
+    "E_clean": {
+      "pass": 535,
+      "inconclusive": 117,
+      "fail": 7,
+      "unknown": 107
+    },
+    "D_uncertain": {
+      "unknown": 2
+    }
+  }
+}
