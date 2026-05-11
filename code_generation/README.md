@@ -48,12 +48,13 @@ This experiment investigates vulnerability propagation through controlled exposu
 
 ## Repository Structure
 
-```
+​```
 code_generation/
 ├── prepare_dataset.py      # Dataset preparation from Civil Comments
 ├── eval_code_generation.py # Model evaluation on HumanEval
-└── bad_code.py            # In-context learning vulnerability experiment
-```
+├── eval_security_eval.py   # Model evaluation on SecurityEval (CWE-mapped vulnerabilities)
+└── bad_code.py             # In-context learning vulnerability experiment
+​```
 
 ## Installation
 
@@ -142,6 +143,29 @@ python eval_code_generation.py \
 - **Bandit**: Detects common Python security vulnerabilities
 - **Pylint**: Identifies code quality issues and potential problems
 - **Combined analysis**: Overall security assessment across all generated code
+
+#### Stage 4: Supplementary Validation on SecurityEval
+
+The `eval_security_eval.py` script validates findings on the SecurityEval benchmark, which contains 121 security-sensitive Python prompts covering 69 CWE categories (e.g., SQL injection, path traversal, insecure deserialization, weak cryptography):
+
+​```bash
+python eval_security_eval.py \
+    --model_names model_A model_B model_C \
+    --num_samples 5 \
+    --max_new_tokens 512 \
+    --temperature 0 \
+    --output_dir security_eval_results
+​```
+
+**Key Features:**
+- **Multi-model evaluation**: Evaluates multiple models in a single invocation, with per-model memory cleanup between runs
+- **CWE-mapped vulnerability rate**: Reports the fraction of samples with at least one Bandit finding mapped to a CWE category
+- **Paired comparison support**: Designed for matched-hyperparameter hazard-vs-benign comparisons
+- **Detailed per-sample output**: Stores generated code, full Bandit JSON, and per-CWE breakdown
+
+**Output:**
+- `summary.json`: Cross-model comparison with statistics
+- `detail_<model_name>.json`: Per-model detailed results (one file per evaluated model)
 
 ### Experiment 2: In-context Learning Vulnerability Experiment
 
