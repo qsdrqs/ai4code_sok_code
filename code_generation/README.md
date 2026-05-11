@@ -148,14 +148,14 @@ python eval_code_generation.py \
 
 The `eval_security_eval.py` script validates findings on the SecurityEval benchmark, which contains 121 security-sensitive Python prompts covering 69 CWE categories (e.g., SQL injection, path traversal, insecure deserialization, weak cryptography):
 
-​​```bash
+```bash
 python eval_security_eval.py \
     --model_names model_A model_B model_C \
     --num_samples 5 \
     --max_new_tokens 512 \
     --temperature 0 \
     --output_dir security_eval_results
-​```
+```
 
 **Key Features:**
 - **Multi-model evaluation**: Evaluates multiple models in a single invocation, with per-model memory cleanup between runs
@@ -166,6 +166,7 @@ python eval_security_eval.py \
 **Output:**
 - `summary.json`: Cross-model comparison with statistics
 - `detail_<model_name>.json`: Per-model detailed results (one file per evaluated model)
+
 
 ### Experiment 2: In-context Learning Vulnerability Experiment
 
